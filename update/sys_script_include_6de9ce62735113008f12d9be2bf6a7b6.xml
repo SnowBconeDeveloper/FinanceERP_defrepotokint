@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.SOAP_ElementGenerator</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>SOAP_ElementGenerator</name>
+    <script><![CDATA[var SOAP_ElementGenerator = Class.create();
+SOAP_ElementGenerator.prototype = {
+	initialize: function(textXml) {
+		this.textXml = decodeURIComponent(textXml);
+		this.xmlDoc = new XMLDocument2();
+		this.xmlDoc.parseXML(this.textXml);
+		this.elements = [];
+	},
+
+	getElements: function() {
+		var node = this.xmlDoc.getDocumentElement();
+		this.xmlParser(node, null);
+		return this.elements;
+	},
+
+	xmlParser: function(node, parentSysID) {
+		var element = this.extractElement(node, parentSysID);
+		if (!this.nodeHasChild(node)) {
+			return;
+		}
+		this.extractAttributes(node, element.sys_id);
+		var iter = node.getChildNodeIterator();
+		while (iter.hasNext()) {
+			var child = iter.next();
+			this.xmlParser(child, element.sys_id);
+		}
+	},
+
+	extractAttributes: function(node, parentSysID) {
+		var attributes = node.getAttributes();
+		var keys = Object.keys(attributes);
+		keys.forEach(function(key) {
+			var element = {};
+			element.parent = parentSysID;
+			element.element = key;
+			element.type = 'attribute';
+			element.sys_id = gs.generateGUID(element);
+			this.elements.push(element);
+		}, this);
+	},
+
+	nodeHasChild: function(node) {
+		if (node.getNodeName().trim() == '#text' || node.getNodeName().trim() == '#comment')
+			return false;
+		var iter = node.getChildNodeIterator();
+		return iter.hasNext();
+	},
+
+	extractElement: function(node, parentSysID) {
+		if (node.getNodeName().trim() == '#text' || node.getNodeName().trim() == '#comment') {
+			return;
+		}
+		var element = {};
+		element.parent = parentSysID;
+		element.element = node.getNodeName();
+		if (this.nodeHasChild(node)) {
+			element.type = 'container';
+		} else {
+			element.type = 'element';
+		}
+		element.sys_id = gs.generateGUID(element);
+		this.elements.push(element);
+		return element;
+	},
+
+	type: 'SOAP_ElementGenerator'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 06:11:31</sys_created_on>
+    <sys_id>6de9ce62735113008f12d9be2bf6a7b6</sys_id>
+    <sys_mod_count>13</sys_mod_count>
+    <sys_name>SOAP_ElementGenerator</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_6de9ce62735113008f12d9be2bf6a7b6</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-30 04:31:58</sys_updated_on>
+  </sys_script_include>
+</record_update>

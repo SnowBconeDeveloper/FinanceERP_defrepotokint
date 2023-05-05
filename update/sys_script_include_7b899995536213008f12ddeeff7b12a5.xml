@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ResultBroadcaster</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ResultBroadcaster</name>
+    <script><![CDATA[var ResultBroadcaster = Class.create();
+ResultBroadcaster.prototype = {
+	initialize: function(serviceQueue) {
+		this.serviceQueue = serviceQueue;
+	},
+
+	buildResult: function() {
+		var result = {};
+
+		var input = JSON.parse(this.serviceQueue.input);
+		var context = JSON.parse(this.serviceQueue.context);
+		var response = JSON.parse(this.serviceQueue.response);
+
+		var source = {};
+		source.sys_id = this.serviceQueue.source.toString();
+		source.name = this.serviceQueue.source.name.toString();
+		source.erp = this.serviceQueue.source.erp.toString();
+		source.fin_erp = this.serviceQueue.source.fin_erp.toString();
+
+		var service = {};
+		service.sys_id = this.serviceQueue.service.toString();
+		service.name = this.serviceQueue.service.name.toString();
+		service.type = this.serviceQueue.service.type.toString();
+		service.service = this.serviceQueue.service.service.toString();
+
+		result.input = input;
+		result.context = context;
+		result.response = response;
+		result.source = source;
+		result.service = service;
+		gs.info('broadcastResult : ' + JSON.stringify(result));
+		return result;
+	},
+
+	broadcast: function() {
+		var result = this.buildResult();
+
+		var responseReceivers = new GlideScriptedExtensionPoint().getExtensions("ErpResponse");
+		responseReceivers.forEach(function(erpResponse) {
+			if (erpResponse.canProcess()) {
+				erpResponse.process(result);
+			}
+		});
+	},
+
+	type: 'ResultBroadcaster'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-06-06 09:01:31</sys_created_on>
+    <sys_id>7b899995536213008f12ddeeff7b12a5</sys_id>
+    <sys_mod_count>28</sys_mod_count>
+    <sys_name>ResultBroadcaster</sys_name>
+    <sys_package display_value="Financial Close Automation - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Automation - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_7b899995536213008f12ddeeff7b12a5</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-06-25 07:47:02</sys_updated_on>
+  </sys_script_include>
+</record_update>

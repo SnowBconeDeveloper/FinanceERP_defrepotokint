@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+  <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <annotation/>
+    <category display_value="Finance Close Automation">ff48fbd9539323008f12ddeeff7b12b1</category>
+    <copied_from/>
+    <copied_from_name/>
+    <description/>
+    <internal_name>fca_payload_generator</internal_name>
+    <label_cache>[{"name":"{{action.service_map_sys_id}}","label":"action➛service_map_sys_id","type":"action","ref":""},{"name":"{{action.input}}","label":"action➛input","type":"action","ref":""},{"name":"{{action.context}}","label":"action➛context","type":"action","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].p}}","label":"step➛Prepare Payload➛p","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].pa}}","label":"step➛Prepare Payload➛pa","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].}}","label":"step➛Prepare Payload➛","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].pay}}","label":"step➛Prepare Payload➛pay","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].payl}}","label":"step➛Prepare Payload➛payl","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].paylo}}","label":"step➛Prepare Payload➛paylo","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].payloa}}","label":"step➛Prepare Payload➛payloa","type":"step","ref":""},{"name":"{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].payload}}","label":"step➛Prepare Payload➛payload","type":"step","ref":""}]</label_cache>
+    <master>true</master>
+    <name>FCA Payload Generator</name>
+    <outputs/>
+    <outputs/>
+    <parent_action display_value="FCA Payload Generator">3968fbd9539323008f12ddeeff7b12d2</parent_action>
+    <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-29 00:09:21</sys_created_on>
+    <sys_id>a724cca553d323008f12ddeeff7b1216</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>FCA Payload Generator</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_hub_action_type_snapshot_a724cca553d323008f12ddeeff7b1216</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-29 00:09:23</sys_updated_on>
+    <system_level>false</system_level>
+    <type/>
+  </sys_hub_action_type_snapshot>
+  <sys_translated_text action="delete_multiple" query="documentkey=a724cca553d323008f12ddeeff7b1216"/>
+  <sys_variable_value action="delete_multiple" query="document_key=a724cca553d323008f12ddeeff7b1216"/>
+  <sys_element_mapping action="delete_multiple" query="id=a724cca553d323008f12ddeeff7b1216"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>payload</field>
+    <id>a724cca553d323008f12ddeeff7b1216</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-29 00:09:23</sys_created_on>
+    <sys_id>bb24cca553d323008f12ddeeff7b1263</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-29 00:09:23</sys_updated_on>
+    <table>var__m_sys_hub_action_output_a724cca553d323008f12ddeeff7b1216</table>
+    <value>{{step[820b9c71-6d62-41c2-bac4-5ca5bff357a4].payload}}</value>
+  </sys_element_mapping>
+</record_update>

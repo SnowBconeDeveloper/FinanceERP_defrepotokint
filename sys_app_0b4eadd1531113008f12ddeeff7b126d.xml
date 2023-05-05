@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+  <sys_app action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <can_edit_in_studio>false</can_edit_in_studio>
+    <enforce_license>log</enforce_license>
+    <guided_setup_guid/>
+    <js_level>helsinki_es5</js_level>
+    <licensable>true</licensable>
+    <license_category>general</license_category>
+    <license_model>none</license_model>
+    <logo/>
+    <menu/>
+    <name>Finance - ERP Integration</name>
+    <private>false</private>
+    <restrict_table_access>false</restrict_table_access>
+    <runtime_access_tracking/>
+    <scope>sn_fcms_intg</scope>
+    <scoped_administration>true</scoped_administration>
+    <short_description>Provides integration support between the ServiceNow platform and common ERP systems.</short_description>
+    <source>sn_fcms_intg</source>
+    <store_correlation_id/>
+    <store_url/>
+    <sys_class_name>sys_app</sys_class_name>
+    <sys_code>com.sn_fcms_integrations</sys_code>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-05 06:57:48</sys_created_on>
+    <sys_id>0b4eadd1531113008f12ddeeff7b126d</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-04-12 08:01:43</sys_updated_on>
+    <template/>
+    <trackable>true</trackable>
+    <user_role/>
+    <vendor/>
+    <vendor_prefix/>
+    <version>${plugin.version}</version>
+  </sys_app>
+</record_update>

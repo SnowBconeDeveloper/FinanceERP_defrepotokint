@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+  <wf_workflow_version action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <activity_stages>{"activities":{},"stages":{},"subflows":[],"ends":["bd2ff5d653503300a3bd2a2db5dc3486"]}</activity_stages>
+    <after_business_rules>false</after_business_rules>
+    <checked_out/>
+    <checked_out_by/>
+    <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+    <condition/>
+    <condition_type/>
+    <description/>
+    <expected_sequences>bd2ff5d653503300a3bd2a2db5dc348b,352ff5d653503300a3bd2a2db5dc3488,f92ff5d653503300a3bd2a2db5dc348a,3d2ff5d653503300a3bd2a2db5dc3489,712ff5d653503300a3bd2a2db5dc348d,bd2ff5d653503300a3bd2a2db5dc3486</expected_sequences>
+    <expected_time>1970-01-01 14:00:00</expected_time>
+    <expected_time_type/>
+    <full_sequences>bd2ff5d653503300a3bd2a2db5dc348b,352ff5d653503300a3bd2a2db5dc3488,f92ff5d653503300a3bd2a2db5dc348a,3d2ff5d653503300a3bd2a2db5dc3489,712ff5d653503300a3bd2a2db5dc348d,bd2ff5d653503300a3bd2a2db5dc3486</full_sequences>
+    <journal/>
+    <max_activity_count>100</max_activity_count>
+    <name>ERP Service Queue Processor</name>
+    <not_cacheable>false</not_cacheable>
+    <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+    <order>100</order>
+    <pin_type>set_by_activity</pin_type>
+    <published>true</published>
+    <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+    <requires_ert>true</requires_ert>
+    <run_multiple>false</run_multiple>
+    <schedule/>
+    <stage_field/>
+    <stage_order>computed</stage_order>
+    <start display_value="Begin">bd2ff5d653503300a3bd2a2db5dc348b</start>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:52</sys_created_on>
+    <sys_id>752ff5d653503300a3bd2a2db5dc3485</sys_id>
+    <sys_mod_count>4</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:05:14</sys_updated_on>
+    <table>sn_fcms_intg_service_queue</table>
+    <timezone/>
+    <validated>false</validated>
+    <workflow display_value="ERP Service Queue Processor">21858e32735113008f12d9be2bf6a7ca</workflow>
+  </wf_workflow_version>
+  <wf_workflow action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <description/>
+    <name>ERP Service Queue Processor</name>
+    <preview/>
+    <sys_class_name>wf_workflow</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-10 00:30:09</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>21858e32735113008f12d9be2bf6a7ca</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>ERP Service Queue Processor</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>wf_workflow_21858e32735113008f12d9be2bf6a7ca</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2018-06-05 22:13:29</sys_updated_on>
+    <table>sn_fcms_intg_service_queue</table>
+    <template>false</template>
+    <vars/>
+  </wf_workflow>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>1</databus_lookup_id>
+    <height/>
+    <input/>
+    <is_parent>false</is_parent>
+    <name>Begin</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>bd2ff5d653503300a3bd2a2db5dc348b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width>80</width>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>20</x>
+    <y>20</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=bd2ff5d653503300a3bd2a2db5dc348b"/>
+  <wf_condition action="INSERT_OR_UPDATE">
+    <activity display_value="Begin">bd2ff5d653503300a3bd2a2db5dc348b</activity>
+    <condition>true</condition>
+    <condition_default/>
+    <condition_type>standard</condition_type>
+    <else_flag>false</else_flag>
+    <error>false</error>
+    <event>false</event>
+    <event_name/>
+    <is_positive>true</is_positive>
+    <name>Always</name>
+    <order>0</order>
+    <short_description/>
+    <skip_during_generate>false</skip_during_generate>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>f52ff5d653503300a3bd2a2db5dc348c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+  </wf_condition>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>5</databus_lookup_id>
+    <height/>
+    <input>{}</input>
+    <is_parent>false</is_parent>
+    <name>Create Response Object</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>3d2ff5d653503300a3bd2a2db5dc3489</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width/>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>631</x>
+    <y>21</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=3d2ff5d653503300a3bd2a2db5dc3489"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>3d2ff5d653503300a3bd2a2db5dc3489</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>bd2ff5d653503300a3bd2a2db5dc3489</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>workflow.scratchpad.result = {};&#13;
+&#13;
+workflow.scratchpad.result.status = data.get(4).status;&#13;
+workflow.scratchpad.result.response = data.get(4).response;&#13;
+workflow.scratchpad.result.error = data.get(4).error;&#13;
+&#13;
+current.response = JSON.stringify(workflow.scratchpad.result);&#13;
+&#13;
+</value>
+    <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>3d2ff5d653503300a3bd2a2db5dc3489</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>bd2ff5d653503300a3bd2a2db5dc3489</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>workflow.scratchpad.result = {};&#13;
+&#13;
+workflow.scratchpad.result.status = data.get(4).status;&#13;
+workflow.scratchpad.result.response = data.get(4).response;&#13;
+workflow.scratchpad.result.error = data.get(4).error;&#13;
+&#13;
+current.response = JSON.stringify(workflow.scratchpad.result);&#13;
+&#13;
+</value>
+    <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+  </sys_variable_value>
+  <wf_condition action="INSERT_OR_UPDATE">
+    <activity display_value="Create Response Object">3d2ff5d653503300a3bd2a2db5dc3489</activity>
+    <condition>true</condition>
+    <condition_default/>
+    <condition_type>standard</condition_type>
+    <else_flag>false</else_flag>
+    <error>false</error>
+    <event>false</event>
+    <event_name/>
+    <is_positive>true</is_positive>
+    <name>Always</name>
+    <order>0</order>
+    <short_description/>
+    <skip_during_generate>false</skip_during_generate>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>b12ff5d653503300a3bd2a2db5dc348a</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+  </wf_condition>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>2</databus_lookup_id>
+    <height/>
+    <input/>
+    <is_parent>false</is_parent>
+    <name>End</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>bd2ff5d653503300a3bd2a2db5dc3486</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width>80</width>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>1093</x>
+    <y>24</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=bd2ff5d653503300a3bd2a2db5dc3486"/>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="ERP SOAP Web Service">d355356f535213008f12ddeeff7b1216</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>4</databus_lookup_id>
+    <height/>
+    <input>{"soap_message":"${workflow.scratchpad.soap_message}","input_object":"${workflow.scratchpad.input_object}","soap_message_function":"${workflow.scratchpad.soap_message_function}"}</input>
+    <is_parent>false</is_parent>
+    <name>FCMS ERP SOAP</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>f92ff5d653503300a3bd2a2db5dc348a</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width/>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>396</x>
+    <y>17</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=f92ff5d653503300a3bd2a2db5dc348a"/>
+  <wf_condition action="INSERT_OR_UPDATE">
+    <activity display_value="FCMS ERP SOAP">f92ff5d653503300a3bd2a2db5dc348a</activity>
+    <condition>true</condition>
+    <condition_default/>
+    <condition_type>standard</condition_type>
+    <else_flag>false</else_flag>
+    <error>false</error>
+    <event>false</event>
+    <event_name/>
+    <is_positive>true</is_positive>
+    <name>Always</name>
+    <order>0</order>
+    <short_description/>
+    <skip_during_generate>false</skip_during_generate>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>752ff5d653503300a3bd2a2db5dc348b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+  </wf_condition>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>3</databus_lookup_id>
+    <height/>
+    <input>{}</input>
+    <is_parent>false</is_parent>
+    <name>Prepare Payload</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>352ff5d653503300a3bd2a2db5dc3488</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width/>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>169</x>
+    <y>17</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=352ff5d653503300a3bd2a2db5dc3488"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>352ff5d653503300a3bd2a2db5dc3488</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>b92ff5d653503300a3bd2a2db5dc3488</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>var serviceMap = current.service.getRefRecord();&#13;
+var payloadVariable = serviceMap.soap_variable;&#13;
+&#13;
+gs.info("payloadVariable : " + payloadVariable);&#13;
+&#13;
+var erpIntgCtx = JSON.parse(current.context);&#13;
+gs.info("erpIntgCtx : " + JSON.stringify(erpIntgCtx));&#13;
+&#13;
+var input = JSON.parse(current.input);&#13;
+gs.info("input : " + JSON.stringify(input));&#13;
+&#13;
+var payloadGenerator = PayloadGeneratorFactory.findGenerator(serviceMap, input, erpIntgCtx);&#13;
+var payload = payloadGenerator.generatePayload();&#13;
+&#13;
+var inputObject = {};&#13;
+inputObject[payloadVariable] = payload;&#13;
+&#13;
+gs.info("Prepare Payload Input Object : " + JSON.stringify(inputObject));&#13;
+&#13;
+workflow.scratchpad.soap_message = serviceMap.soap_message;&#13;
+workflow.scratchpad.soap_message_function = serviceMap.soap_message_function;&#13;
+workflow.scratchpad.input_object = JSON.stringify(inputObject);</value>
+    <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>352ff5d653503300a3bd2a2db5dc3488</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>b92ff5d653503300a3bd2a2db5dc3488</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>var serviceMap = current.service.getRefRecord();&#13;
+var payloadVariable = serviceMap.soap_variable;&#13;
+&#13;
+gs.info("payloadVariable : " + payloadVariable);&#13;
+&#13;
+var erpIntgCtx = JSON.parse(current.context);&#13;
+gs.info("erpIntgCtx : " + JSON.stringify(erpIntgCtx));&#13;
+&#13;
+var input = JSON.parse(current.input);&#13;
+gs.info("input : " + JSON.stringify(input));&#13;
+&#13;
+var payloadGenerator = PayloadGeneratorFactory.findGenerator(serviceMap, input, erpIntgCtx);&#13;
+var payload = payloadGenerator.generatePayload();&#13;
+&#13;
+var inputObject = {};&#13;
+inputObject[payloadVariable] = payload;&#13;
+&#13;
+gs.info("Prepare Payload Input Object : " + JSON.stringify(inputObject));&#13;
+&#13;
+workflow.scratchpad.soap_message = serviceMap.soap_message;&#13;
+workflow.scratchpad.soap_message_function = serviceMap.soap_message_function;&#13;
+workflow.scratchpad.input_object = JSON.stringify(inputObject);</value>
+    <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+  </sys_variable_value>
+  <wf_condition action="INSERT_OR_UPDATE">
+    <activity display_value="Prepare Payload">352ff5d653503300a3bd2a2db5dc3488</activity>
+    <condition>true</condition>
+    <condition_default/>
+    <condition_type>standard</condition_type>
+    <else_flag>false</else_flag>
+    <error>false</error>
+    <event>false</event>
+    <event_name/>
+    <is_positive>true</is_positive>
+    <name>Always</name>
+    <order>0</order>
+    <short_description/>
+    <skip_during_generate>false</skip_during_generate>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>b52ff5d653503300a3bd2a2db5dc3489</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+  </wf_condition>
+  <wf_activity action="INSERT_OR_UPDATE">
+    <activity_definition display_value="Return Value">9b2dba250a0a0b6400396e341ba9d9a4</activity_definition>
+    <activity_definition_updated>false</activity_definition_updated>
+    <databus_lookup_id>6</databus_lookup_id>
+    <height/>
+    <input>{}</input>
+    <is_parent>false</is_parent>
+    <name>Return Value</name>
+    <new_activity_definition/>
+    <notes/>
+    <out_of_date>false</out_of_date>
+    <parent/>
+    <pinned>false</pinned>
+    <pinned_version/>
+    <stage/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>712ff5d653503300a3bd2a2db5dc348d</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <timeout>1970-01-01 00:00:00</timeout>
+    <vars/>
+    <width/>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+    <x>863</x>
+    <y>20</y>
+  </wf_activity>
+  <sys_variable_value action="delete_multiple" query="document_key=712ff5d653503300a3bd2a2db5dc348d"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>712ff5d653503300a3bd2a2db5dc348d</document_key>
+    <order>100</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>f52ff5d653503300a3bd2a2db5dc348d</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>${workflow.scratchpad.result}</value>
+    <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>wf_activity</document>
+    <document_key>712ff5d653503300a3bd2a2db5dc348d</document_key>
+    <order>100</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>f52ff5d653503300a3bd2a2db5dc348d</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <value>${workflow.scratchpad.result}</value>
+    <variable display_value="">9b2e2cdf0a0a0b6400b2257f77a7db13</variable>
+  </sys_variable_value>
+  <wf_condition action="INSERT_OR_UPDATE">
+    <activity display_value="Return Value">712ff5d653503300a3bd2a2db5dc348d</activity>
+    <condition>true</condition>
+    <condition_default/>
+    <condition_type>standard</condition_type>
+    <else_flag>false</else_flag>
+    <error>false</error>
+    <event>false</event>
+    <event_name/>
+    <is_positive>true</is_positive>
+    <name>Always</name>
+    <order>0</order>
+    <short_description/>
+    <skip_during_generate>false</skip_during_generate>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>7d2ff5d653503300a3bd2a2db5dc348d</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+  </wf_condition>
+  <wf_transition action="INSERT_OR_UPDATE">
+    <condition display_value="Always">b52ff5d653503300a3bd2a2db5dc3489</condition>
+    <from display_value="Prepare Payload">352ff5d653503300a3bd2a2db5dc3488</from>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>312ff5d653503300a3bd2a2db5dc34b4</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <to display_value="FCMS ERP SOAP">f92ff5d653503300a3bd2a2db5dc348a</to>
+  </wf_transition>
+  <wf_transition action="INSERT_OR_UPDATE">
+    <condition display_value="Always">b12ff5d653503300a3bd2a2db5dc348a</condition>
+    <from display_value="Create Response Object">3d2ff5d653503300a3bd2a2db5dc3489</from>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>792ff5d653503300a3bd2a2db5dc34b4</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <to display_value="Return Value">712ff5d653503300a3bd2a2db5dc348d</to>
+  </wf_transition>
+  <wf_transition action="INSERT_OR_UPDATE">
+    <condition display_value="Always">f52ff5d653503300a3bd2a2db5dc348c</condition>
+    <from display_value="Begin">bd2ff5d653503300a3bd2a2db5dc348b</from>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>7d2ff5d653503300a3bd2a2db5dc34b3</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <to display_value="Prepare Payload">352ff5d653503300a3bd2a2db5dc3488</to>
+  </wf_transition>
+  <wf_transition action="INSERT_OR_UPDATE">
+    <condition display_value="Always">752ff5d653503300a3bd2a2db5dc348b</condition>
+    <from display_value="FCMS ERP SOAP">f92ff5d653503300a3bd2a2db5dc348a</from>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>b52ff5d653503300a3bd2a2db5dc34b4</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <to display_value="Create Response Object">3d2ff5d653503300a3bd2a2db5dc3489</to>
+  </wf_transition>
+  <wf_transition action="INSERT_OR_UPDATE">
+    <condition display_value="Always">7d2ff5d653503300a3bd2a2db5dc348d</condition>
+    <from display_value="Return Value">712ff5d653503300a3bd2a2db5dc348d</from>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:53</sys_created_on>
+    <sys_id>f12ff5d653503300a3bd2a2db5dc34b4</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:53</sys_updated_on>
+    <to display_value="End">bd2ff5d653503300a3bd2a2db5dc3486</to>
+  </wf_transition>
+  <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+    <estimated_run_time/>
+    <no_of_data_points>1</no_of_data_points>
+    <percentage_threshold_ert>20</percentage_threshold_ert>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-22 10:04:52</sys_created_on>
+    <sys_id>392ff5d653503300a3bd2a2db5dc3485</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:04:52</sys_updated_on>
+    <workflow_version display_value="ERP Service Queue Processor">752ff5d653503300a3bd2a2db5dc3485</workflow_version>
+  </wf_estimated_runtime_config>
+  <wf_workflow_version action="update_multiple" query="workflow=21858e32735113008f12d9be2bf6a7ca^sys_id!=752ff5d653503300a3bd2a2db5dc3485">
+    <published>false</published>
+  </wf_workflow_version>
+</record_update>

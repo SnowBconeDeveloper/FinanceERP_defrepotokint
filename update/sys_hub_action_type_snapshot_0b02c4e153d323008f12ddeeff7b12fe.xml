@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+  <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <annotation/>
+    <category display_value="Finance Close Automation">ff48fbd9539323008f12ddeeff7b12b1</category>
+    <copied_from/>
+    <copied_from_name/>
+    <description/>
+    <internal_name>fca_rest_connector</internal_name>
+    <label_cache>[{"name":"{{action.credential_alias}}","label":"action➛credential_alias","type":"action","ref":""},{"name":"{{action.use_mid}}","label":"action➛use_mid","type":"action","ref":""},{"name":"{{action.base_url}}","label":"action➛base_url","type":"action","ref":""},{"name":"{{action.resource_path}}","label":"action➛resource_path","type":"action","ref":""},{"name":"{{action.content}}","label":"action➛content","type":"action","ref":""},{"name":"{{step[567ef2ee-8783-4c60-b1b8-07796cf94370].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":""},{"name":"{{step[567ef2ee-8783-4c60-b1b8-07796cf94370].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[567ef2ee-8783-4c60-b1b8-07796cf94370].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":""},{"name":"{{step[567ef2ee-8783-4c60-b1b8-07796cf94370].response_headers}}","label":"step➛REST step➛Response Headers","type":"step","ref":""},{"name":"{{step[567ef2ee-8783-4c60-b1b8-07796cf94370].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].p}}","label":"step➛Prepare Response➛p","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].pa}}","label":"step➛Prepare Response➛pa","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].pay}}","label":"step➛Prepare Response➛pay","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].payl}}","label":"step➛Prepare Response➛payl","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].paylo}}","label":"step➛Prepare Response➛paylo","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].payloa}}","label":"step➛Prepare Response➛payloa","type":"step","ref":""},{"name":"{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].payload}}","label":"step➛Prepare Response➛payload","type":"step","ref":""}]</label_cache>
+    <master>true</master>
+    <name>FCA REST Connector</name>
+    <outputs/>
+    <outputs/>
+    <parent_action display_value="FCA REST Connector">e3bbbbd9539323008f12ddeeff7b1210</parent_action>
+    <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-29 00:00:02</sys_created_on>
+    <sys_id>0b02c4e153d323008f12ddeeff7b12fe</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>FCA REST Connector</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_hub_action_type_snapshot_0b02c4e153d323008f12ddeeff7b12fe</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-29 00:00:04</sys_updated_on>
+    <system_level>false</system_level>
+    <type/>
+  </sys_hub_action_type_snapshot>
+  <sys_translated_text action="delete_multiple" query="documentkey=0b02c4e153d323008f12ddeeff7b12fe"/>
+  <sys_variable_value action="delete_multiple" query="document_key=0b02c4e153d323008f12ddeeff7b12fe"/>
+  <sys_element_mapping action="delete_multiple" query="id=0b02c4e153d323008f12ddeeff7b12fe"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>parameter</field>
+    <id>0b02c4e153d323008f12ddeeff7b12fe</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-29 00:00:04</sys_created_on>
+    <sys_id>e70248e153d323008f12ddeeff7b1212</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-29 00:00:04</sys_updated_on>
+    <table>var__m_sys_hub_action_output_0b02c4e153d323008f12ddeeff7b12fe</table>
+    <value>{{step[ef3d1fa4-acd7-410f-afd7-c2344797b3be].payload}}</value>
+  </sys_element_mapping>
+</record_update>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+  <sys_ui_page action="INSERT_OR_UPDATE">
+    <category>general</category>
+    <client_script><![CDATA[addLoadEvent(
+    function() {
+        setFocus();
+    }
+);
+function setFocus(){
+	$j('#cancel').focus();
+}
+$j("#cancel").click(function() {
+    GlideDialogWindow.get().destroy();
+	return false;
+});
+
+function hideSpinner(){
+	$j('#spinnerModal').modal('hide');
+}
+function showSpinner(){
+	$j('#spinnerModal').modal({backdrop: 'static', keyboard: false});
+}
+
+$j("#Ok").click(function(e) {
+	showSpinner();
+	e.preventDefault();
+    var textXML = $j("#textxml").val();
+    var serviceMapID = $j("#service_map_id").val();
+    var serviceType = $j("#service_type").val();
+    var sampleContent = $j("#sample_content").val();
+	
+	if(serviceType == 'SOAP' && !textXML){
+		showError(getMessage("Service Map Envelope is Empty"));
+		return false;
+	}
+
+	if(serviceType == 'REST' && !sampleContent){
+		showError(getMessage("Sample Content is Empty"));
+		return false;
+	}
+	
+	var glideAjax = new GlideAjax("ERPIntegrationAjax");
+    glideAjax.addParam("sysparm_name", "createElementMap");
+    glideAjax.addParam('sysparm_service_map_sys_id', serviceMapID);
+    glideAjax.addParam('sysparm_text_xml', textXML);
+    glideAjax.addParam('sysparm_service_type', serviceType);
+    glideAjax.addParam('sysparm_sample_content', sampleContent);
+
+    glideAjax.getXML(handleReponse);
+	return false;
+});
+
+function showError(message){
+	$j("#error").html(message);
+	$j("#error").show();
+	hideSpinner();
+}
+
+function handleReponse(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+	var returnObject = JSON.parse(answer);
+	if(returnObject.status == 'SUCCESS'){
+		hideSpinner();
+		GlideDialogWindow.get().destroy();
+		window.location.reload();
+	}else
+		showError(returnObject.message);
+	hideSpinner();
+}]]></client_script>
+    <description/>
+    <direct>false</direct>
+    <endpoint>sn_fcms_intg_CreateXMLElement.do</endpoint>
+    <html><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<j:jelly xmlns:j="jelly:core" xmlns:g="glide" xmlns:g2="null" xmlns:j2="null" trim="false">
+   <style>.loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 70px;
+      height: 70px;
+      margin: -75px 0 0 -75px;
+      border: 10px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 10px solid #3498db;
+      width: 70px;
+      height: 70px;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      }
+      @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+      }</style>
+	<g:requires name="scripts/lib/jquery_includes.js" includes="true"/>
+    <g:evaluate var="jvar_serviceMap" expression="RP.getWindowProperties().sysparam_service_map" />
+	<g:evaluate var="jvar_envelope" expression="RP.getWindowProperties().sysparam_envelope" />
+	<g:evaluate var="jvar_serviceType" expression="RP.getWindowProperties().sysparam_service_type" />
+	<g:evaluate var="jvar_sampleContent" expression="RP.getWindowProperties().sysparam_sample_content" />
+	
+   <form class="form-horizontal">
+      <fieldset>
+		 <input type='hidden' name='service_map_id' id = 'service_map_id' value="${JS,HTML:jvar_serviceMap}"/>
+		 <input type='hidden' id="textxml" name="textxml" value="${JS,HTML:jvar_envelope}"/>
+		 <input type='hidden' id="service_type" name="service_type" value="${JS,HTML:jvar_serviceType}"/>
+		 <input type='hidden' id="sample_content" name="sample_content" value="${JS,HTML:jvar_sampleContent}"/>
+
+         <div id="error" class="alert alert-danger" style="text-align:center;display:none" role="alert" />
+         <div class="modal fade" id="spinnerModal" role="dialog">
+            <div class="loader" />
+         </div>
+         <!-- Textarea -->
+         <div class="form-group">
+            <label class="col-md-12">${gs.getMessage('This action will replace the existing Element Map. Do you want to continue?')}</label>
+         </div>
+         <!-- Button (Double) -->
+         <div class="form-action" style="display: inline; text-align: center;">
+            <div class="btn-toolbar">
+               <button id="Ok" name="create" class="btn btn-primary">${gs.getMessage('Ok')}</button>
+               <button id="cancel" name="cancel" class="btn btn-default">${gs.getMessage('Cancel')}</button>
+            </div>
+         </div>
+      </fieldset>
+   </form>
+</j:jelly>]]></html>
+    <name>CreateXMLElement</name>
+    <processing_script/>
+    <sys_class_name>sys_ui_page</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 06:03:05</sys_created_on>
+    <sys_id>64e70a62735113008f12d9be2bf6a7ef</sys_id>
+    <sys_mod_count>21</sys_mod_count>
+    <sys_name>CreateXMLElement</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_ui_page_64e70a62735113008f12d9be2bf6a7ef</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-15 19:11:26</sys_updated_on>
+  </sys_ui_page>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+  <sys_transform_map action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <copy_empty_fields>false</copy_empty_fields>
+    <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+    <enforce_mandatory_fields>No</enforce_mandatory_fields>
+    <name>Ledger Group Mapping Excel Upload Transform Map</name>
+    <order>100</order>
+    <run_business_rules>true</run_business_rules>
+    <run_script>true</run_script>
+    <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+    // Add your code here
+    if (gs.nil(target.getValue('gl_account'))) {
+        log.error(gs.getMessage('Ledger account is not available'));
+        ignore = true;
+    }
+    if (gs.nil(target.getValue('gl_group'))) {
+        log.error(gs.getMessage('Ledger group is not available'));
+        ignore = true;
+    }
+})(source, target, map, log, action === "update");]]></script>
+    <source_table>sn_fcms_intg_gl_group_mapping_load_data</source_table>
+    <sys_class_name>sys_transform_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-04 09:14:45</sys_created_on>
+    <sys_id>c5b544c253601010ba07ddeeff7b12f9</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_name>Ledger Group Mapping Excel Upload Transform Map</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_transform_map_c5b544c253601010ba07ddeeff7b12f9</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-08 11:42:37</sys_updated_on>
+    <target_table>sn_fin_gl_group_mapping</target_table>
+  </sys_transform_map>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role_contains">
+  <sys_user_role_contains action="INSERT_OR_UPDATE">
+    <contains display_value="sn_fcms_intg.integration_user" name="sn_fcms_intg.integration_user">55d70219531113008f12ddeeff7b127f</contains>
+    <role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</role>
+    <sys_class_name>sys_user_role_contains</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-06-16 08:33:45</sys_created_on>
+    <sys_id>03b63c280b321300ee540e7363673a14</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>sn_fcms_intg.integration_user.admin</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_user_role_contains_03b63c280b321300ee540e7363673a14</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2018-06-16 08:33:45</sys_updated_on>
+  </sys_user_role_contains>
+</record_update>

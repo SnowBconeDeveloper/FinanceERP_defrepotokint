@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ErpUserMapper</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ErpUserMapper</name>
+    <script><![CDATA[var ErpUserMapper = Class.create();
+ErpUserMapper.prototype = {
+
+    initialize: function(erpSourceConfig) {
+        this.erpSourceConfig = erpSourceConfig;
+    },
+
+    getSnowUserIDs: function(erpUserIDs /* Array */ ) {
+        var erpUserMap = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        erpUserMap.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        erpUserMap.addQuery('erp_user_id', 'IN', erpUserIDs.join(','));
+		erpUserMap.addNullQuery('inactive').addOrCondition('inactive', false);
+        erpUserMap.query();
+
+        var snowUserIDs = [];
+
+        while (erpUserMap.next()) {
+            snowUserIDs = snowUserIDs.concat(erpUserMap.getValue('user'));
+        }
+        return snowUserIDs;
+    },
+
+    getERPUserID: function(sysUserID) {
+        if (gs.nil(sysUserID))
+            return '';
+
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('user', sysUserID);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        if (gr.next())
+            return gr.getValue('erp_user_id');
+
+        return '';
+    },
+
+    getAllERPUsersIdsWithRole: function(role, shadowRoles) {
+        var userIDs = [];
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', 'CONTAINS', role);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        while (gr.next()) {
+            var addedRoles = shadowRoles.filter(function(userRole) {
+                return (gr.getValue('roles').indexOf(userRole) == -1);
+            });
+            if (addedRoles.length == 0)
+                userIDs.push(gr.getValue('erp_user_id'));
+        }
+        return userIDs;
+    },
+
+    getAllUsersWithErpRole: function(role) {
+        var userIDs = [];
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', 'CONTAINS', role);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+        while (gr.next()) {
+            userIDs.push(gr.getValue('user'));
+        }
+        return userIDs;
+    },
+
+    getMappedUserIds: function(erpUserIds) {
+        var userIDs = [];
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('erp_user_id', 'IN', erpUserIds.join());
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+        while (gr.next()) {
+            userIDs.push(gr.getValue('user'));
+        }
+        return userIDs;
+    },
+
+    getAllPreparers: function() {
+        var preparerUserIDs = [];
+
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', IntgConstants.ROLE_JOURNAL_PREPARER);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        while (gr.next())
+            preparerUserIDs.push(gr.getValue('user'));
+
+        return preparerUserIDs;
+    },
+
+    getAllApprovers: function() {
+        var approverUserIDs = [];
+
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', IntgConstants.ROLE_JOURNAL_APPROVER);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        while (gr.next())
+            approverUserIDs.push(gr.getValue('user'));
+
+        return approverUserIDs;
+    },
+
+    getAllERPUsers: function() {
+        var userIds = [];
+
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        while (gr.next())
+            userIds.push(gr.getValue('user'));
+
+        return userIds;
+    },
+
+    isValidPreparer: function(userId) {
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('user', userId);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', IntgConstants.ROLE_JOURNAL_PREPARER);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        return gr.next();
+    },
+
+    isValidApprover: function(userId) {
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('user', userId);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+        gr.addQuery('roles', IntgConstants.ROLE_JOURNAL_APPROVER);
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+        gr.query();
+
+        return gr.next();
+    },
+
+    doAssignAndRevokeRole: function(role, erpUserIDs, shadowRoles) {
+        shadowRoles = shadowRoles ? shadowRoles.split(',') : [];
+        var userIdsWithRole = this.getAllUsersWithErpRole(role); 
+        var mappedUserIds = this.getMappedUserIds(erpUserIDs); 
+        var usersIDsForNewAssignment = mappedUserIds.filter(function(userID) {
+            return (userIdsWithRole.indexOf(userID) == -1);
+        });
+        var userIDsForRevoke = userIdsWithRole.filter(function(userIdWithRole) {
+            return (mappedUserIds.indexOf(userIdWithRole) == -1);
+        });
+        this.assignRole(role, usersIDsForNewAssignment, shadowRoles);
+        this.revokeRole(role, userIDsForRevoke, shadowRoles);
+        //holding the updated user ids for further actions
+        var updatedUserIds = {};
+        updatedUserIds['assigned'] = usersIDsForNewAssignment;
+        updatedUserIds['revoked'] = userIDsForRevoke;
+        return updatedUserIds;
+    },
+
+    assignRole: function(role, userIds, shadowRoles) {
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('user', 'IN', userIds);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+
+        gr.query();
+        while (gr.next()) {
+            var roles = gr.getValue('roles');
+            roles = this.addValue(roles, role);
+            var _this = this;
+            shadowRoles.forEach(function(shadowRole) {
+                roles = _this.addValue(roles, shadowRole);
+            });
+            gr.setValue('roles', roles);
+            gr.setWorkflow(false);
+            gr.update();
+        }
+    },
+
+    revokeRole: function(role, userIds, shadowRoles) {
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_ERP_USER_MAP);
+        gr.addQuery('user', 'IN', userIds);
+        gr.addQuery('source', this.erpSourceConfig.getValue('sys_id'));
+		gr.addNullQuery('inactive').addOrCondition('inactive', false);
+
+        gr.query();
+
+        while (gr.next()) {
+            var roles = gr.getValue('roles');
+            roles = this.removeValue(roles, role);
+            var _this = this;
+            shadowRoles.forEach(function(shadowRole) {
+                roles = _this.removeValue(roles, shadowRole);
+            });
+            gr.setValue('roles', roles);
+            gr.setWorkflow(false);
+            gr.update();
+        }
+    },
+
+    addValue: function(csv, value) {
+        var array = [];
+        if (!gs.nil(csv))
+            array = csv.split(',');
+
+        if (array.indexOf(value) == -1)
+            array.push(value);
+        return array.join();
+
+    },
+
+    removeValue: function(csv, value) {
+        if (gs.nil(csv))
+            return '';
+        var array = csv.split(',');
+        array = array.filter(function(arrValue) {
+            if (arrValue != value)
+                return true;
+        });
+        return array.join();
+    },
+
+
+    type: 'ErpUserMapper'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-06-13 07:57:39</sys_created_on>
+    <sys_id>c371d163536213008f12ddeeff7b124a</sys_id>
+    <sys_mod_count>43</sys_mod_count>
+    <sys_name>ErpUserMapper</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_c371d163536213008f12ddeeff7b124a</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-12-05 14:07:15</sys_updated_on>
+  </sys_script_include>
+</record_update>

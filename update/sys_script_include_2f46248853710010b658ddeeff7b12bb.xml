@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.netsuite_UserRoleSyncParser</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>netsuite_UserRoleSyncParser</name>
+    <script><![CDATA[var netsuite_UserRoleSyncParser = Class.create();
+netsuite_UserRoleSyncParser.prototype = {
+    initialize: function(result) {
+        this.response = result.response;
+        this.status = result.status;
+    },
+
+    getUserIDs: function() {
+        var respBody = JSON.parse(this.response.body);
+        var result = [];
+        if (respBody.status && respBody.status == 'success')
+            result = respBody['userList'];
+        return result;
+    },
+
+    isValidResponse: function() {
+        if (this.status == 200 && !gs.nil(this.response) && !gs.nil(this.response.body))
+            return true;
+        return false;
+    },
+
+    type: 'netsuite_UserRoleSyncParser'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-12-13 13:36:41</sys_created_on>
+    <sys_id>2f46248853710010b658ddeeff7b12bb</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>netsuite_UserRoleSyncParser</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_2f46248853710010b658ddeeff7b12bb</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-12-13 13:36:41</sys_updated_on>
+  </sys_script_include>
+</record_update>

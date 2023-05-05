@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>false</advance>
+    <condition/>
+    <element>soapenv:Envelope</element>
+    <foreign_key/>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>10</order>
+    <order_by/>
+    <order_type>ascending</order_type>
+    <parent/>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {  	// Add your code here  	return "";  })(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Fetch FX Rate">58b20256c7b00010a3bdb6f827c2609e</service_map>
+    <source_field/>
+    <source_table/>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-11-01 03:22:04</sys_created_on>
+    <sys_id>e51786d6c7b00010a3bdb6f827c26055</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>soapenv:Envelope</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_e51786d6c7b00010a3bdb6f827c26055</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-11-01 03:22:04</sys_updated_on>
+    <type>container</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_service_map" type="collection" extends="sys_metadata" label="Service Map" attributes="update_synch=true">
+        <element name="name" type="string" label="Name" hint="Name" />
+        <element name="source" type="reference" reference="sn_fcms_intg_source" label="Source" hint="ERP Source" />
+        <element name="service" type="string" label="Service" choice="3" default_value="fcms_document_post" hint="ERP Service" >
+        	<choice>
+                <element value="fcms_document_post" sequence="0" label="Document post"/>
+                <element value="fcms_document_reverse" sequence="1" label="Document reverse"/>
+                <element value="fcms_fetch_users" sequence="2" label="Fetch users"/>
+                <element value="fin_fetch_gl_accounts" sequence="3" label="Fetch GL accounts"/>
+                <element value="fin_fetch_gl_balance" sequence="4" label="Fetch GL balance"/>
+                <element value="fin_fetch_fx_rate" sequence="5" label="Fetch FX rate"/>
+                <element value="fin_fetch_std_bal_activity" label="Fetch standard balance activity" sequence="6" />
+			</choice>
+		</element>
+        <element name="type" type="string" label="Type" choice="3" default_value="SOAP" hint="Service Type">
+        	<choice>
+                <element value="SOAP" sequence="0" label="SOAP"/>
+               <element value="REST" sequence="1" label="REST"/>
+			</choice>
+		</element>
+        <element name="soap_message" type="reference" reference="sys_soap_message" label="SOAP Message" hint="SOAP Message" />
+        <element name="soap_message_function" type="reference" reference="sys_soap_message_function" label="SOAP Message Function" reference_qual='javascript:"soap_message=" + current.soap_message.sys_id;' hint="SOAP Message Function" />
+        <element name="envelope" type="xml" label="Envelope" hint="SOAP Message Envelope" xml_view = "true" max_length="80000"/>
+        <element name="soap_variable" type="string" label="SOAP Variable" hint="SOAP Variable" max_length="40"/>
+        <element name="credential_alias" type="reference" reference="sys_alias" label="Credential alias" reference_qual="type=credential" hint="SOAP Message Function" />        
+        <!-- Fields to handle Rest Request -->
+        <element name="base_url" type="string" label="Base URL" hint="Base URL of the endpoint" max_length="100"/>
+        <element name="resource_path" type="string" label="Resource path" hint="Path to the resource" max_length="100"/>
+        <element name="http_method" type="string" label="HTTP Method" choice="3" default_value="post" hint="HTTP Method to use" max_length="10">
+        	<choice>
+				<element value="post" sequence="1" label="POST"/>
+			</choice>
+		</element>
+        <element name="sample_content" type="json" label="Sample Content" hint="Sample Content to send in the body of the request" max_length="80000"/>
+        <!-- End Fields to handle Rest Request -->
+        <element name="soap_action" type="string" label="SOAP action" hint="SOAP action" max_length="400"/>
+        <element name="soap_endpoint" type="url" label="SOAP endpoint" hint="SOAP endpoint" />     
+        <element name="use_mid" type="boolean" label="Use MID" hint="Send request via MID server" />   
+        <element name="allow_empty" type="boolean" label="Allow empty" hint="Allow empty elements in the payload xml" />   
+ 	</element>
+</database>

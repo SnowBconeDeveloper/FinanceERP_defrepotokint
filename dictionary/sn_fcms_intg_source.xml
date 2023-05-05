@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="6fa1173bc30ea110f827dff9050131ab" extends="sys_metadata" label="ERP Source Configuration" max_length="40" name="sn_fcms_intg_source" type="collection">
+        <element label="Connection alias" max_length="32" name="connection" reference="sys_alias" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ERP" max_length="40" name="erp" type="string" hint="ERP Software Name">
+            <choice>
+   		            <element value="sap" sequence="0" label="SAP"/>
+		            <element value="oracle" sequence="1" label="Oracle"/>
+		            <element value="netsuite" sequence="2" label="NetSuite"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="ERP source" mandatory="true" max_length="32" name="fin_erp" reference="sn_fin_erp_source" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Inactive" max_length="40" name="inactive" type="boolean" hint="Inactive status"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string" hint="ERP Name"/>
+        <index name="index">
+            <element name="connection"/>
+        </index>
+        <index name="index2">
+            <element name="fin_erp"/>
+        </index>
+    </element>
+</database>

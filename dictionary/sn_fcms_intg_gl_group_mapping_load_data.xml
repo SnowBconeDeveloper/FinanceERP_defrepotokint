@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+	<element name="sn_fcms_intg_gl_group_mapping_load_data" extends="sys_import_set_row" type="collection" label="Ledger Group Mappings Excel Upload Stage" >
+        <element name="u_ledger_group" label="Ledger group" type="string" hint="GL Group" />
+        <element name="u_ledger_account" label="Ledger account" type="string" />
+        <element name="u_start_date" label="Start date" type="string" />
+        <element name="u_end_date" label="End date" type="string" />
+    </element>
+</database>

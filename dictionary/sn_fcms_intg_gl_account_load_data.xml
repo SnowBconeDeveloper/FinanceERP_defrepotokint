@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+	<element name="sn_fcms_intg_gl_account_load_data" extends="sys_import_set_row" type="collection" label="Ledger Account Excel Upload Stage" >
+        <element name="u_account_name" label="Account name" plural="Account name" type="string" max_length="160" hint="Display name of ledger account fetched from ERP"/>
+		<element name="u_entity" label="Entity" type="string" hint="Entity Name" />
+		<element name="u_ledger_account" label="Ledger account" type="string" max_length="40" display="true" hint="" />
+		<element name="u_short_description" label="Short description" type="string" max_length="160" hint=""/>
+		<element name="u_type" label="Type" type="string"></element>
+		<element name="u_erp_source" label="ERP source" type="string" hint="ERP Source system"/>
+		<element name="u_ledger_type" label="Ledger type" type="string" hint="" />
+		<element name="u_category" label="Category" type="string" max_length="40" hint=""></element>
+		<element name="u_inactive" label="Inactive" type="string" hint="Inactive status" />
+		<element name="u_account_currency" label="Account currency" type="string" hint="Account currency" />
+		<element name="u_local_currency" label="Local currency" type="string" hint="Local currency" />
+		<element name="u_reporting_currency" label="Reporting currency" type="string" hint="Reporting currency" />
+		<element name="u_alternate_currency" label="Alternate currency" type="string" hint="Alternate currency" />
+		<element name="u_open_item_management" type="string" label="Open item management" hint="" />
+		<element name="u_sub_ledger_account" label="Sub-ledger account" type="string" max_length="40" hint="" />
+
+		<!-- Below list of fields are not associated with ERP Source -->
+		<element name="u_key_account" type="string" label="Key account" hint="" />
+		<element name="u_zero_balance_account" type="string" label="Zero balance account" hint="" />
+		<element name="u_risk_rating" label="Risk rating" type="string"></element>
+        <element name="u_description" label="Description" type="string" max_length="4000" hint=""/>
+        <!-- END of non ERP Source fields -->
+    </element>
+</database>

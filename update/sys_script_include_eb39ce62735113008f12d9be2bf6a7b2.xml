@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ERPIntegrationAjax</api_name>
+    <caller_access/>
+    <client_callable>true</client_callable>
+    <description/>
+    <name>ERPIntegrationAjax</name>
+    <script><![CDATA[var ERPIntegrationAjax = Class.create();
+ERPIntegrationAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	createElementMap: function() {
+		if(!gs.hasRole('sn_fcms_intg.integration_user')){
+			return;
+		}
+		var serviceType = this.getParameter('sysparm_service_type');
+		var serviceMapSysID = this.getParameter('sysparm_service_map_sys_id');
+		
+		var serviceMap = new GlideRecord('sn_fcms_intg_service_map');
+		serviceMap.get(serviceMapSysID);
+		
+		var textXML = serviceMap.getValue('envelope');
+		var sampleContent = serviceMap.getValue('sample_content');
+	
+		var result = {};
+		result.status = 'SUCCESS';
+		result.message = gs.getMessage('Elements Created Successfully');
+
+		
+		try {
+			var elementGeneratorInput = textXML;		
+			if(serviceType == 'REST')
+				elementGeneratorInput = sampleContent;
+
+			var elementGenerator = ElementGeneratorFactory.findGenerator(serviceType);
+			elementGenerator = new elementGenerator(elementGeneratorInput);
+					
+			var elements = elementGenerator.getElements();
+
+			var elementUtil = new ServiceElementMapUtil();
+			elementUtil.clearElementMapping(serviceMapSysID);
+			elementUtil.createElementMapping(serviceMapSysID, elements);
+
+		} catch (e) {
+			gs.info('Exception in ERPIntegrationAjax : ' + e);
+			result.status = 'ERROR';
+			result.message = gs.getMessage('Error with xml {0}',e);
+		}
+
+		return JSON.stringify(result);
+	},
+
+	copyElementMap: function() {
+		if(!gs.hasRole('sn_fcms_intg.integration_user')){
+			return;
+		}
+		var sourceService = this.getParameter('sysparm_source_service_map_sys_id');
+		var targetService = this.getParameter('sysparm_target_service_map_sys_id');
+
+		var result = {};
+		result.status = 'SUCCESS';
+		result.message = gs.getMessage('Elements Copied Successfully');
+
+		var elementUtil = new ServiceElementMapUtil();
+		elementUtil.clearElementMapping(targetService);
+		elementUtil.copyElementMapping(sourceService, targetService);
+
+		return JSON.stringify(result);
+	},
+
+	type: 'ERPIntegrationAjax'
+});]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 06:10:36</sys_created_on>
+    <sys_id>eb39ce62735113008f12d9be2bf6a7b2</sys_id>
+    <sys_mod_count>13</sys_mod_count>
+    <sys_name>ERPIntegrationAjax</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_eb39ce62735113008f12d9be2bf6a7b2</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-02-06 20:14:23</sys_updated_on>
+  </sys_script_include>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="INSERT_OR_UPDATE">
+    <sys_class_name>sys_security_acl_role</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 03:37:10</sys_created_on>
+    <sys_id>c6356f27c7381010a3bdb6f827c260cf</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>sn_fcms_intg_gl_group_mapping_load_data.sn_fin.finance_admin</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_security_acl display_value="sn_fcms_intg_gl_group_mapping_load_data">31356f27c7381010a3bdb6f827c260a4</sys_security_acl>
+    <sys_update_name>sys_security_acl_role_c6356f27c7381010a3bdb6f827c260cf</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 03:55:03</sys_updated_on>
+    <sys_user_role display_value="sn_fin.finance_admin" name="sn_fin.finance_admin">4b9de60a53122300a3bd2a2db5dc34dd</sys_user_role>
+    <transaction_id/>
+  </sys_security_acl_role>
+</record_update>

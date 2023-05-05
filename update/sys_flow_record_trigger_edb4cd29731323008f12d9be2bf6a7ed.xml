@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_record_trigger">
+  <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <condition table="sn_fcms_intg_service_queue">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+    </condition>
+    <name/>
+    <on_delete>false</on_delete>
+    <on_insert>true</on_insert>
+    <on_update>false</on_update>
+    <run_when_setting>both</run_when_setting>
+    <run_when_user_list/>
+    <run_when_user_setting>any</run_when_user_setting>
+    <sys_class_name>sys_flow_record_trigger</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-29 04:51:18</sys_created_on>
+    <sys_id>edb4cd29731323008f12d9be2bf6a7ed</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_name/>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_flow_record_trigger_edb4cd29731323008f12d9be2bf6a7ed</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-22 10:05:33</sys_updated_on>
+    <table>sn_fcms_intg_service_queue</table>
+  </sys_flow_record_trigger>
+</record_update>

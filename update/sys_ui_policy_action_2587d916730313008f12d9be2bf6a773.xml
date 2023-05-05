@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <cleared>false</cleared>
+    <disabled>ignore</disabled>
+    <field>order_by</field>
+    <mandatory>true</mandatory>
+    <sys_class_name>sys_ui_policy_action</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-07-04 07:42:16</sys_created_on>
+    <sys_id>2587d916730313008f12d9be2bf6a773</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_name>order_by</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_ui_policy_action_2587d916730313008f12d9be2bf6a773</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-02-06 22:26:01</sys_updated_on>
+    <table>sn_fcms_intg_service_element_map</table>
+    <ui_policy display_value="Hide Order By &amp; Order Type Fields">4bd61916730313008f12d9be2bf6a79c</ui_policy>
+    <visible>true</visible>
+  </sys_ui_policy_action>
+</record_update>

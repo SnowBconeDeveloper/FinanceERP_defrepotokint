@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+  <sys_transform_map action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <copy_empty_fields>false</copy_empty_fields>
+    <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+    <enforce_mandatory_fields>No</enforce_mandatory_fields>
+    <name>Ledger Account Excel Upload transform map</name>
+    <order>100</order>
+    <run_business_rules>true</run_business_rules>
+    <run_script>true</run_script>
+    <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+    if (gs.nil(target.getValue('legal_entity'))) {
+        log.error(gs.getMessage("Legal entity is not available for the record"));
+        ignore = true;
+    }
+
+    if (gs.nil(target.getValue('gl_account'))) {
+        log.error(gs.getMessage("Ledger account value is not available for the record"));
+        ignore = true;
+    }
+
+    var erpSource = new sn_fin.ErpSource(target.getValue('erp_source'));
+    if (!erpSource.isValid()) {
+        var msg = gs.getMessage('Invalid ERP Source');
+        log.error(msg);
+        status_message = msg;
+        ignore = true;
+        return;
+    }
+
+    var response = erpSource.isValidAccount(target);
+    if (response.status == 'failure') {
+        log.error(response.message);
+        status_message = response.message;
+        ignore = true;
+    }
+
+    function areValuesSame(field1, field2, field3) {
+        var label1 = target[field1].getLabel();
+        var label2 = target[field2].getLabel();
+        var label3 = target[field3].getLabel();
+        if (!gs.nil(target.getValue(field1)) && target.getValue(field1) == target.getValue(field2)) {
+            log.error(gs.getMessage('{0}, {1} should not have same values', [label1, label2]));
+            ignore = true;
+        } else if (!gs.nil(target.getValue(field3)) && target.getValue(field1) == target.getValue(field3)) {
+            log.error(gs.getMessage('{0}, {1} should not have same values', [label1, label3]));
+            ignore = true;
+        } else if (!gs.nil(target.getValue(field2)) && target.getValue(field2) == target.getValue(field3)) {
+            log.error(gs.getMessage('{0}, {1} should not have same values', [label2, label3]));
+            ignore = true;
+        }
+    }
+
+    if (GlidePluginManager.isActive('x_trint_recon')) {
+        areValuesSame('recon_owner', 'recon_reviewer', 'recon_approver');
+        areValuesSame('recon_owner_group', 'recon_reviewer_group', 'recon_approver_group');
+
+        if (target.getValue('recon_frequency') == 'monthly')
+            target.setValue('applicable_periods', '');
+        else {
+            response = new sn_fin.ValidateApplicablePeriods().validate(target.getValue('recon_frequency'), target.getValue('applicable_periods'));
+            if (response.success == false) {
+                target.setValue('applicable_periods', '');
+                target.setValue('recon_frequency', 'monthly');
+            }
+        }
+    }
+
+})(source, target, map, log, action === "update");]]></script>
+    <source_table>sn_fcms_intg_gl_account_load_data</source_table>
+    <sys_class_name>sys_transform_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-04-16 13:23:48</sys_created_on>
+    <sys_id>9702d01853501010ba07ddeeff7b1271</sys_id>
+    <sys_mod_count>9</sys_mod_count>
+    <sys_name>Ledger Account Excel Upload transform map</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_transform_map_9702d01853501010ba07ddeeff7b1271</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-04-30 08:47:34</sys_updated_on>
+    <target_table>sn_fin_gl_account</target_table>
+  </sys_transform_map>
+</record_update>

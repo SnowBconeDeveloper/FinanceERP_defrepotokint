@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+	<element name="sn_fcms_intg_gl_group_load_data" extends="sys_import_set_row" type="collection" label="Ledger Account Group Excel Upload Stage" >
+        <element name="u_group_name" label="Group name" type="string" />
+		<element name="u_entity" label="Entity" type="string" />
+		<element name="u_erp_source" label="ERP source" type="string" hint="ERP Source system"/>
+        <element name="u_short_description" label="Short description" type="string" max_length="160" hint=""/>
+        <element name="u_type" label="Type" type="string" max_length="40" />
+        <element name="u_key_group" label="Key group" type="string" hint="" />
+        <element name="u_zero_balance_group" label="Zero balance group" type="string" hint="" />
+        <element name="u_risk_rating" type="string" label="Risk rating" max_length="40" hint="" />
+		
+		<element name="u_account_currency" label="Account currency" type="string" hint="Account currency" />
+		<element name="u_local_currency" label="Local currency" type="string" hint="Local currency" />
+		<element name="u_reporting_currency" label="Reporting currency" type="string" hint="Reporting currency" />
+		<element name="u_alternate_currency" label="Alternate currency" type="string" hint="Alternate currency" />
+        
+    </element>
+</database>

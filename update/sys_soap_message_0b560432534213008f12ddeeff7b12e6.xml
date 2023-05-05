@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message">
+  <sys_soap_message action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <authentication_type>basic</authentication_type>
+    <basic_auth_password/>
+    <basic_auth_profile/>
+    <basic_auth_user/>
+    <description/>
+    <download_wsdl>true</download_wsdl>
+    <enable_mutual_auth>false</enable_mutual_auth>
+    <name>SAP Post</name>
+    <protocol_profile/>
+    <sys_class_name>sys_soap_message</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-05-16 22:02:40</sys_created_on>
+    <sys_id>0b560432534213008f12ddeeff7b12e6</sys_id>
+    <sys_mod_count>4</sys_mod_count>
+    <sys_name>SAP Post</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_soap_message_0b560432534213008f12ddeeff7b12e6</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-20 13:59:21</sys_updated_on>
+    <use_basic_auth>false</use_basic_auth>
+    <wsdl>http://example.com</wsdl>
+    <wsdl_xml><![CDATA[<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:n1="urn:sap-com:document:sap:rfc:functions" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+<wsdl:documentation>
+<sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl"/>
+</wsdl:documentation>
+<wsp:UsingPolicy wsdl:required="true"/>
+<wsp:Policy wsu:Id="BN__NOW_FCMS_DOCUMENT_POST">
+<wsp:ExactlyOne>
+<wsp:All>
+<sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
+<wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true"/>
+<wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<wsp:Policy>
+<sp:TransportToken>
+<wsp:Policy>
+<sp:HttpsToken>
+<wsp:Policy>
+<sp:HttpBasicAuthentication/>
+</wsp:Policy>
+</sp:HttpsToken>
+</wsp:Policy>
+</sp:TransportToken>
+<sp:AlgorithmSuite>
+<wsp:Policy>
+<sp:Basic128Rsa15/>
+</wsp:Policy>
+</sp:AlgorithmSuite>
+<sp:Layout>
+<wsp:Policy>
+<sp:Strict/>
+</wsp:Policy>
+</sp:Layout>
+</wsp:Policy>
+</sp:TransportBinding>
+</wsp:All>
+</wsp:All>
+<wsp:All>
+<sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true"/>
+<wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<wsp:Policy>
+<sp:TransportToken>
+<wsp:Policy>
+<sp:HttpsToken>
+<wsp:Policy>
+<sp:HttpBasicAuthentication/>
+</wsp:Policy>
+</sp:HttpsToken>
+</wsp:Policy>
+</sp:TransportToken>
+<sp:AlgorithmSuite>
+<wsp:Policy>
+<sp:Basic128Rsa15/>
+</wsp:Policy>
+</sp:AlgorithmSuite>
+<sp:Layout>
+<wsp:Policy>
+<sp:Strict/>
+</wsp:Policy>
+</sp:Layout>
+</wsp:Policy>
+</sp:TransportBinding>
+</wsp:All>
+</wsp:All>
+</wsp:ExactlyOne>
+</wsp:Policy>
+<wsp:Policy wsu:Id="BN__NOW_FCMS_DOCUMENT_POST_soap12">
+<wsp:ExactlyOne>
+<wsp:All>
+<sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+<saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true"/>
+<wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true"/>
+<wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<wsp:Policy>
+<sp:TransportToken>
+<wsp:Policy>
+<sp:HttpsToken>
+<wsp:Policy>
+<sp:HttpBasicAuthentication/>
+</wsp:Policy>
+</sp:HttpsToken>
+</wsp:Policy>
+</sp:TransportToken>
+<sp:AlgorithmSuite>
+<wsp:Policy>
+<sp:Basic128Rsa15/>
+</wsp:Policy>
+</sp:AlgorithmSuite>
+<sp:Layout>
+<wsp:Policy>
+<sp:Strict/>
+</wsp:Policy>
+</sp:Layout>
+</wsp:Policy>
+</sp:TransportBinding>
+</wsp:All>
+</wsp:All>
+<wsp:All>
+<sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+<saptrnbnd:OptimizedXMLTransfer xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" uri="http://xml.sap.com/2006/11/esi/esp/binxml" wsp:Optional="true"/>
+<wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true"/>
+<wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+<sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+<wsp:Policy>
+<sp:TransportToken>
+<wsp:Policy>
+<sp:HttpsToken>
+<wsp:Policy>
+<sp:HttpBasicAuthentication/>
+</wsp:Policy>
+</sp:HttpsToken>
+</wsp:Policy>
+</sp:TransportToken>
+<sp:AlgorithmSuite>
+<wsp:Policy>
+<sp:Basic128Rsa15/>
+</wsp:Policy>
+</sp:AlgorithmSuite>
+<sp:Layout>
+<wsp:Policy>
+<sp:Strict/>
+</wsp:Policy>
+</sp:Layout>
+</wsp:Policy>
+</sp:TransportBinding>
+</wsp:All>
+</wsp:All>
+</wsp:ExactlyOne>
+</wsp:Policy>
+<wsp:Policy wsu:Id="IF___-NOW_-FCMS_DOCUMENT_POST">
+<wsp:ExactlyOne>
+<wsp:All>
+<sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+<sapsession:enableSession>false</sapsession:enableSession>
+</sapsession:Session>
+<sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
+<sapcentraladmin:BusinessApplicationID>005056AE40871ED391B62D00C85B7E96</sapcentraladmin:BusinessApplicationID>
+</sapcentraladmin:CentralAdministration>
+</wsp:All>
+</wsp:ExactlyOne>
+</wsp:Policy>
+<wsp:Policy wsu:Id="OP___-now_-fcmsDocumentPost">
+<wsp:ExactlyOne>
+<wsp:All>
+<saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+<sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+<sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+<saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+</wsp:All>
+</wsp:ExactlyOne>
+</wsp:Policy>
+<wsdl:types>
+<xsd:schema xmlns:n0="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+<xsd:import namespace="urn:sap-com:document:sap:rfc:functions"/>
+<xsd:simpleType name="char10">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char12">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char15">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char250">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="250"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char30">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char32">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char4">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char40">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:complexType name="_-now_-fcmsDocStr">
+<xsd:sequence>
+<xsd:element name="JournalId" type="tns:char15"/>
+<xsd:element name="JournalSysId" type="tns:char32"/>
+<xsd:element name="JournalTable" type="tns:char40"/>
+<xsd:element name="Header" type="tns:_-now_-fcmsHdrStr"/>
+<xsd:element name="Items" type="tns:_-now_-fcmsItmTt"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsHdrStr">
+<xsd:sequence>
+<xsd:element name="ObjType" type="n0:char5"/>
+<xsd:element name="ObjKey" type="n0:char20"/>
+<xsd:element name="ObjSys" type="n0:char10"/>
+<xsd:element name="BusAct" type="n0:char4"/>
+<xsd:element name="Username" type="n0:char12"/>
+<xsd:element name="HeaderTxt" type="n0:char25"/>
+<xsd:element name="CompCode" type="n0:char4"/>
+<xsd:element name="DocDate" type="n0:date10"/>
+<xsd:element name="PstngDate" type="n0:date10"/>
+<xsd:element name="TransDate" type="n0:date10"/>
+<xsd:element name="FiscYear" type="n0:numeric4"/>
+<xsd:element name="FisPeriod" type="n0:numeric2"/>
+<xsd:element name="DocType" type="n0:char2"/>
+<xsd:element name="RefDocNo" type="n0:char16"/>
+<xsd:element name="AcDocNo" type="n0:char10"/>
+<xsd:element name="ObjKeyR" type="n0:char20"/>
+<xsd:element name="ReasonRev" type="n0:char2"/>
+<xsd:element name="CompoAcc" type="n0:char4"/>
+<xsd:element name="RefDocNoLong" type="n0:char35"/>
+<xsd:element name="AccPrinciple" type="n0:char4"/>
+<xsd:element name="NegPostng" type="n0:char1"/>
+<xsd:element name="ObjKeyInv" type="n0:char20"/>
+<xsd:element name="BillCategory" type="n0:char1"/>
+<xsd:element name="Vatdate" type="n0:date10"/>
+<xsd:element name="InvoiceRecDate" type="n0:date10"/>
+<xsd:element name="EcsEnv" type="n0:char10"/>
+<xsd:element name="PartialRev" type="n0:char1"/>
+<xsd:element name="DocStatus" type="n0:char1"/>
+<xsd:element name="ZfiAppr" type="tns:char12"/>
+<xsd:element name="ZfiPpnam" type="tns:char12"/>
+<xsd:element name="JeField" type="tns:char30"/>
+<xsd:element name="ClearingGl" type="n0:char10"/>
+<xsd:element name="Lines" type="xsd:int"/>
+<xsd:element name="TaxMethod" type="n0:char10"/>
+<xsd:element name="HeaderAddl" type="tns:_-now_-fcmsHdrAddlTt"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsHdrAddlStr">
+<xsd:sequence>
+<xsd:element name="HdrFieldname" type="tns:char30"/>
+<xsd:element name="HdrFieldvalue" type="tns:char250"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsItmStr">
+<xsd:sequence>
+<xsd:element name="ItemnoAcc" type="n0:numeric10"/>
+<xsd:element name="ItemSysId" type="tns:char32"/>
+<xsd:element name="ItemTable" type="tns:char40"/>
+<xsd:element name="Newko" type="n0:char17"/>
+<xsd:element name="AmtDoccur" type="n0:decimal23.4"/>
+<xsd:element name="Currency" type="n0:cuky5"/>
+<xsd:element name="Dmbtr" type="n0:curr13.2"/>
+<xsd:element name="Dmbe2" type="n0:curr13.2"/>
+<xsd:element name="Dmbe3" type="n0:curr13.2"/>
+<xsd:element name="GlAccount" type="n0:char10"/>
+<xsd:element name="ItemText" type="n0:char50"/>
+<xsd:element name="StatCon" type="n0:char1"/>
+<xsd:element name="LogProc" type="n0:char6"/>
+<xsd:element name="AcDocNo" type="n0:char10"/>
+<xsd:element name="RefKey1" type="n0:char12"/>
+<xsd:element name="RefKey2" type="n0:char12"/>
+<xsd:element name="RefKey3" type="n0:char20"/>
+<xsd:element name="AcctKey" type="n0:char3"/>
+<xsd:element name="AcctType" type="n0:char1"/>
+<xsd:element name="DocType" type="n0:char2"/>
+<xsd:element name="CompCode" type="n0:char4"/>
+<xsd:element name="BusArea" type="n0:char4"/>
+<xsd:element name="FuncArea" type="n0:char4"/>
+<xsd:element name="Plant" type="n0:char4"/>
+<xsd:element name="FisPeriod" type="n0:numeric2"/>
+<xsd:element name="FiscYear" type="n0:numeric4"/>
+<xsd:element name="PstngDate" type="n0:date10"/>
+<xsd:element name="ValueDate" type="n0:date10"/>
+<xsd:element name="FmArea" type="n0:char4"/>
+<xsd:element name="Customer" type="n0:char10"/>
+<xsd:element name="CshdisInd" type="n0:char1"/>
+<xsd:element name="VendorNo" type="n0:char10"/>
+<xsd:element name="AllocNmbr" type="n0:char18"/>
+<xsd:element name="TaxCode" type="n0:char2"/>
+<xsd:element name="Taxjurcode" type="n0:char15"/>
+<xsd:element name="ExtObjectId" type="n0:char34"/>
+<xsd:element name="BusScenario" type="n0:char16"/>
+<xsd:element name="Costobject" type="n0:char12"/>
+<xsd:element name="Costcenter" type="n0:char10"/>
+<xsd:element name="Acttype" type="n0:char6"/>
+<xsd:element name="ProfitCtr" type="n0:char10"/>
+<xsd:element name="PartPrctr" type="n0:char10"/>
+<xsd:element name="Network" type="n0:char12"/>
+<xsd:element name="WbsElement" type="n0:char24"/>
+<xsd:element name="Orderid" type="n0:char12"/>
+<xsd:element name="OrderItno" type="n0:numeric4"/>
+<xsd:element name="RoutingNo" type="n0:numeric10"/>
+<xsd:element name="Activity" type="n0:char4"/>
+<xsd:element name="CondType" type="n0:char4"/>
+<xsd:element name="CondCount" type="n0:numeric2"/>
+<xsd:element name="CondStNo" type="n0:numeric3"/>
+<xsd:element name="Fund" type="n0:char10"/>
+<xsd:element name="FundsCtr" type="n0:char16"/>
+<xsd:element name="CmmtItem" type="n0:char14"/>
+<xsd:element name="CoBusproc" type="n0:char12"/>
+<xsd:element name="AssetNo" type="n0:char12"/>
+<xsd:element name="SubNumber" type="n0:char4"/>
+<xsd:element name="BillType" type="n0:char4"/>
+<xsd:element name="SalesOrd" type="n0:char10"/>
+<xsd:element name="SOrdItem" type="n0:numeric6"/>
+<xsd:element name="DistrChan" type="n0:char2"/>
+<xsd:element name="Division" type="n0:char2"/>
+<xsd:element name="Salesorg" type="n0:char4"/>
+<xsd:element name="SalesGrp" type="n0:char3"/>
+<xsd:element name="SalesOff" type="n0:char4"/>
+<xsd:element name="SoldTo" type="n0:char10"/>
+<xsd:element name="DeCreInd" type="n0:char1"/>
+<xsd:element name="PElPrctr" type="n0:char10"/>
+<xsd:element name="Xmfrw" type="n0:char1"/>
+<xsd:element name="Quantity" type="n0:quantum13.3"/>
+<xsd:element name="BaseUom" type="n0:unit3"/>
+<xsd:element name="BaseUomIso" type="n0:char3"/>
+<xsd:element name="InvQty" type="n0:quantum13.3"/>
+<xsd:element name="InvQtySu" type="n0:quantum13.3"/>
+<xsd:element name="SalesUnit" type="n0:unit3"/>
+<xsd:element name="SalesUnitIso" type="n0:char3"/>
+<xsd:element name="PoPrQnt" type="n0:quantum13.3"/>
+<xsd:element name="PoPrUom" type="n0:unit3"/>
+<xsd:element name="PoPrUomIso" type="n0:char3"/>
+<xsd:element name="EntryQnt" type="n0:quantum13.3"/>
+<xsd:element name="EntryUom" type="n0:unit3"/>
+<xsd:element name="EntryUomIso" type="n0:char3"/>
+<xsd:element name="Volume" type="n0:quantum15.3"/>
+<xsd:element name="Volumeunit" type="n0:unit3"/>
+<xsd:element name="VolumeunitIso" type="n0:char3"/>
+<xsd:element name="GrossWt" type="n0:quantum15.3"/>
+<xsd:element name="NetWeight" type="n0:quantum15.3"/>
+<xsd:element name="UnitOfWt" type="n0:unit3"/>
+<xsd:element name="UnitOfWtIso" type="n0:char3"/>
+<xsd:element name="ItemCat" type="n0:char1"/>
+<xsd:element name="Material" type="n0:char18"/>
+<xsd:element name="MatlType" type="n0:char4"/>
+<xsd:element name="MvtInd" type="n0:char1"/>
+<xsd:element name="RevalInd" type="n0:char1"/>
+<xsd:element name="OrigGroup" type="n0:char4"/>
+<xsd:element name="OrigMat" type="n0:char1"/>
+<xsd:element name="SerialNo" type="n0:numeric2"/>
+<xsd:element name="PartAcct" type="n0:char10"/>
+<xsd:element name="TrPartBa" type="n0:char4"/>
+<xsd:element name="TradeId" type="n0:char6"/>
+<xsd:element name="ValArea" type="n0:char4"/>
+<xsd:element name="ValType" type="n0:char10"/>
+<xsd:element name="AsvalDate" type="n0:date10"/>
+<xsd:element name="PoNumber" type="n0:char10"/>
+<xsd:element name="PoItem" type="n0:numeric5"/>
+<xsd:element name="ItmNumber" type="n0:numeric6"/>
+<xsd:element name="CondCategory" type="n0:char1"/>
+<xsd:element name="FuncAreaLong" type="n0:char16"/>
+<xsd:element name="CmmtItemLong" type="n0:char24"/>
+<xsd:element name="GrantNbr" type="n0:char20"/>
+<xsd:element name="CsTransT" type="n0:char3"/>
+<xsd:element name="Measure" type="n0:char24"/>
+<xsd:element name="Segment" type="n0:char10"/>
+<xsd:element name="PartnerSegment" type="n0:char10"/>
+<xsd:element name="ResDoc" type="n0:char10"/>
+<xsd:element name="ResItem" type="n0:numeric3"/>
+<xsd:element name="BillingPeriodStartDate" type="n0:date10"/>
+<xsd:element name="BillingPeriodEndDate" type="n0:date10"/>
+<xsd:element name="PpaExInd" type="n0:char1"/>
+<xsd:element name="Fastpay" type="n0:char1"/>
+<xsd:element name="PartnerGrantNbr" type="n0:char20"/>
+<xsd:element name="BudgetPeriod" type="n0:char10"/>
+<xsd:element name="PartnerBudgetPeriod" type="n0:char10"/>
+<xsd:element name="PartnerFund" type="n0:char10"/>
+<xsd:element name="ItemnoTax" type="n0:numeric6"/>
+<xsd:element name="PaymentType" type="tns:char4"/>
+<xsd:element name="ExpenseType" type="tns:char4"/>
+<xsd:element name="ProgramProfile" type="tns:char10"/>
+<xsd:element name="Pmnttrms" type="n0:char4"/>
+<xsd:element name="BlineDate" type="n0:date10"/>
+<xsd:element name="DsctDays1" type="n0:decimal3.0"/>
+<xsd:element name="DsctDays2" type="n0:decimal3.0"/>
+<xsd:element name="Netterms" type="n0:decimal3.0"/>
+<xsd:element name="DsctPct1" type="n0:decimal5.3"/>
+<xsd:element name="DsctPct2" type="n0:decimal5.3"/>
+<xsd:element name="PymtMeth" type="n0:char1"/>
+<xsd:element name="Pmtmthsupl" type="n0:char2"/>
+<xsd:element name="PaymtRef" type="n0:char30"/>
+<xsd:element name="DunnKey" type="n0:char1"/>
+<xsd:element name="DunnBlock" type="n0:char1"/>
+<xsd:element name="PmntBlock" type="n0:char1"/>
+<xsd:element name="VatRegNo" type="n0:char20"/>
+<xsd:element name="PartnerBk" type="n0:char4"/>
+<xsd:element name="ScbankInd" type="n0:char3"/>
+<xsd:element name="Businessplace" type="n0:char4"/>
+<xsd:element name="Sectioncode" type="n0:char4"/>
+<xsd:element name="Branch" type="n0:char10"/>
+<xsd:element name="PymtCur" type="n0:cuky5"/>
+<xsd:element name="PymtCurIso" type="n0:char3"/>
+<xsd:element name="PymtAmt" type="n0:decimal23.4"/>
+<xsd:element name="CCtrArea" type="n0:char4"/>
+<xsd:element name="BankId" type="n0:char5"/>
+<xsd:element name="Supcountry" type="n0:char3"/>
+<xsd:element name="SupcountryIso" type="n0:char2"/>
+<xsd:element name="TaxDate" type="n0:date10"/>
+<xsd:element name="SpGlInd" type="n0:char1"/>
+<xsd:element name="PartnerGuid" type="n0:char32"/>
+<xsd:element name="AltPayee" type="n0:char10"/>
+<xsd:element name="AltPayeeBank" type="n0:char4"/>
+<xsd:element name="DunnArea" type="n0:char2"/>
+<xsd:element name="CaseGuid" type="n0:char32"/>
+<xsd:element name="Housebankacctid" type="n0:char5"/>
+<xsd:element name="FundLong" type="n0:char20"/>
+<xsd:element name="DisputeIfType" type="n0:char1"/>
+<xsd:element name="PaysProv" type="n0:char4"/>
+<xsd:element name="PaysTran" type="n0:char35"/>
+<xsd:element name="SepaMandateId" type="n0:char35"/>
+<xsd:element name="PartBusinessplace" type="n0:char5"/>
+<xsd:element name="BllsrvInd" type="n0:char1"/>
+<xsd:element name="PoSubNo" type="n0:char11"/>
+<xsd:element name="PoCheckdg" type="n0:char2"/>
+<xsd:element name="PoRefNo" type="n0:char27"/>
+<xsd:element name="WTaxCode" type="n0:char2"/>
+<xsd:element name="Instr1" type="n0:numeric2"/>
+<xsd:element name="Instr2" type="n0:numeric2"/>
+<xsd:element name="Instr3" type="n0:numeric2"/>
+<xsd:element name="Instr4" type="n0:numeric2"/>
+<xsd:element name="Wmwst" type="n0:curr13.2"/>
+<xsd:element name="Rstgr" type="n0:char3"/>
+<xsd:element name="CondKey" type="n0:char4"/>
+<xsd:element name="TaxRate" type="n0:decimal7.3"/>
+<xsd:element name="TaxjurcodeDeep" type="n0:char15"/>
+<xsd:element name="TaxjurcodeLevel" type="n0:char1"/>
+<xsd:element name="DirectTax" type="n0:char1"/>
+<xsd:element name="Fieldname" type="n0:char30"/>
+<xsd:element name="Character" type="n0:char18"/>
+<xsd:element name="ValFieldname" type="n0:char30"/>
+<xsd:element name="ValCurrType" type="n0:char2"/>
+<xsd:element name="AmtValcom" type="n0:decimal23.4"/>
+<xsd:element name="QuaValcom" type="n0:quantum15.3"/>
+<xsd:element name="CcGlaccount" type="n0:char10"/>
+<xsd:element name="CcType" type="n0:char4"/>
+<xsd:element name="CcNumber" type="n0:char25"/>
+<xsd:element name="CcSeqNo" type="n0:char10"/>
+<xsd:element name="CcValidF" type="n0:date10"/>
+<xsd:element name="CcValidT" type="n0:date10"/>
+<xsd:element name="CcName" type="n0:char40"/>
+<xsd:element name="Dataorigin" type="n0:char1"/>
+<xsd:element name="Authamount" type="n0:decimal23.4"/>
+<xsd:element name="CcAutthNo" type="n0:char10"/>
+<xsd:element name="AuthRefno" type="n0:char15"/>
+<xsd:element name="AuthDate" type="n0:date10"/>
+<xsd:element name="AuthTime" type="n0:time"/>
+<xsd:element name="Merchidcl" type="n0:char15"/>
+<xsd:element name="PointOfReceipt" type="n0:char10"/>
+<xsd:element name="Terminal" type="n0:char10"/>
+<xsd:element name="Cctyp" type="n0:char2"/>
+<xsd:element name="ContAcct" type="n0:char12"/>
+<xsd:element name="MainTrans" type="n0:char4"/>
+<xsd:element name="SubTrans" type="n0:char4"/>
+<xsd:element name="AgreementGuid" type="n0:char16"/>
+<xsd:element name="Vtref" type="n0:char20"/>
+<xsd:element name="VtrefGuid" type="n0:char16"/>
+<xsd:element name="ReferenceNo" type="n0:char16"/>
+<xsd:element name="BusinessEntity" type="n0:char8"/>
+<xsd:element name="Building" type="n0:char8"/>
+<xsd:element name="Property" type="n0:char8"/>
+<xsd:element name="RentalObject" type="n0:char8"/>
+<xsd:element name="ServChargeKey" type="n0:char4"/>
+<xsd:element name="SettlementUnit" type="n0:char5"/>
+<xsd:element name="ContractNo" type="n0:char13"/>
+<xsd:element name="FlowType" type="n0:char4"/>
+<xsd:element name="CorrItem" type="n0:char10"/>
+<xsd:element name="RefDate" type="n0:date10"/>
+<xsd:element name="OptionRate" type="n0:decimal9.6"/>
+<xsd:element name="WtType" type="n0:char2"/>
+<xsd:element name="WtCode" type="n0:char2"/>
+<xsd:element name="BasAmtLc" type="n0:decimal23.4"/>
+<xsd:element name="BasAmtTc" type="n0:decimal23.4"/>
+<xsd:element name="BasAmtL2" type="n0:decimal23.4"/>
+<xsd:element name="BasAmtL3" type="n0:decimal23.4"/>
+<xsd:element name="ManAmtLc" type="n0:decimal23.4"/>
+<xsd:element name="ManAmtTc" type="n0:decimal23.4"/>
+<xsd:element name="ManAmtL2" type="n0:decimal23.4"/>
+<xsd:element name="ManAmtL3" type="n0:decimal23.4"/>
+<xsd:element name="AwhAmtLc" type="n0:decimal23.4"/>
+<xsd:element name="AwhAmtTc" type="n0:decimal23.4"/>
+<xsd:element name="AwhAmtL2" type="n0:decimal23.4"/>
+<xsd:element name="AwhAmtL3" type="n0:decimal23.4"/>
+<xsd:element name="BasAmtInd" type="n0:char1"/>
+<xsd:element name="ManAmtInd" type="n0:char1"/>
+<xsd:element name="ItemAddl" type="tns:_-now_-fcmsItmAddlTt"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsItmAddlStr">
+<xsd:sequence>
+<xsd:element name="ItemFieldname" type="tns:char30"/>
+<xsd:element name="ItemFieldvalue" type="tns:char250"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsBkpfKeyStr">
+<xsd:sequence>
+<xsd:element name="JournalId" type="tns:char15"/>
+<xsd:element name="JournalSysId" type="n0:char32"/>
+<xsd:element name="JournalTable" type="n0:char40"/>
+<xsd:element name="Bukrs" type="n0:char4"/>
+<xsd:element name="Belnr" type="n0:char10"/>
+<xsd:element name="Gjahr" type="n0:numeric4"/>
+<xsd:element name="Interccode" type="n0:char16"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsMsgLogStr">
+<xsd:sequence>
+<xsd:element name="JournalId" type="tns:char15"/>
+<xsd:element name="JournalSysId" type="tns:char32"/>
+<xsd:element name="JournalTable" type="tns:char40"/>
+<xsd:element name="ItemnoAcc" type="n0:numeric10"/>
+<xsd:element name="ItemSysId" type="tns:char32"/>
+<xsd:element name="ItemTable" type="tns:char40"/>
+<xsd:element name="Type" type="n0:char1"/>
+<xsd:element name="Message" type="n0:char220"/>
+<xsd:element name="Id" type="n0:char20"/>
+<xsd:element name="Number" type="n0:numeric3"/>
+<xsd:element name="Row" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsDocTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsDocStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsHdrAddlTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsHdrAddlStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsItmTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsItmStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsItmAddlTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsItmAddlStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsBkpfKeyTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsBkpfKeyStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="_-now_-fcmsMsgLogTt">
+<xsd:sequence>
+<xsd:element name="item" type="tns:_-now_-fcmsMsgLogStr" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="_-now_-fcmsDocumentPost">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="CloseTable" type="tns:char40"/>
+<xsd:element name="CloseTask" type="tns:char15"/>
+<xsd:element name="CloseTaskSysId" type="tns:char32"/>
+<xsd:element name="ItDocs" type="tns:_-now_-fcmsDocTt"/>
+<xsd:element name="Park" type="n0:char1" minOccurs="0"/>
+<xsd:element name="Source" type="tns:char30" minOccurs="0"/>
+<xsd:element name="Testrun" type="n0:char1" minOccurs="0"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="_-now_-fcmsDocumentPostResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="EtDocuments" type="tns:_-now_-fcmsBkpfKeyTt"/>
+<xsd:element name="EtReturn" type="tns:_-now_-fcmsMsgLogTt"/>
+<xsd:element name="EvMessage" type="n0:string"/>
+<xsd:element name="EvMtype" type="n0:char1"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+<xsd:simpleType name="char1">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="1"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char10">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char11">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="11"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char12">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="12"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char13">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="13"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char14">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="14"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char15">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="15"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char16">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="16"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char17">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="17"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char18">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="18"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char2">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char20">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char220">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="220"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char24">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="24"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char25">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="25"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char27">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="27"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char3">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char30">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="30"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char32">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char34">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="34"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char35">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="35"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char4">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char40">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="40"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char5">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char50">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="50"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char6">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="char8">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="8"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="cuky5">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="curr13.2">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="13"/>
+<xsd:fractionDigits value="2"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="date10">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/>
+<xsd:pattern value="\d\d\d\d-\d\d-\d\d"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="decimal23.4">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="23"/>
+<xsd:fractionDigits value="4"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="decimal3.0">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="3"/>
+<xsd:fractionDigits value="0"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="decimal5.3">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="5"/>
+<xsd:fractionDigits value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="decimal7.3">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="7"/>
+<xsd:fractionDigits value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="decimal9.6">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="9"/>
+<xsd:fractionDigits value="6"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric10">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="10"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric2">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric3">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric4">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="4"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric5">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="5"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="numeric6">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="6"/>
+<xsd:pattern value="\d*"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="quantum13.3">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="13"/>
+<xsd:fractionDigits value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="quantum15.3">
+<xsd:restriction base="xsd:decimal">
+<xsd:totalDigits value="15"/>
+<xsd:fractionDigits value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="string">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+<xsd:simpleType name="time">
+<xsd:restriction base="xsd:time">
+<xsd:pattern value="[0-9]{2}:[0-9]{2}:[0-9]{2}"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="unit3">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="_-now_-fcmsDocumentPost">
+<wsdl:part name="parameters" element="tns:_-now_-fcmsDocumentPost"/>
+</wsdl:message>
+<wsdl:message name="_-now_-fcmsDocumentPostResponse">
+<wsdl:part name="parameter" element="tns:_-now_-fcmsDocumentPostResponse"/>
+</wsdl:message>
+<wsdl:portType name="_-NOW_-FCMS_DOCUMENT_POST">
+<wsdl:documentation>
+<sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+<sapdoc:docitem docURL="http://sjc4saperpx1.corp.service-now.com:8000/sap/bc/esdt/docu/sd_text?sap-client=400&amp;sd_name=%2fNOW%2fFCMS_DOCUMENT_POST"/>
+</sapdoc:sapdoc>
+</wsdl:documentation>
+<wsp:Policy>
+<wsp:PolicyReference URI="#IF___-NOW_-FCMS_DOCUMENT_POST"/>
+</wsp:Policy>
+<wsdl:operation name="_-now_-fcmsDocumentPost">
+<wsp:Policy>
+<wsp:PolicyReference URI="#OP___-now_-fcmsDocumentPost"/>
+</wsp:Policy>
+<wsdl:input message="tns:_-now_-fcmsDocumentPost"/>
+<wsdl:output message="tns:_-now_-fcmsDocumentPostResponse"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="NOW_FCMS_DOCUMENT_POST" type="tns:_-NOW_-FCMS_DOCUMENT_POST">
+<wsp:Policy>
+<wsp:PolicyReference URI="#BN__NOW_FCMS_DOCUMENT_POST"/>
+</wsp:Policy>
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="_-now_-fcmsDocumentPost">
+<soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:_-NOW_-FCMS_DOCUMENT_POST:_-now_-fcmsDocumentPostRequest" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="NOW_FCMS_DOCUMENT_POST_soap12" type="tns:_-NOW_-FCMS_DOCUMENT_POST">
+<wsp:Policy>
+<wsp:PolicyReference URI="#BN__NOW_FCMS_DOCUMENT_POST_soap12"/>
+</wsp:Policy>
+<wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="_-now_-fcmsDocumentPost">
+<wsoap12:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:_-NOW_-FCMS_DOCUMENT_POST:_-now_-fcmsDocumentPostRequest" style="document"/>
+<wsdl:input>
+<wsoap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<wsoap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="NOW_FCMS_DOCUMENT_POST">
+<wsdl:port name="NOW_FCMS_DOCUMENT_POST" binding="tns:NOW_FCMS_DOCUMENT_POST">
+<soap:address location="http://sjc4saperpx1.corp.service-now.com:8000/sap/bc/srt/rfc/now/fcms_document_post/400/now_fcms_document_post/now_fcms_document_post"/>
+</wsdl:port>
+<wsdl:port name="NOW_FCMS_DOCUMENT_POST_soap12" binding="tns:NOW_FCMS_DOCUMENT_POST_soap12">
+<wsoap12:address location="http://sjc4saperpx1.corp.service-now.com:8000/sap/bc/srt/rfc/now/fcms_document_post/400/now_fcms_document_post/now_fcms_document_post"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>]]></wsdl_xml>
+  </sys_soap_message>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Goods Receipt</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-01 14:48:34</sys_created_on>
+        <sys_id>166a7ca587e2a110c04eb259dabb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Goods Receipt</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_hub_category_166a7ca587e2a110c04eb259dabb3529</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-01 14:48:34</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=166a7ca587e2a110c04eb259dabb3529"/>
+</record_update>

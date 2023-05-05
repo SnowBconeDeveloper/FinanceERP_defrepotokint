@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.IntgConstants</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>IntgConstants</name>
+    <script><![CDATA[var IntgConstants = Class.create();
+
+IntgConstants.SYS_CLASS_ERP_USER_MAP = 'sn_fcms_intg_erp_user_map';
+IntgConstants.SYS_CLASS_SOURCE = 'sn_fcms_intg_source';
+IntgConstants.SYS_CLASS_SERVICE_MAP = 'sn_fcms_intg_service_map';
+IntgConstants.SYS_CLASS_SERVICE_ELEMENT_MAP = 'sn_fcms_intg_service_element_map';
+IntgConstants.SYS_CLASS_ERP_ROLE_MAP = 'sn_fcms_intg_erp_role_map';
+IntgConstants.SYS_CLASS_SYS_USER_HAS_ROLE = 'sys_user_has_role';
+IntgConstants.SYS_CLASS_SERVICE_QUEUE = 'sn_fcms_intg_service_queue';
+IntgConstants.SYS_CLASS_GROUPS = 'sys_user_group';
+IntgConstants.SYS_CLASS_GROUP_MEMBERS = 'sys_user_grmember';
+IntgConstants.SYS_CLASS_ERP_SOURCE = 'sn_fin_erp_source';
+
+IntgConstants.ERP_SERVICE_DOCUMENT_POST = 'fcms_document_post';
+IntgConstants.ERP_SERVICE_DOCUMENT_REVERSE = 'fcms_document_reverse';
+IntgConstants.ERP_SERVICE_FETCH_USERS = 'fcms_fetch_users';
+IntgConstants.ERP_SERVICE_FETCH_GL_ACCOUNTS = 'fin_fetch_gl_accounts';
+IntgConstants.ERP_SERVICE_FETCH_GL_BALANCE = 'fin_fetch_gl_balance';
+IntgConstants.ERP_SERVICE_FETCH_FX_RATE = 'fin_fetch_fx_rate';
+IntgConstants.ERP_SERVICE_FETCH_ACTIVITY = 'fin_fetch_std_bal_activity';
+IntgConstants.ERP_SERVICE_FETCH_CROSS_LEDGER_ACTIVITY = 'fin_fetch_cross_ledger_bal_activity';
+
+IntgConstants.ACTION_PARK = 'PARK';
+IntgConstants.ACTION_POST = 'POST';
+
+IntgConstants.STATUS_SUCCESS = 'SUCCESS';
+IntgConstants.STATUS_ERROR = 'ERROR';
+IntgConstants.STATUS_FAIL = 'FAIL';
+
+IntgConstants.JE_STATUS_PARK_IN_PROGRESS = 'park_in_progress';
+IntgConstants.JE_STATUS_POST_IN_PROGRESS = 'post_in_progress';
+IntgConstants.JE_STATUS_PARK_FAILED = 'park_failed';
+IntgConstants.JE_STATUS_POST_FAILED = 'post_failed';
+IntgConstants.JE_STATUS_PARKED = 'parked';
+IntgConstants.JE_STATUS_POSTED = 'posted';
+
+IntgConstants.ERP_WORKFLOW = 'FCMS ERP Integration';
+IntgConstants.ROLE_JOURNAL_PREPARER = '53661ee253b013007cfe2a2db5dc346b';
+IntgConstants.ROLE_JOURNAL_APPROVER = 'fc861ee253b013007cfe2a2db5dc347b';
+IntgConstants.SYS_JOURNAL_APPROVER_GROUP_TYPE = 'c0c7fc19b761330025de99f8de11a9ce';
+IntgConstants.ROLE_RECON_ADMIN = 'x_trint_recon.recon_admin';
+IntgConstants.NETSUITE = 'netsuite';
+
+IntgConstants.NLAUTH_EMAIL = "nlauth_email";
+IntgConstants.NLAUTH_SIGNATURE = "nlauth_signature";
+IntgConstants.NLAUTH_ACCOUNT = "nlauth_account";
+IntgConstants.NLAUTH_ROLE = "nlauth_role";
+
+IntgConstants.NETSUITE_ELEMENTS = [
+    IntgConstants.NLAUTH_EMAIL,
+    IntgConstants.NLAUTH_SIGNATURE,
+    IntgConstants.NLAUTH_ACCOUNT,
+    IntgConstants.NLAUTH_ROLE
+];
+
+IntgConstants.NETSUITE_CREDENTIALS = "sn_fcms_intg_netsuite_credentials";]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-05-15 18:54:24</sys_created_on>
+    <sys_id>c6c19256730213008f12d9be2bf6a746</sys_id>
+    <sys_mod_count>37</sys_mod_count>
+    <sys_name>IntgConstants</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_c6c19256730213008f12d9be2bf6a746</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-11 12:33:37</sys_updated_on>
+  </sys_script_include>
+</record_update>

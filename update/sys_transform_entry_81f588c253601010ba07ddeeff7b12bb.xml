@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+  <sys_transform_entry action="INSERT_OR_UPDATE">
+    <choice_action>reject</choice_action>
+    <coalesce>true</coalesce>
+    <coalesce_case_sensitive>false</coalesce_case_sensitive>
+    <coalesce_empty_fields>true</coalesce_empty_fields>
+    <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+    <map display_value="Ledger Group Mapping Excel Upload Transform Map">c5b544c253601010ba07ddeeff7b12f9</map>
+    <reference_value_field>sys_id</reference_value_field>
+    <source_field>[Script]</source_field>
+    <source_script><![CDATA[answer = (function transformEntry(source) {
+
+    var groupGr = new GlideRecord('sn_fin_gl_group');
+    var query = groupGr.addQuery('group_id', source.getValue('u_ledger_group'));
+    query.addOrCondition('short_description', source.getValue('u_ledger_group'));
+    groupGr.query();
+    if (groupGr.next())
+        return groupGr.getValue('sys_id');
+    return "";
+
+})(source);]]></source_script>
+    <source_table>sn_fcms_intg_gl_group_mapping_load_data</source_table>
+    <sys_class_name>sys_transform_entry</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-04 09:14:52</sys_created_on>
+    <sys_id>81f588c253601010ba07ddeeff7b12bb</sys_id>
+    <sys_mod_count>10</sys_mod_count>
+    <sys_name>[Script]</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_transform_entry_81f588c253601010ba07ddeeff7b12bb</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-08 11:39:55</sys_updated_on>
+    <target_field>gl_group</target_field>
+    <target_table>sn_fin_gl_group_mapping</target_table>
+    <use_source_script>true</use_source_script>
+  </sys_transform_entry>
+</record_update>

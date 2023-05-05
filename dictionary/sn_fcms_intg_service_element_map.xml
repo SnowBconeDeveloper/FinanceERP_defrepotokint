@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+   <element name="sn_fcms_intg_service_element_map" type="collection" extends="sys_metadata" label="Service element map">
+      <element name="advance" type="boolean" label="Advance" hint="Advance" />
+      <element name="condition" type="conditions" label="Condition" use_dependent_field="true" dependent="source_table" dependent_on_field="source_table" hint="Condition" />
+      <element name="element" type="string" label="Element" hint="Element" display="true" />
+      <element name="foreign_key" type="field_name" label="Foreign key" use_dependent_field="true" dependent="source_table" dependent_on_field="source_table" hint="Foreign Key field maps with header Primary key" />
+      <element name="maintain_order" type="boolean" label="Maintain Order" hint="Maintain Order" />
+      <element name="order_by" type="field_name" label="Order By" use_dependent_field="true" dependent="source_table" dependent_on_field="source_table" hint="Maintain Order By the field" />
+      <element name="order_type" type="string" label="Order Type" default_value="ascending" hint="Order Type">
+         <choice>
+            <element value="ascending" sequence="0" label="Ascending" />
+            <element value="descending" sequence="1" label="Descending" />
+         </choice>
+      </element>
+      <element name="order" type="integer" label="Order" hint="Order of Element" />
+      <element name="parent" type="reference" reference="sn_fcms_intg_service_element_map" reference_qual="javascript:&quot;service_map=&quot; + current.service_map.sys_id + &quot;^sys_id!=&quot; + current.sys_id+&quot;^type=container^ORtype=container-array&quot;;" label="Parent" hint="Parent" />
+      <element name="script" type="script" dependent="source_table" label="Script" max_length="8000" default_value="&#xD;answer = (function getValueForTarget(current,erpIntgCtxString) {&#xD;  &#x9;// Add your code here&#xD;  &#x9;return &quot;&quot;; &#xD; })(current,erpIntgCtxString);" hint="Script" />
+      <element name="source_field" type="field_name" label="Source field" use_dependent_field="true" dependent="source_table" dependent_on_field="source_table" hint="Source Field" />
+      <element name="source_table" type="table_name" label="Source table" hint="Source Table" attributes="base_start=true,allow_public=true" />
+      <element name="type" type="string" label="Type" choice="3" default_value="element" hint="Element Type">
+         <choice>
+            <element value="element" sequence="0" label="Element" />
+            <element value="attribute" sequence="1" label="Attribute" />
+            <element value="container" sequence="2" label="Container" />
+            <element value="container-array" sequence="3" label="Container Array" />
+            <element value="element-array" sequence="4" label="Element Array" />
+         </choice>
+      </element>
+      <element name="service_map" type="reference" reference="sn_fcms_intg_service_map" label="Service Map" hint="Service Map" />
+      <element name="is_related" type="boolean" label="Is Related" hint="Check this if data mapped in this Element Map has relations with data mapped in its Parent" />
+   </element>
+</database>

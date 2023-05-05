@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.REST_PayloadGenerator</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>REST_PayloadGenerator</name>
+    <script><![CDATA[var REST_PayloadGenerator = Class.create();
+REST_PayloadGenerator.prototype = {
+    initialize: function(serviceMap, input, erpIntgCtxString) {
+        this.input = input;
+        this.elementMapStructure = ElementMapStructure.build(serviceMap.sys_id);
+        this.erpIntgCtxString = gs.nil(erpIntgCtxString) ? {} : erpIntgCtxString;
+    },
+
+    generatePayload: function() {
+        var object = {};
+        var topElementMaps = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getTopElements());
+        topElementMaps.forEach(function(elementMap) {
+            this.processElement(elementMap, object, null);
+        }, this);
+        return JSON.stringify(object);
+    },
+
+    processElement: function(elementMap, object, sourceGR) {
+        var elementName = elementMap.getElementName();
+        if (elementMap.getType() == 'element' || elementMap.getType() == 'attribute') {
+            this.addAttribute(object, elementMap, sourceGR);
+        } else if (elementMap.getType() == 'container') {
+            var childObject = this.buildObject(elementMap, sourceGR);
+            if (!gs.nil(childObject))
+                object[elementName] = childObject;
+        } else if (elementMap.getType() == 'container-array') {
+            var childObjects = this.buildObjects(elementMap, sourceGR);
+            if (!gs.nil(childObjects))
+                object[elementName] = childObjects;
+        } else if (elementMap.getType() == 'element-array') {
+            var childArray = this.buildArray(elementMap, sourceGR);
+            if (!gs.nil(childArray))
+                object[elementName] = childArray;
+        }
+    },
+
+    buildObjectFromSource: function(elementMap, sourceGR) {
+        var object = {};
+        var childElementMaps = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getChildElements(elementMap.sys_id));
+        childElementMaps.forEach(function(child) {
+            this.processElement(child, object, sourceGR);
+        }, this);
+        return object;
+    },
+
+    buildObject: function(elementMap, sourceGR) {
+        if (this.elementNeedNewSource(elementMap)) {
+            sourceGR = this.getNewSource(elementMap, sourceGR);
+            sourceGR.next();
+        }
+        var object = this.buildObjectFromSource(elementMap, sourceGR);
+        return object;
+    },
+
+    buildObjects: function(elementMap, sourceGR) {
+        var objects = [];
+        if (this.elementNeedNewSource(elementMap)) {
+            sourceGR = this.getNewSource(elementMap, sourceGR);
+        }
+        while (sourceGR.next()) {
+            var object = this.buildObjectFromSource(elementMap, sourceGR);
+            objects.push(object);
+        }
+        return objects;
+    },
+
+    buildArray: function(elementMap, sourceGR) {
+        var values = [];
+        if (this.elementNeedNewSource(elementMap)) {
+            sourceGR = this.getNewSource(elementMap, sourceGR);
+        }
+        while (sourceGR.next()) {
+            var value = this.getElementValue(elementMap, sourceGR);
+            values.push(value);
+        }
+        return values;
+    },
+
+    getNewSource: function(elementMap, sourceGR) {
+        var newSource = new GlideRecord(elementMap.source_table);
+        if ((!gs.nil(elementMap.is_related)) && elementMap.is_related == 1) {
+            newSource.addQuery(elementMap.foreign_key, sourceGR.sys_id);
+        }
+        var encodedQueryFromContext = this.input[elementMap.source_table];
+        newSource.addEncodedQuery(encodedQueryFromContext);
+        if (elementMap.maintain_order) {
+            if (elementMap.order_type == 'ascending')
+                newSource.orderBy(elementMap.order_by);
+            else
+                newSource.orderByDesc(elementMap.order_by);
+        }
+        newSource.query();
+        return newSource;
+    },
+
+    elementNeedNewSource: function(elementMap) {
+        if (gs.nil(elementMap.source_table))
+            return false;
+        var parentElement = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getElementBySysID(elementMap.parent))[0];
+        if (gs.nil(parentElement))
+            return true;
+        return (parentElement.source_table != elementMap.source_table);
+    },
+
+    addAttribute: function(object, elementMap, sourceGR) {
+        var elementName = elementMap.getElementName();
+        var value = this.getElementValue(elementMap, sourceGR);
+        if (!gs.nil(value))
+            object[elementName] = value;
+    },
+
+    getElementValue: function(elementMap, sourceGR) {
+        var value = '';
+        if (elementMap.isAdvance()) {
+            var vars = {
+                current: sourceGR,
+                erpIntgCtxString: JSON.stringify(this.erpIntgCtxString)
+            };
+            var evaluator = new GlideScopedEvaluator();
+            var elementMapGR = elementMap.getOriginalRecord();
+            value = evaluator.evaluateScript(elementMapGR, 'script', vars);
+        } else if(!gs.nil(sourceGR) && !gs.nil(elementMap.source_field)) {
+            value = sourceGR.getValue(elementMap.source_field);
+        }
+        return value;
+    },
+
+    type: 'REST_PayloadGenerator'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-21 05:45:31</sys_created_on>
+    <sys_id>ec248487530323008f12ddeeff7b12f4</sys_id>
+    <sys_mod_count>41</sys_mod_count>
+    <sys_name>REST_PayloadGenerator</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_ec248487530323008f12ddeeff7b12f4</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-11-04 06:19:52</sys_updated_on>
+  </sys_script_include>
+</record_update>

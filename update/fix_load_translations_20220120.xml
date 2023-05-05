@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glidefix description="Run translations import set for sn_fcms_intg" run_once="false">
+	<script>
+		runImport('sn_fcms_intg');
+
+		function runImport(scopeName) {
+			if (gs.isPaused()) {
+				scheduleImport(scopeName);
+			} else {
+				runImportNow(scopeName);
+			}
+		}
+		function scheduleImport(scopeName) {
+			gs.eventQueue(scopeName + ".translation.app.update", null, gs.getUserID(), gs.getUserName(), "localization");
+		}
+
+		function runImportNow(scopeName) {
+			if(gs.tableExists('sys_language')) {
+				var gr = new GlideRecord('sys_language');
+				gr.addActiveQuery();
+				gr.query();
+
+				while (gr.next()) {
+					var lName = gr.name.toLowerCase();
+
+					if (lName !== 'english') {
+						if (lName.contains(' - '))
+							lName = lName.replace(' - ', /-/g);
+						else if (lName.contains(' '))
+							lName = lName.replaceAll(' ', '_');
+
+						var tl = new global.TranslationLoader();
+						tl.languageAbbreviation = tl.getLanguageAbbreviation0('com.snc.i18n.' + lName);
+
+						tl.loadTranslationsFromAppPlugin(scopeName);
+						gs.info('Completed loading application language files for: ' + scopeName + ' ' + lName);
+					}
+				}
+			}
+		}
+	</script>
+</glidefix>

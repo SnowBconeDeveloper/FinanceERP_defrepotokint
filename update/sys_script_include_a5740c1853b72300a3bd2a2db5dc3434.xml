@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ParkPostResponseHandler</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ParkPostResponseHandler</name>
+    <script><![CDATA[var ParkPostResponseHandler = Class.create();
+ParkPostResponseHandler.prototype = {
+    initialize: function(source, target) {
+		this.source = source;
+		this.target = target;
+		this.responseType = gs.nil(source.getValue('response_type')) ? '' : source.getValue('response_type').toUpperCase();
+		this.result = gs.nil(source.getValue('result')) ? '' : source.getValue('result').toUpperCase();
+		this.currentState = target.state;
+		this.currentDocStatus = target.document_status;
+    },
+
+	deriveState: function() {
+		var state = this.currentState;
+		
+		if(this.isPark() && this.isSuccess() && this.isValidParkState()) 
+			state = x_trint_fcms.FcmsConstants.JE_IN_PROGRESS;
+		
+		else if(this.isPark() && !this.isSuccess() && this.isValidParkState()) 
+			state = x_trint_fcms.FcmsConstants.JE_DRAFT;
+		
+		else if(this.isPost() && this.isSuccess() && this.isValidPostState()) 
+			state = x_trint_fcms.FcmsConstants.JE_COMPLETED;
+		
+		else if(this.isPost() && !this.isSuccess() && this.isValidPostState()) 
+			state = x_trint_fcms.FcmsConstants.JE_IN_PROGRESS;
+		
+		return state;
+	},
+	
+	deriveJeDocumentStatus: function() {
+		var status = this.currentDocStatus;
+
+		if(this.isPark() && this.isSuccess() && this.isValidParkDocStatus()) 
+			status = x_trint_fcms.FcmsConstants.JE_STATUS_VALIDATION_SUCCESSFUL;
+		
+		else if(this.isPark() && !this.isSuccess() && this.isValidParkDocStatus()) 
+			status = x_trint_fcms.FcmsConstants.JE_STATUS_VALIDATION_FAILED;
+		
+		else if(this.isPost() && this.isSuccess() && this.isValidPostDocStatus()) 
+			status = x_trint_fcms.FcmsConstants.JE_STATUS_POSTED;
+		
+		else if(this.isPost() && !this.isSuccess() && this.isValidPostDocStatus()) 
+			status = x_trint_fcms.FcmsConstants.JE_STATUS_POST_FAILED;
+		return status;
+	},
+	
+	isPark: function() {
+		return this.responseType == 'PARK';
+	}, 
+	
+	isSuccess: function() {
+		return this.result == 'SUCCESS';
+	},
+	
+	isPost: function() {
+		return this.responseType == 'POST';
+	},
+	
+	isStateInProgress: function() {
+		return this.currentState == x_trint_fcms.FcmsConstants.IN_PROGRESS;
+	},
+	
+	isValidParkState: function() {
+		return this.currentState == x_trint_fcms.FcmsConstants.JE_DRAFT;
+	},
+	
+	isValidPostState: function() {
+		return (this.currentState == x_trint_fcms.FcmsConstants.JE_IN_PROGRESS);
+	},
+	
+	isValidParkDocStatus: function() {
+		return (this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_DRAFT || 
+				this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_PENDING_VALIDATION ||
+				this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_VALIDATION_SUCCESSFUL ||
+			    this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_VALIDATION_FAILED || 
+			    this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_REJECTED);
+	},
+	
+	isValidPostDocStatus: function() {
+		return (this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_POST_IN_PROGRESS || 
+				this.currentDocStatus == x_trint_fcms.FcmsConstants.JE_STATUS_POST_FAILED);
+	},
+    type: 'ParkPostResponseHandler'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-02-18 23:30:09</sys_created_on>
+    <sys_id>a5740c1853b72300a3bd2a2db5dc3434</sys_id>
+    <sys_mod_count>17</sys_mod_count>
+    <sys_name>ParkPostResponseHandler</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_a5740c1853b72300a3bd2a2db5dc3434</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-11 08:32:43</sys_updated_on>
+  </sys_script_include>
+</record_update>

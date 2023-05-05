@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ContextReader</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ContextReader</name>
+    <script><![CDATA[var ContextReader = Class.create();
+
+ContextReader.erpUserIdFilter = function(snowUserId) {
+	return function(obj) {
+		return obj.userSysId == snowUserId;
+	};
+};
+
+ContextReader.prototype = {
+    initialize: function(contextStr) {
+		this.context = JSON.parse(contextStr);
+    },
+	
+	getErpUserId: function(snowUserId) {
+		var approvers = this.context.approver;
+		if(gs.nil(approvers) || !approvers.length || gs.nil(snowUserId))
+			return "";
+		
+		var userObj = this.context.approver.filter(ContextReader.erpUserIdFilter(snowUserId));
+		return userObj.length ? userObj[0].erpId : "";
+	},
+	
+	getPreparer: function() {
+		return this.context.preparer;
+	},
+	
+	getAction: function() {
+		return this.context.action;
+	},
+
+    type: 'ContextReader'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-03-02 14:08:08</sys_created_on>
+    <sys_id>c074777f53f32300a3bd2a2db5dc34e4</sys_id>
+    <sys_mod_count>4</sys_mod_count>
+    <sys_name>ContextReader</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_c074777f53f32300a3bd2a2db5dc34e4</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-02 14:49:47</sys_updated_on>
+  </sys_script_include>
+</record_update>

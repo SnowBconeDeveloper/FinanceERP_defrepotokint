@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.SOAP_PayloadGenerator</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>SOAP_PayloadGenerator</name>
+    <script><![CDATA[var SOAP_PayloadGenerator = Class.create();
+SOAP_PayloadGenerator.prototype = {
+	initialize: function(serviceMap, input, erpIntgCtxString) {
+		this.input = input;
+		this.serviceMap = serviceMap;
+		this.elementMapStructure = ElementMapStructure.build(serviceMap.sys_id);
+		this.erpIntgCtxString = gs.nil(erpIntgCtxString) ? '{}' : JSON.stringify(erpIntgCtxString);
+		this.xmlEncoder = new XmlEncoder();
+	},
+
+	generatePayload: function() {
+		var topElementMaps = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getTopElements());
+		var payload = '';
+		topElementMaps.forEach(function(elementMap) {
+			payload = this.processElement(elementMap, null);
+		}, this);
+		var xmlDoc = new XMLDocument2();
+		xmlDoc.parseXML(payload);
+		return xmlDoc.toString();
+	},
+
+	processElement: function(elementMap, sourceGR) {
+		if (elementMap.getType() == 'container' || elementMap.getType() == 'container-array') {
+			return this.buildContainer(elementMap, sourceGR);
+		} else if (elementMap.getType() == 'attribute') {
+			return this.buildAttribute(elementMap, sourceGR);
+		} else if (elementMap.getType() == 'element') {
+			return this.buildElement(elementMap, sourceGR);
+		}
+	},
+
+	buildContainer: function(elementMap, sourceGR) {
+		var container = '';
+		if (this.elementNeedNewSource(elementMap)) {
+			sourceGR = this.getNewSource(elementMap, sourceGR);
+			while (sourceGR.next()) {
+				container = container.concat(this.buildContainerFromSource(elementMap, sourceGR));
+			}
+		} else {
+			container = container.concat(this.buildContainerFromSource(elementMap, sourceGR));
+		}
+		return container;
+	},
+	
+	buildAttributes: function(elementMap, sourceGR){
+		var attributeString = '';
+		var attributes = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getChildAttributes(elementMap.sys_id));
+		attributes.forEach( function (attribute){
+			attributeString = attributeString.concat(this.buildAttribute(attribute, sourceGR));
+		},this);
+		return attributeString;
+	},
+	
+	addAttributesToNode: function(node /* eg:<header> */, attributes){
+		return node.substring(0, node.length - 1) + attributes + '>';
+	},
+
+	buildContainerFromSource: function(elementMap, sourceGR) {
+		var container = '';
+		container = container.concat(this.buildContainerStart(elementMap));
+		
+		var attributes = this.buildAttributes(elementMap, sourceGR);
+		container = this.addAttributesToNode(container, attributes);
+		
+		var childElementMaps = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getChildElementsExcludingAttributes(elementMap.sys_id));
+		childElementMaps.forEach(function(child) {
+			container = container.concat(this.processElement(child, sourceGR));
+		}, this);
+		container = container.concat(this.buildContainerEnd(elementMap));
+		return container;
+	},
+
+	elementNeedNewSource: function(elementMap) {
+		if (gs.nil(elementMap.source_table))
+			return false;
+		var parentElement = this.elementMapStructure.getElementMapsByFilter(ElementMapFilter.getElementBySysID(elementMap.parent))[0];
+		if (gs.nil(parentElement))
+			return true;
+		return (parentElement.source_table != elementMap.source_table);
+	},
+
+	buildAttribute: function(elementMap, sourceGR) {
+		var element = elementMap.getElementName();
+		var value = this.computeValue(elementMap, sourceGR);
+		if( gs.nil(value) )
+			return '';
+		return ' ' + element + '="' + value + '"';
+	},
+
+	buildElement: function(elementMap, sourceGR) {
+		var element = elementMap.getElementName();
+		var value = this.computeValue(elementMap, sourceGR);
+		if (gs.nil(value) && this.serviceMap.getValue('allow_empty') == '1')
+			return '<' + element + '/>';
+		
+		if (gs.nil(value))
+			return '';
+		
+		return '<' + element + '>' + value + '</' + element + '>';
+	},
+
+	computeValue: function(elementMap, sourceGR) {
+		var value = '';
+		if (elementMap.isAdvance()) {
+			var vars = {
+				current: sourceGR,
+				erpIntgCtxString: this.erpIntgCtxString
+			};
+			var evaluator = new GlideScopedEvaluator();
+			var elementMapGR = elementMap.getOriginalRecord();
+			value = evaluator.evaluateScript(elementMapGR, 'script', vars);
+		} else {
+			if(!gs.nil(elementMap.source_field))
+				value = sourceGR.getValue(elementMap.source_field);
+		}
+		return this.xmlEncoder.encodeXml(value);
+	},
+
+	getNewSource: function(elementMap, sourceGR) {
+		var newSource = new GlideRecord(elementMap.source_table);
+		if ((!gs.nil(elementMap.is_related)) && elementMap.is_related == 1) {
+			newSource.addQuery(elementMap.foreign_key, sourceGR.sys_id);
+		}
+		var encodedQueryFromContext = this.input[elementMap.source_table];
+		newSource.addEncodedQuery(encodedQueryFromContext);
+		if (elementMap.maintain_order) {
+			if (elementMap.order_type == 'ascending')
+				newSource.orderBy(elementMap.order_by);
+			else
+				newSource.orderByDesc(elementMap.order_by);
+		}
+		newSource.query();
+		return newSource;
+	},
+
+	buildContainerStart: function(element) {
+		return '<' + element.getElementName() + '>';
+	},
+
+	buildContainerEnd: function(element) {
+		return '</' + element.getElementName() + '>';
+	},
+
+	type: 'SOAP_PayloadGenerator'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 19:34:29</sys_created_on>
+    <sys_id>09fff876731113008f12d9be2bf6a7dc</sys_id>
+    <sys_mod_count>84</sys_mod_count>
+    <sys_name>SOAP_PayloadGenerator</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_09fff876731113008f12d9be2bf6a7dc</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-02-14 09:12:03</sys_updated_on>
+  </sys_script_include>
+</record_update>

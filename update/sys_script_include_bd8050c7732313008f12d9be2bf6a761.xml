@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.XmlEncoder</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>XmlEncoder</name>
+    <script><![CDATA[var XmlEncoder = Class.create();
+XmlEncoder.prototype = {
+	initialize: function() {
+		this.specialCharToEscapeMap = {
+			'&': '&amp;',
+			'"': '&quot;',
+			'<': '&lt;',
+			'>': '&gt;',
+			'\'': '&apos;'
+		};
+	},
+
+	encodeXml: function(string) {
+		if(typeof string != 'string')
+			return string;
+		var _this = this;
+		return string.replace(/([\&"<>'])/g, function(str, item) {
+			return _this.specialCharToEscapeMap[item];
+		});
+	},
+
+	type: 'XmlEncoder'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-07-31 07:03:52</sys_created_on>
+    <sys_id>bd8050c7732313008f12d9be2bf6a761</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_name>XmlEncoder</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_bd8050c7732313008f12d9be2bf6a761</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2018-07-31 07:06:21</sys_updated_on>
+  </sys_script_include>
+</record_update>

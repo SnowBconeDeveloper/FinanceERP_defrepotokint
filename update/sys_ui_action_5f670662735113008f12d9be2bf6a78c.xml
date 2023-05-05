@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+  <sys_ui_action action="INSERT_OR_UPDATE">
+    <action_name/>
+    <active>true</active>
+    <client>true</client>
+    <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+    <comments/>
+    <condition>gs.hasRole('sn_fcms_intg.integration_user')</condition>
+    <form_action>true</form_action>
+    <form_button>false</form_button>
+    <form_button_v2>false</form_button_v2>
+    <form_context_menu>false</form_context_menu>
+    <form_link>true</form_link>
+    <form_menu_button_v2>false</form_menu_button_v2>
+    <form_style/>
+    <hint/>
+    <isolate_script>false</isolate_script>
+    <list_action>false</list_action>
+    <list_banner_button>false</list_banner_button>
+    <list_button>false</list_button>
+    <list_choice>false</list_choice>
+    <list_context_menu>false</list_context_menu>
+    <list_link>false</list_link>
+    <list_save_with_form_button>false</list_save_with_form_button>
+    <list_style/>
+    <messages/>
+    <name>Generate elements map</name>
+    <onclick>createElements()</onclick>
+    <order>200</order>
+    <script><![CDATA[function createElements() {
+    var serviceMap = g_form.getUniqueValue();
+	var envelope = g_form.getValue('envelope');
+	var serviceType = g_form.getValue('type');
+	var sampleContent = g_form.getValue('sample_content');
+	
+	envelope = envelope.replace(/\$\S*\{.*?}/g, '');
+	var glideWindow = new GlideDialogWindow('sn_fcms_intg_CreateXMLElement');
+	glideWindow.setTitle('<legend>' + getMessage('Create Elements') + '</legend>');
+	glideWindow.setPreference('sysparam_service_map', serviceMap);
+	glideWindow.setPreference('sysparam_envelope', envelope);
+	glideWindow.setPreference('sysparam_service_type', serviceType);
+	glideWindow.setPreference('sysparam_sample_content', sampleContent);
+	glideWindow.setSize(700, 150);
+	glideWindow.render();
+}]]></script>
+    <show_insert>false</show_insert>
+    <show_multiple_update>false</show_multiple_update>
+    <show_query>false</show_query>
+    <show_update>true</show_update>
+    <sys_class_name>sys_ui_action</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 06:03:22</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>5f670662735113008f12d9be2bf6a78c</sys_id>
+    <sys_mod_count>7</sys_mod_count>
+    <sys_name>Generate elements map</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_ui_action_5f670662735113008f12d9be2bf6a78c</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-09-01 07:12:49</sys_updated_on>
+    <table>sn_fcms_intg_service_map</table>
+    <ui11_compatible>true</ui11_compatible>
+    <ui16_compatible>true</ui16_compatible>
+  </sys_ui_action>
+</record_update>

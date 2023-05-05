@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_parkpostresponse" extends="sys_import_set_row" type="collection" label="Park Post Response">
+        <element name="company_code" type="string" label="Company Code" hint="Company Code" max_length="40" />
+        <element name="erp_document_number" type="string" label="ERP Document Number" hint="ERP Document Number" max_length="40" />
+        <element name="errors" type="string" label="Errors" hint="Errors" max_length="4000"/>
+        <element name="fiscal_year" type="string" label="Fiscal Year" hint="Fiscal Year" max_length="40"/>
+        <element name="ic_document_number" type="string" label="IC Document Number" hint="Inter Company Document Number" max_length="40"/>
+        <element name="response_type" type="string" label="Response Type" hint="Response Type" max_length="40">
+        	<choice>
+                <element value="park" sequence="0" label="PARK"/>
+                <element value="post" sequence="1" label="POST"/>
+			</choice>
+		</element>
+        <element name="result" type="string" label="Result" hint="Result" max_length="40">
+        	<choice>
+                <element value="success" sequence="0" label="Success"/>
+                <element value="error" sequence="1" label="Error"/>
+			</choice>
+		</element>
+        <element name="target_sys_id" type="string" label="Target Sys ID" hint="Target Sys ID" max_length="40"/>
+        <element name="target_table" type="string" label="Target Table" hint="Target Table" max_length="40"/>
+        <element name="posting_period" type="string" label="Posting Period" hint="Posting Period" max_length="40"/>        
+    </element>
+</database>

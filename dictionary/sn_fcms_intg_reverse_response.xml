@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_reverse_response" extends="sys_import_set_row" type="collection" label="Reverse Response">
+        <element name="journal_number" type="string" label="Journal Number" hint="Journal Number" max_length="40" />
+        <element name="journal_header_id" type="string" label="Journal Header Id" hint="Journal Header SysId" max_length="32" />
+        <element name="fiscal_year" type="string" label="Fiscal Year" hint="Fiscal Year" max_length="40" />
+        <element name="posting_date" type="string" label="Posting Date" hint="Posting Date" max_length="40"/>
+        <element name="year_reversed" type="string" label="Year Reversed" hint="Year Reversed" max_length="40"/>
+        <element name="posting_period" type="string" label="Posting Period" hint="Posting Period" max_length="40"/>
+        <element name="result" type="string" label="Result" hint="Result" max_length="40">
+        	<choice>
+                <element value="success" sequence="0" label="Success"/>
+                <element value="error" sequence="1" label="Error"/>
+			</choice>
+		</element>
+        <element name="message" type="string" label="Message" hint="Message" max_length="1000"/>
+        <element name="entity_code" type="string" label="Entity Code" hint="Entity Code" max_length="40"/>
+        <element name="erp_document_id" type="string" label="Erp Document #" hint="Erp Document #" max_length="200"/>
+        <element name="ic_document_id" type="string" label="IC Document #" hint="IC Document #" max_length="200"/>        
+        <element name="reversal_document_id" type="string" label="Reversal Document #" hint="Reversal Document #" max_length="200"/>        
+        <element name="je_reversal_code" type="string" label="Reversal Code" hint="Reversal Code" max_length="40"/>        
+        <element name="reversal_reason" type="string" label="Reversal Reason" hint="Reversal Reason" max_length="1000"/>        
+    	<element name="reversal_period" label="Reversal period" type="string" hint="Value that determines in which posting period Journal Entry will be reversed in ERP" />
+    </element>
+</database>

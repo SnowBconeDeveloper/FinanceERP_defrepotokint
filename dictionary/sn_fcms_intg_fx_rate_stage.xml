@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_fx_rate_stage" extends="sys_import_set_row" type="collection" label="FX Rate Stage">
+    		<element name="from_currency" type="string" label="From currency" max_length="40" hint="" />
+        <element name="to_currency" type="string" label="To currency" max_length="40" hint="" />
+        <element name="conversion_date" label="Conversion date" type="string" max_length="40" hint="" />   
+        <element name="exchange_rate" label="Exchange rate" type="float" hint="" />   
+        <element name="span_start" label="Span start" type="string" max_length="40" hint="" />  
+        <element name="span_end" label="Span end" type="string" max_length="40" hint="" /> 
+        <element name="erp_source" label="ERP Source" type="string" max_length="40" hint="ERP Source ID" />
+        <element name="rate_type" label="Rate type" type="string" max_length="40" hint="" />
+    </element>
+</database>

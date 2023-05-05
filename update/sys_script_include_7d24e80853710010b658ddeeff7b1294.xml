@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.netsuite_AuthorizationBuilder</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>netsuite_AuthorizationBuilder</name>
+    <script><![CDATA[var netsuite_AuthorizationBuilder = Class.create();
+netsuite_AuthorizationBuilder.prototype = {
+    initialize: function(credentialAlias) {
+        var gr = new GlideRecord(IntgConstants.NETSUITE_CREDENTIALS);
+        this.credentialRec = gs.nil(gr.get("tag", credentialAlias)) ? '' : gr;
+    },
+
+    buildAuthObject: function() {
+        var outputs = {};
+        outputs.authorization = this.getAuthorizationCode();
+        outputs.deploy = this.getDeployValue();
+        outputs.script = this.getScriptValue();
+        return outputs;
+    },
+
+    getAuthorizationCode: function() {
+        var elements = IntgConstants.NETSUITE_ELEMENTS;
+        var authorization = "NLAuth ";
+        var parameters = [];
+        if (this.credentialRec)
+            elements.forEach(function(element) {
+                if (element == IntgConstants.NLAUTH_SIGNATURE)
+                    parameters.push(element + "=" + this.credentialRec["password"].getDecryptedValue());
+                else if (!gs.nil(this.credentialRec.getValue(element)))
+                    parameters.push(element + "=" + this.credentialRec.getValue(element));
+            }, this);
+        return authorization.concat(parameters.join());
+    },
+
+    getScriptValue: function() {
+        return this.credentialRec.getValue("script");
+    },
+
+    getDeployValue: function() {
+        return this.credentialRec.getValue("deploy");
+    },
+
+    type: 'netsuite_AuthorizationBuilder'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-12-13 13:30:03</sys_created_on>
+    <sys_id>7d24e80853710010b658ddeeff7b1294</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>netsuite_AuthorizationBuilder</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_7d24e80853710010b658ddeeff7b1294</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-12-13 13:30:03</sys_updated_on>
+  </sys_script_include>
+</record_update>

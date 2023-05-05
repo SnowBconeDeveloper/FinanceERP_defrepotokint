@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+  <sys_ui_page action="INSERT_OR_UPDATE">
+    <category>general</category>
+    <client_script><![CDATA[addLoadEvent(
+    function() {
+        setFocus();
+    }
+);
+function setFocus(){
+	$j('#source_service').focus();
+}
+$j("#cancel").click(function() {
+    GlideDialogWindow.get().destroy();
+	return false;
+});
+
+function hideSpinner(){
+	$j('#spinnerModal').modal('hide');
+}
+function showSpinner(){
+	$j('#spinnerModal').modal({backdrop: 'static', keyboard: false});
+}
+
+$j("#Ok").click(function(e) {
+	showSpinner();
+	e.preventDefault();
+    var sourceService = $j("#source_service").val();
+	var targetService = $j("#service_map_id").val();
+	
+	if(!targetService){
+		showError(getMessage("Service is Empty"));
+		return false;
+	}
+	
+	var glideAjax = new GlideAjax("ERPIntegrationAjax");
+    glideAjax.addParam("sysparm_name", "copyElementMap");
+    glideAjax.addParam('sysparm_source_service_map_sys_id', sourceService);
+    glideAjax.addParam('sysparm_target_service_map_sys_id', targetService);
+
+    glideAjax.getXML(handleReponse);
+	return false;
+});
+
+function showError(message){
+	$j("#error").html(message);
+	$j("#error").show();
+	hideSpinner();
+}
+
+function handleReponse(response) {
+    var answer = response.responseXML.documentElement.getAttribute("answer");
+	var returnObject = JSON.parse(answer);
+	if(returnObject.status == 'SUCCESS'){
+		hideSpinner();
+		GlideDialogWindow.get().destroy();
+		window.location.reload();
+	}else
+		showError(returnObject.message);
+	hideSpinner();
+}]]></client_script>
+    <description/>
+    <direct>false</direct>
+    <endpoint>sn_fcms_intg_CopyXMLElement.do</endpoint>
+    <html><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<j:jelly xmlns:j="jelly:core" xmlns:g="glide" xmlns:g2="null" xmlns:j2="null" trim="false">
+   <style>.loader {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  z-index: 1;
+		  width: 70px;
+		  height: 70px;
+		  margin: -75px 0 0 -75px;
+		  border: 10px solid #f3f3f3;
+		  border-radius: 50%;
+		  border-top: 10px solid #3498db;
+		  width: 70px;
+		  height: 70px;
+		  -webkit-animation: spin 1s linear infinite;
+		  animation: spin 1s linear infinite;
+      }
+      @-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+      }
+	  .form-control:focus {
+		  border-color: #278efc;
+		  outline: 0;
+		  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(39, 142, 252, 0.6);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(39, 142, 252, 0.6); }
+		  .form-control::-moz-placeholder {
+		  color: #bdc0c4;
+		  opacity: 1; }
+		  .form-control:-ms-input-placeholder {
+		  color: #bdc0c4; }
+		  .form-control::-webkit-input-placeholder {
+		  color: #bdc0c4; }
+		  .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+		  cursor: not-allowed;
+		  background-color: #e6e8ea;
+		  opacity: 1; 
+	   }	
+	</style>
+	<g:requires name="scripts/lib/jquery_includes.js" includes="true"/>
+    <g:evaluate var="jvar_serviceMap" expression="RP.getWindowProperties().sysparam_service_map" />
+	<g:evaluate var="jvar_envelope" expression="RP.getWindowProperties().sysparam_envelope" />
+	
+   <form class="form-horizontal">
+      <fieldset>
+		 <input type='hidden' name='service_map_id' id = 'service_map_id' value="${JS,HTML:jvar_serviceMap}"/>
+         <div id="error" class="alert alert-danger" style="text-align:center;display:none" role="alert" />
+         <div class="modal fade" id="spinnerModal" role="dialog">
+            <div class="loader" />
+         </div>
+         <!-- Textarea -->
+         <div class="form-group">
+            <label class="col-md-12">${gs.getMessage('This action will copy the elements from the Service and replace the existing Element Map. Do you want to continue?')}</label>
+         </div>
+		  <!-- Source Service Reference -->
+		     <div class="form-group">
+               <label class="col-md-4 control-label" for="schedule">${gs.getMessage('Service')}</label>  
+               <div class="col-md-4">
+                  <g:ui_reference name="source_service" id="source_service" table="sn_fcms_intg_service_map" value="" displayvalue="" class="form-control input-md" required="required" query="sys_id!=${JS,HTML:jvar_serviceMap}" />
+               </div>
+            </div>
+         <!-- Button (Double) -->
+         <div class="form-action" style="display: inline; text-align: center;">
+            <div class="btn-toolbar">
+               <button id="Ok" name="create" class="btn btn-primary">${gs.getMessage('Ok')}</button>
+               <button id="cancel" name="cancel" class="btn btn-default">${gs.getMessage('Cancel')}</button>
+            </div>
+         </div>
+      </fieldset>
+   </form>
+</j:jelly>]]></html>
+    <name>CopyXMLElement</name>
+    <processing_script/>
+    <sys_class_name>sys_ui_page</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-05-08 06:17:28</sys_created_on>
+    <sys_id>da81afb7533113008f12ddeeff7b12ac</sys_id>
+    <sys_mod_count>11</sys_mod_count>
+    <sys_name>CopyXMLElement</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_ui_page_da81afb7533113008f12ddeeff7b12ac</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-03-15 19:12:04</sys_updated_on>
+  </sys_ui_page>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.REST_ElementGenerator</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>REST_ElementGenerator</name>
+    <script><![CDATA[var REST_ElementGenerator = Class.create();
+REST_ElementGenerator.prototype = {
+	
+    initialize: function(object) {
+		if( typeof object == 'string' )
+			object = JSON.parse(object);
+		this.object = object;
+		this.elements = [];
+	},
+	
+	getElements: function() {
+		if(gs.nil(this.object))
+			return {};
+		this.parseObject(this.object, null);
+		return this.elements;
+	},
+	
+	parseObject: function(object, parentSysID) {
+		var keys = Object.keys(object);
+		keys.forEach ( function (key) {
+			var value = object[key];
+			var element = this.createElement(key, value, parentSysID);
+			if ( Array.isArray(value) ) {
+				this.parseObject(value[0], element.sys_id);
+			}else if (typeof value == 'object'){
+				this.parseObject(value, element.sys_id);
+			}
+		}, this);
+	},
+	
+	createElement: function(key, value, parentSysID) {
+		var element = {};
+		element.parent = parentSysID;
+		element.element = key;
+		if ( Array.isArray(value) )
+			element.isArray = true;
+		else
+			element.isArray = false;			
+		if (typeof value == 'object')
+			element.type = 'container';
+		else
+			element.type = 'element';
+		element.sys_id = gs.generateGUID(element);
+		this.elements.push(element);
+		return element;
+	},
+
+	type: 'REST_ElementGenerator'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-17 22:00:04</sys_created_on>
+    <sys_id>c6ecbe35534323008f12ddeeff7b12bf</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_name>REST_ElementGenerator</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_c6ecbe35534323008f12ddeeff7b12bf</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-30 04:30:47</sys_updated_on>
+  </sys_script_include>
+</record_update>

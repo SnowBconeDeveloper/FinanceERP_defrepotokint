@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+  <sys_app_module action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <application display_value="System Import Sets">import_sets</application>
+    <assessment/>
+    <device_type/>
+    <filter/>
+    <hint/>
+    <homepage/>
+    <image/>
+    <link_type>LIST</link_type>
+    <map_page/>
+    <mobile_title>Ledger Account Group Excel Upload Stage</mobile_title>
+    <mobile_view_name>Mobile</mobile_view_name>
+    <name>sn_fcms_intg_gl_group_load_data</name>
+    <order>1100</order>
+    <override_menu_roles>false</override_menu_roles>
+    <query/>
+    <report/>
+    <roles/>
+    <sys_class_name>sys_app_module</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-04-17 14:44:26</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>475e29a453d41010ba07ddeeff7b1230</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>Ledger Account Group Excel Upload Stage</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_app_module_475e29a453d41010ba07ddeeff7b1230</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-04-17 14:44:26</sys_updated_on>
+    <timeline_page/>
+    <title>Ledger Account Group Excel Upload Stage</title>
+    <uncancelable>false</uncancelable>
+    <view_name/>
+    <window_name/>
+  </sys_app_module>
+</record_update>

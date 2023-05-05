@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <admin_overrides>false</admin_overrides>
+    <advanced>true</advanced>
+    <condition/>
+    <description>Allow delete for records in sn_fcms_intg_erp_user_map, if the ACL script returns true.</description>
+    <name>sn_fcms_intg_erp_user_map</name>
+    <operation display_value="delete">delete</operation>
+    <script><![CDATA[answer = false;]]></script>
+    <sys_class_name>sys_security_acl</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-06-16 09:19:40</sys_created_on>
+    <sys_id>bb0181e80b321300ee540e7363673a82</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_name>sn_fcms_intg_erp_user_map</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_security_acl_bb0181e80b321300ee540e7363673a82</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-10-30 10:50:29</sys_updated_on>
+    <type display_value="record">record</type>
+  </sys_security_acl>
+</record_update>

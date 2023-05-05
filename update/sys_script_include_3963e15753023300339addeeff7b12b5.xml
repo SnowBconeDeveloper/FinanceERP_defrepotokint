@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.GroupManager</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>GroupManager</name>
+    <script><![CDATA[var GroupManager = Class.create();
+GroupManager.prototype = {
+	initialize: function() {},
+	
+	getGroupMembersByGroupTypeAndUsers: function(groupTypeId, erpsourceId, userIds){
+		var groupMemberGR = new GlideRecord(IntgConstants.SYS_CLASS_GROUP_MEMBERS);
+		groupMemberGR.addQuery('group.type',groupTypeId);
+		groupMemberGR.addQuery('group.fin_erp', erpsourceId);	
+		groupMemberGR.addQuery('user', 'IN', userIds.join(','));
+		groupMemberGR.query(); 
+		return groupMemberGR;
+	},
+
+	type: 'GroupManager'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-06-20 10:27:26</sys_created_on>
+    <sys_id>3963e15753023300339addeeff7b12b5</sys_id>
+    <sys_mod_count>35</sys_mod_count>
+    <sys_name>GroupManager</sys_name>
+    <sys_package display_value="Financial Close Automation - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Automation - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_3963e15753023300339addeeff7b12b5</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-07-04 12:43:26</sys_updated_on>
+  </sys_script_include>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_extension_instance">
+  <sys_extension_instance action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <order>100</order>
+    <point>sn_fcms_intg.ErpResponse</point>
+    <script_include display_value="ErpResponse">e14ec640c7f33300a3bdb6f827c26037</script_include>
+    <sys_class_name>sys_extension_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-09-05 11:04:22</sys_created_on>
+    <sys_id>a54ec640c7f33300a3bdb6f827c2603a</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>sn_fcms_intg.ErpResponse</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_extension_instance_a54ec640c7f33300a3bdb6f827c2603a</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-09-05 11:04:22</sys_updated_on>
+  </sys_extension_instance>
+</record_update>

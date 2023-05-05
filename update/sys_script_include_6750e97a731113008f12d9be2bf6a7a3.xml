@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ElementMapFilter</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ElementMapFilter</name>
+    <script><![CDATA[var ElementMapFilter = Class.create();
+
+ElementMapFilter.getTopElements = function() {
+	return function(elementMap) {
+		return gs.nil(elementMap.getParent());
+	};
+};
+
+ElementMapFilter.getChildAttributes = function(parent_sys_id) {
+	return function(elementMap) {
+		return elementMap.getParent() == parent_sys_id && elementMap.getType() == 'attribute';
+	};
+};
+
+ElementMapFilter.getChildElementsExcludingAttributes = function(parent_sys_id) {
+	return function(elementMap) {
+		return elementMap.getParent() == parent_sys_id && elementMap.getType() != 'attribute';
+	};
+};
+
+ElementMapFilter.getChildElements = function(parent_sys_id) {
+	return function(elementMap) {
+		return elementMap.getParent() == parent_sys_id;
+	};
+};
+
+ElementMapFilter.getElementBySysID = function(sys_id) {
+	return function(elementMap) {
+		return elementMap.sys_id == sys_id;
+	};
+};
+
+ElementMapFilter.getCtxOnlyElements = function() {
+	return function(elementMap) {
+		return gs.nil(elementMap.source_table);
+	};
+};
+
+ElementMapFilter.getNonCtxElements = function() {
+	return function(elementMap) {
+		return !gs.nil(elementMap.source_table);
+	};
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 21:52:13</sys_created_on>
+    <sys_id>6750e97a731113008f12d9be2bf6a7a3</sys_id>
+    <sys_mod_count>21</sys_mod_count>
+    <sys_name>ElementMapFilter</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_6750e97a731113008f12d9be2bf6a7a3</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-30 01:59:34</sys_updated_on>
+  </sys_script_include>
+</record_update>

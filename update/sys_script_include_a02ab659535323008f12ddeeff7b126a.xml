@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.PayloadGeneratorFactory</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>PayloadGeneratorFactory</name>
+    <script><![CDATA[var PayloadGeneratorFactory = Class.create();
+
+PayloadGeneratorFactory.findGenerator = function(serviceMap /*GlideRecord*/ , input, erpIntgCtxString) {
+	var type = serviceMap.getValue('type');
+	var payloadGenerator = new sn_fcms_intg[type + '_' + 'PayloadGenerator'](serviceMap, input, erpIntgCtxString);
+	return payloadGenerator;
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-28 18:56:54</sys_created_on>
+    <sys_id>a02ab659535323008f12ddeeff7b126a</sys_id>
+    <sys_mod_count>5</sys_mod_count>
+    <sys_name>PayloadGeneratorFactory</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_a02ab659535323008f12ddeeff7b126a</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-28 19:39:49</sys_updated_on>
+  </sys_script_include>
+</record_update>

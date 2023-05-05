@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application/>
+        <code/>
+        <commented_message/>
+        <key>Initiated Purchase Order creation in ERP</key>
+        <language>en</language>
+        <message>Initiated Purchase Order creation in ERP</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-03 06:43:56</sys_created_on>
+        <sys_id>2aae5dce876a25102a18b846dabb3534</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Initiated Purchase Order creation in ERP</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_ui_message_2aae5dce876a25102a18b846dabb3534</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 06:43:56</sys_updated_on>
+    </sys_ui_message>
+</record_update>

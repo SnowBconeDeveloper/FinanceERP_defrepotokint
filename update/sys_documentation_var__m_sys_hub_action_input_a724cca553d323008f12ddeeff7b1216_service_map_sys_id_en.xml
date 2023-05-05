@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_documentation element="service_map_sys_id" label="service_map_sys_id" language="en" table="var__m_sys_hub_action_input_a724cca553d323008f12ddeeff7b1216">
+    <sys_documentation action="INSERT_OR_UPDATE">
+      <element>service_map_sys_id</element>
+      <help/>
+      <hint/>
+      <label>service_map_sys_id</label>
+      <language>en</language>
+      <name>var__m_sys_hub_action_input_a724cca553d323008f12ddeeff7b1216</name>
+      <plural/>
+      <sys_class_name>sys_documentation</sys_class_name>
+      <sys_created_by>admin</sys_created_by>
+      <sys_created_on>2019-01-29 00:09:21</sys_created_on>
+      <sys_id>2324cca553d323008f12ddeeff7b121f</sys_id>
+      <sys_mod_count>0</sys_mod_count>
+      <sys_name>service_map_sys_id</sys_name>
+      <sys_package display_value="Financial Close Automation - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+      <sys_policy/>
+      <sys_scope display_value="Financial Close Automation - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+      <sys_update_name>sys_documentation_var__m_sys_hub_action_input_a724cca553d323008f12ddeeff7b1216_service_map_sys_id_en</sys_update_name>
+      <sys_updated_by>admin</sys_updated_by>
+      <sys_updated_on>2019-01-29 00:09:21</sys_updated_on>
+      <url/>
+      <url_target/>
+    </sys_documentation>
+  </sys_documentation>
+</record_update>

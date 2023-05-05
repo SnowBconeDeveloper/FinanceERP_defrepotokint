@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+    <element name="sn_fcms_intg_erp_role_map" type="collection" label="ERP Role Mapping">
+        <element name="source" type="reference" reference="sn_fcms_intg_source" label="Source" hint="ERP Source" />
+        <element name="role" type="reference" reference="sys_user_role" label="Role" hint="Role"  reference_qual="javascript:new ErpRoleMapper().getRoleReferenceQualifier();" mandatory="true"/>
+        <element name="shadow_roles" label="Shadow roles" type="glide_list" reference="sys_user_role" hint="List of shadow roles user having access" reference_qual="javascript:new ErpRoleMapper().getRoleReferenceQualifier();"  />
+        <element name="erp_role" type="string" label="ERP role" hint="ERP Role" mandatory="true"/>
+        <element name="work_notes" label="Work notes" type="journal_input" max_length="4000" hint="Work notes for erp role" />
+        <element name="inactive" label="Inactive" type="boolean" hint="Set the erp role as inactive" />
+     </element>
+</database>

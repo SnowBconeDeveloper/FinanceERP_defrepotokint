@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_gl_account_stage" extends="sys_import_set_row" type="collection" label="GL Account Stage">
+        <element name="gl_account" type="string" label="GL Account" hint="GL account number" max_length="40" />
+        <element name="legal_entity" type="string" label="Entity" hint="Legal entity sysId" max_length="40" />
+        <element name="short_description" type="string" label="Short description" hint="Short description" max_length="4000" />
+        <element name="erp_source" type="string" label="Erp Source" hint="ERP Source ID" max_length="40"/>
+        
+        <element name="category" type="string" label="Category" hint="GL Account category" max_length="40" />
+        <element name="inactive" type="boolean" label="Inactive" hint="Inactive status"/>
+        
+        <element name="type" type="string" label="Type" hint="GL account type" max_length="40" />
+		<element name="ledger_type" label="Ledger type" type="string" max_length="40" hint="" />
+        
+        <element name="local_currency" type="string" label="Local currency" hint="GL account local currency" max_length="40"/>
+        <element name="account_currency" type="string" label="Account currency" hint="GL account currency" max_length="40"/>
+        <element name="reporting_currency" type="string" label="Reporting currency" hint="GL account reporting currency" max_length="40"/>
+        <element name="alternate_currency" type="string" label="Alternate currency" hint="GL account alternate currency" max_length="40"/>        
+        
+        <element name="open_item_management_flag" type="boolean" label="Open Item Management flag" hint="" />
+        <element name="sub_ledger_account" label="Sub-ledger account" type="string" max_length="40" display="true" hint="" />       
+    </element>
+</database>

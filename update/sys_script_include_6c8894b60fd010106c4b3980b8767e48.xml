@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ERPFetchService</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ERPFetchService</name>
+    <script><![CDATA[var ERPFetchService = Class.create();
+ERPFetchService.prototype = {
+    initialize: function() {
+        this.erpSource = new GlideRecord(IntgConstants.SYS_CLASS_ERP_SOURCE);
+        this.erpSource.addActiveQuery();
+        this.erpSource.query();
+    },
+
+    getErpSourceConfig: function(erpSource) {
+        var sourceConfig = new ErpSourceConfig(erpSource.getValue('sys_id'));
+        if (sourceConfig.isValid())
+            return sourceConfig;
+
+        gs.error(gs.getMessage("ERP Source Configuration is not valid for {0}", [erpSource.getValue('source')]));
+    },
+
+    getStandardReconLedger: function(erpSource) {
+        var standardReconledger = sn_fin.Ledger.getStandardReconLedger(erpSource.getValue('sys_id'));
+        if (standardReconledger.isValid())
+            return standardReconledger;
+
+        gs.error(gs.getMessage("Standard recon ledger not present for {0}", [erpSource.getValue('source')]));
+        gs.eventQueue('sn_fcms_intg.no_standard_ledger_setup', null, erpSource.getValue('sys_id'), RoleManager.getUserSysIdsByRole(IntgConstants.ROLE_RECON_ADMIN));
+    },
+
+    getIntegrationServiceMap: function(service, source) {
+        var serviceMap = new GlideRecord(IntgConstants.SYS_CLASS_SERVICE_MAP);
+        serviceMap.addQuery('service', service);
+        serviceMap.addQuery('source', source);
+        serviceMap.query();
+        return serviceMap;
+    },
+
+    _isObject: function(arg) {
+        return Object.prototype.toString.call(arg) === "[object Object]";
+    },
+
+    /**
+     * @param {Object} dataObj
+     *  subLedger - string
+     *  glAccountIds - string[]
+     *  periodIds - string[]
+     */
+    fetchStandardLedgerBalances: function(dataObj) {
+        if (!this._isObject(dataObj))
+            dataObj = {};
+
+        var erpSource = this.erpSource;
+        while (erpSource.next()) {
+            // check whether valid erp source configuration is available or not
+            var sourceConfig = this.getErpSourceConfig(erpSource);
+            if (!sourceConfig)
+                continue;
+
+            // check whether standard recon ledger is available or not
+            var standardReconledger = this.getStandardReconLedger(erpSource);
+            if (!standardReconledger)
+                continue;
+
+			dataObj.ledgerCode = standardReconledger.getValue('ledger_code');
+            var serviceMap = this.getIntegrationServiceMap(IntgConstants.ERP_SERVICE_FETCH_GL_BALANCE, sourceConfig.getValue('sys_id'));
+
+            while (serviceMap.next()) {
+                var response = GLAccountActions.fetchGLBalance(serviceMap, dataObj);
+				
+                if (response.status != IntgConstants.STATUS_SUCCESS)
+                    gs.error(gs.getMessage("Error in fetching Standard Recon Ledger Balances: STATUS - {0} : ERROR - {1}",
+                        [response.status, response.message]));
+                else {
+                    response = GLAccountActions.fetchActivityForGLBalance(serviceMap, dataObj);
+                    if (response.status != IntgConstants.STATUS_SUCCESS)
+                        gs.error(gs.getMessage("Error in fetching Standard Ledger Balance Activity: STATUS - {0} : ERROR - {1}",
+                            [response.status, response.message]));
+                }
+            }
+        }
+    },
+
+    _fetchCrossLedgerBalancesForPeriod: function(periodId, erpSourceId, sourceConfigId) {
+        var crossLedgerGLAccounts = x_trint_recon.CrossLedgerHelper.getCrossLedgerGLAccounts(erpSourceId, periodId);
+        if (!Object.keys(crossLedgerGLAccounts).length)
+            return;
+
+        var serviceMap = this.getIntegrationServiceMap(IntgConstants.ERP_SERVICE_FETCH_GL_BALANCE, sourceConfigId);
+        while (serviceMap.next()) {
+            Object.keys(crossLedgerGLAccounts).forEach(function(ledger) {
+                var response = GLAccountActions.fetchGLBalance(serviceMap, {
+                    ledgerCode: ledger,
+                    glAccountIds: crossLedgerGLAccounts[ledger],
+                    periodIds: [periodId]
+                });
+                if (response.status != IntgConstants.STATUS_SUCCESS)
+                    gs.error(gs.getMessage("Error in fetching Ledger Balances for {0}: STATUS - {1} : ERROR - {2}", [ledger, response.status, response.message]));
+            });
+        }
+    },
+
+    /**
+     * @param {Object} dataObj
+     *  periodIds - string[]
+     */
+    fetchCrossLedgerBalances: function(dataObj) {
+        if (!this._isObject(dataObj))
+            dataObj = {};
+
+        var periodIds = dataObj.periodIds;
+        if (!periodIds || !Array.isArray(periodIds) || periodIds.length == 0) {
+            periodIds = [];
+            var currPeriod = sn_fin.FiscalPeriod.getCurrentPeriod();
+            if (currPeriod.isValid())
+                periodIds.push(currPeriod.getValue('sys_id'));
+        }
+
+        var erpSource = this.erpSource;
+        while (erpSource.next()) {
+            // check whether valid erp source configuration is available or not
+            var sourceConfig = this.getErpSourceConfig(erpSource);
+            if (!sourceConfig)
+                continue;
+
+            periodIds.forEach(function(periodId) {
+                this._fetchCrossLedgerBalancesForPeriod(periodId, erpSource.getValue('sys_id'), sourceConfig.getValue('sys_id'));
+            }, this);
+        }
+    },
+
+    /**
+     * @param {string[]} accountIds
+     */
+    fetchGLAccounts: function(accountIds) {
+        var erpSource = this.erpSource;
+        while (erpSource.next()) {
+            // check whether valid erp source configuration is available or not
+            var sourceConfig = this.getErpSourceConfig(erpSource);
+            if (!sourceConfig)
+                continue;
+
+            var serviceMap = this.getIntegrationServiceMap(IntgConstants.ERP_SERVICE_FETCH_GL_ACCOUNTS, sourceConfig.getValue('sys_id'));
+            while (serviceMap.next()) {
+                var response = GLAccountActions.doFetch(serviceMap, accountIds);
+                if (response.status != IntgConstants.STATUS_SUCCESS)
+                    gs.error(gs.getMessage("Error in fetching GL Accounts: STATUS - {0} : ERROR - {1}", [response.status, response.message]));
+            }
+        }
+    },
+
+    /**
+     * @param {string} conversionDate
+     */
+    fetchFXRates: function(conversionDate) {
+        conversionDate = conversionDate || new GlideDateTime().getLocalDate().getValue();
+
+        var erpSource = this.erpSource;
+        while (erpSource.next()) {
+            // check whether valid erp source configuration is available or not
+            var sourceConfig = this.getErpSourceConfig(erpSource);
+            if (!sourceConfig)
+                continue;
+
+            var serviceMap = this.getIntegrationServiceMap(IntgConstants.ERP_SERVICE_FETCH_FX_RATE, sourceConfig.getValue('sys_id'));
+            while (serviceMap.next()) {
+                var response = FxRateActions.doFetch(serviceMap, conversionDate);
+                if (response.status != IntgConstants.STATUS_SUCCESS)
+                    gs.error(gs.getMessage("Error in fetching FX Rate: STATUS - {0} : ERROR - {1}", [response.status, response.message]));
+            }
+        }
+    },
+
+    type: 'ERPFetchService'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-04-24 09:29:48</sys_created_on>
+    <sys_id>6c8894b60fd010106c4b3980b8767e48</sys_id>
+    <sys_mod_count>14</sys_mod_count>
+    <sys_name>ERPFetchService</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_6c8894b60fd010106c4b3980b8767e48</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-12 13:23:24</sys_updated_on>
+  </sys_script_include>
+</record_update>

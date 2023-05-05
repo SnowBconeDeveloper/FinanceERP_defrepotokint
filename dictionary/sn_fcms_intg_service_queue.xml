@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_service_queue" type="collection" label="Service Queue">
+        <element name="source" type="reference" reference="sn_fcms_intg_source" label="Source" hint="ERP Source" />
+        <element name="service" type="reference" label="Service" hint="ERP Service" reference="sn_fcms_intg_service_map"/>
+        <element name="context" type="json" label="Context" hint="Context" max_length="5000"/>       
+        <element name="input" type="json" label="Input" hint="Input" max_length="5000"/>       
+        <element name="response" type="json" label="Response" hint="Response" max_length="5000"/> 
+        <element name="service_name" label="Service" type="string" choice="1" 
+        	choice_field="service" choice_table="sn_fcms_intg_service_map" hint="" />      
+ 	</element>
+</database>

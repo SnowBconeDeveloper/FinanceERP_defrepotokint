@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+<sysauto_script action="INSERT_OR_UPDATE">
+<active>true</active>
+<business_calendar display_value=""/>
+<condition/>
+<conditional>false</conditional>
+<entered_time>1970-01-01 00:00:00</entered_time>
+<name>Cleanup recon staging tables</name>
+<run_as/>
+<run_as_tz/>
+<run_dayofmonth>1</run_dayofmonth>
+<run_dayofweek>1</run_dayofweek>
+<run_period/>
+<run_start>2020-01-31 07:50:54</run_start>
+<run_time>1969-12-31 18:30:00</run_time>
+<run_type>daily</run_type>
+<script><![CDATA[var gr = new GlideRecord('sn_fcms_intg_gl_account_stage');
+gr.addEncodedQuery('sys_created_on<=javascript:gs.endOfYesterday()');
+gr.query();
+gr.deleteMultiple();
+
+gr = new GlideRecord('sn_fcms_intg_gl_balance_stage');
+gr.addEncodedQuery('sys_created_on<=javascript:gs.endOfYesterday()');
+gr.query();
+gr.deleteMultiple();
+
+gr = new GlideRecord('sn_fcms_intg_fx_rate_stage');
+gr.addEncodedQuery('sys_created_on<=javascript:gs.endOfYesterday()');
+gr.query();
+gr.deleteMultiple();]]></script>
+<sys_class_name>sysauto_script</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-01-31 07:51:19</sys_created_on>
+<sys_id>ea4d6f6fc7620010a3bdb6f827c26083</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>Cleanup recon staging tables</sys_name>
+<sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+<sys_policy/>
+<sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+<sys_update_name>sysauto_script_ea4d6f6fc7620010a3bdb6f827c26083</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-01-31 07:51:19</sys_updated_on>
+<time_zone/>
+<upgrade_safe>false</upgrade_safe>
+</sysauto_script>
+</record_update>

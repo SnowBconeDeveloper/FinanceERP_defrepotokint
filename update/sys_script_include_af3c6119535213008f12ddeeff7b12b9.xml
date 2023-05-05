@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.UserRoleSynchronizer</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>UserRoleSynchronizer</name>
+    <script><![CDATA[var UserRoleSynchronizer = Class.create();
+
+UserRoleSynchronizer.prototype = {
+	
+	initialize: function(source) {
+		this.erpSource = new ErpSourceConfig(source.getValue('fin_erp'));
+		this.erpRoleMapper = new ErpRoleMapper(this.erpSource);
+	},
+
+	doSync: function() {
+		if (!this.erpSource.isValid())
+			return false;
+
+		var snowRoles = this.erpRoleMapper.getUniqueSnowRoles();
+		for (var index in snowRoles) {
+			var snowRole = snowRoles[index];
+			ErpUserFetcher.fetchUsers(this.erpSource, snowRole);
+		}
+	},
+
+	type: 'UserRoleSynchronizer'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-05-24 23:55:26</sys_created_on>
+    <sys_id>af3c6119535213008f12ddeeff7b12b9</sys_id>
+    <sys_mod_count>50</sys_mod_count>
+    <sys_name>UserRoleSynchronizer</sys_name>
+    <sys_package display_value="Financial Close Automation - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Automation - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_af3c6119535213008f12ddeeff7b12b9</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-04-15 19:04:50</sys_updated_on>
+  </sys_script_include>
+</record_update>

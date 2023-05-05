@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.RoleManager</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>RoleManager</name>
+    <script><![CDATA[var RoleManager = Class.create();
+
+RoleManager.getUserSysIdsByRole = function(role) {
+    var usersGr = new GlideRecord(IntgConstants.SYS_CLASS_SYS_USER_HAS_ROLE);
+    usersGr.addEncodedQuery('role.name=' + role);
+    usersGr.query();
+
+    var users = [];
+    while (usersGr.next())
+        users[users.length] = usersGr.getValue('user');
+    return users;
+};
+
+RoleManager.prototype = {
+
+    initialize: function(sysUserRoleSysIDs, userIDs) {
+        this.sysUserRoleSysIDs = sysUserRoleSysIDs.split(',');
+        this.userIDs = userIDs;
+    },
+
+    doAssignRoles: function() {
+        var snowUsersWithRole = this.findUsersWithRole();
+        var userIDs = this.userIDs;
+        var usersIDsForRoleAssignment = this.userIDs.filter(function(userID) {
+            return (snowUsersWithRole.indexOf(userID) == -1);
+        });
+        this.assignRoleToUsers(usersIDsForRoleAssignment);
+        /*
+        		var userIDsForRoleRevoke = snowUsersWithRole.filter(function(snowUserWithRole) {
+        			return (userIDs.indexOf(snowUserWithRole) == -1);
+        		});
+
+        		this.revokeRoleFromUsers(userIDsForRoleRevoke);
+        */
+    },
+
+    findUsersWithRole: function() {
+        var sysUserHasRole = new GlideRecord(IntgConstants.SYS_CLASS_SYS_USER_HAS_ROLE);
+        sysUserHasRole.addQuery('role', 'IN', this.sysUserRoleSysIDs.join(','));
+        sysUserHasRole.addQuery('state', 'active');
+        sysUserHasRole.addQuery('inherited', false);
+        sysUserHasRole.orderBy('user');
+        sysUserHasRole.query();
+
+        var snowUsersWithRole = [];
+        while (sysUserHasRole.next()) {
+            var user = sysUserHasRole.getValue('user');
+            snowUsersWithRole.push(user);
+        }
+
+        var uniqueUsers = snowUsersWithRole.filter(function(snowUserWithRole, index) {
+            return snowUsersWithRole.indexOf(snowUserWithRole) >= index;
+        });
+
+        return uniqueUsers;
+    },
+
+    assignRoleToUsers: function(userIDs) {
+        var roleIDs = this.sysUserRoleSysIDs;
+        userIDs.forEach(function(userID) {
+            roleIDs.forEach(function(roleID) {
+                if (!roleID.startsWith("x_trint_fcms"))
+                    return;
+                var gr = new GlideRecord(IntgConstants.SYS_CLASS_SYS_USER_HAS_ROLE);
+                gr.addQuery('user', userID);
+                gr.addQuery('role', 'IN', roleID);
+                gr.query();
+                if (gr.next()) {
+                    gr.setValue('state', 'active');
+                    gr.update();
+                } else {
+                    gr.initialize();
+                    gr.user = userID;
+                    gr.role = roleID;
+                    gr.insert();
+                }
+            });
+        });
+    },
+
+    revokeRoleFromUsers: function(userIDs) {
+        var gr = new GlideRecord(IntgConstants.SYS_CLASS_SYS_USER_HAS_ROLE);
+        gr.addQuery('user', 'IN', userIDs.join(','));
+        gr.addQuery('role', 'IN', this.sysUserRoleSysIDs);
+        gr.query();
+        gr.setValue('state', 'pending_approval');
+        gr.updateMultiple();
+    },
+
+    type: 'RoleManager'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-05-25 06:26:40</sys_created_on>
+    <sys_id>9f668b11539213008f12ddeeff7b120f</sys_id>
+    <sys_mod_count>30</sys_mod_count>
+    <sys_name>RoleManager</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_9f668b11539213008f12ddeeff7b120f</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-04-29 04:15:53</sys_updated_on>
+  </sys_script_include>
+</record_update>

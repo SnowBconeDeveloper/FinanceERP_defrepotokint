@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.ElementMap</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>ElementMap</name>
+    <script><![CDATA[var ElementMap = Class.create();
+
+ElementMap.build = function(glideRecord) {
+	var elementMap = new ElementMap();
+	elementMap.advance = glideRecord.getValue('advance');
+	elementMap.condition = glideRecord.getValue('condition');
+	elementMap.element = glideRecord.getValue('element');
+	elementMap.foreign_key = glideRecord.getValue('foreign_key');
+	elementMap.order = glideRecord.getValue('order');
+	elementMap.parent = glideRecord.getValue('parent');
+	elementMap.service_map = glideRecord.getValue('service_map');
+	elementMap.source_field = glideRecord.getValue('source_field');
+	elementMap.source_table = glideRecord.getValue('source_table');
+	elementMap.sys_id = glideRecord.getValue('sys_id');
+	elementMap.type = glideRecord.getValue('type');
+	elementMap.maintain_order = glideRecord.getValue('maintain_order');
+
+	elementMap.is_related = gs.nil (glideRecord.getValue('is_related')) ? false : glideRecord.getValue('is_related');
+
+	if(elementMap.maintain_order){
+		elementMap.order_by = glideRecord.getValue('order_by');
+		elementMap.order_type = glideRecord.getValue('order_type');
+	}	
+	if(elementMap.advance)
+		elementMap.script = glideRecord.getValue('script');
+	return elementMap;
+};
+
+ElementMap.prototype = {
+	initialize: function() {},
+
+	addProperties: function(props) {
+		for (var prop in props)
+			this[prop] = props[prop];
+	},
+
+	getOrder: function() {
+		return this.order;
+	},
+
+	getElementName: function() {
+		return this.element;
+	},
+
+	getOriginalRecord: function() {
+		var gr = new GlideRecord(IntgConstants.SYS_CLASS_SERVICE_ELEMENT_MAP);
+		gr.get(this.sys_id);
+		return gr;
+	},
+
+	isAdvance: function() {
+		if (this.advance == 1 || this.advance == '1')
+			return true;
+		return false;
+	},
+	
+	isContextElement: function() {
+		return gs.nil(this.source_table);
+	},
+
+	getParent: function() {
+		return this.parent;
+	},
+
+	getType: function() {
+		return this.type;
+	},
+
+	type: 'ElementMap'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-04-09 21:28:03</sys_created_on>
+    <sys_id>3cfa993a731113008f12d9be2bf6a731</sys_id>
+    <sys_mod_count>22</sys_mod_count>
+    <sys_name>ElementMap</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_3cfa993a731113008f12d9be2bf6a731</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-30 19:53:32</sys_updated_on>
+  </sys_script_include>
+</record_update>

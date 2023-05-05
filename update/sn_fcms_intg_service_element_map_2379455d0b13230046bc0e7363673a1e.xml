@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>true</advance>
+    <condition/>
+    <element>@xmlns</element>
+    <foreign_key/>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>20</order>
+    <order_by/>
+    <order_type>ascending</order_type>
+    <parent display_value="SNOW_USER_LIST">ad69055d0b13230046bc0e7363673a8d</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+  	// Add your code here
+  	return "http://xmlns.oracle.com/apps/fnd/rest/SNOW_USER_LIST/user_sync"; 
+ })(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Fetch Users">e819815d0b13230046bc0e7363673ab1</service_map>
+    <source_field>[Script]</source_field>
+    <source_table/>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-28 10:34:17</sys_created_on>
+    <sys_id>2379455d0b13230046bc0e7363673a1e</sys_id>
+    <sys_mod_count>4</sys_mod_count>
+    <sys_name>@xmlns</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_2379455d0b13230046bc0e7363673a1e</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-02-07 05:43:21</sys_updated_on>
+    <type>element</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>
