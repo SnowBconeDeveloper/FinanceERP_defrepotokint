@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
-  <sys_script_fix action="INSERT_OR_UPDATE">
-    <active>true</active>
-    <before>false</before>
-    <description/>
-    <flush_cache>false</flush_cache>
-    <name>Migrate ERP to Fin common - FCA INTG</name>
-    <record_for_rollback>false</record_for_rollback>
-    <run_once>true</run_once>
-    <script><![CDATA[runScript();
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Migrate ERP to Fin common - FCA INTG</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[runScript();
 
 function runScript() {
     var oldNewSourceMap = computeOldNewSourceMap();
@@ -78,18 +75,18 @@ function updateSourceReference(glideRecord, fieldName, value) {
 	glideRecord.setValue(fieldName, value);
 	glideRecord.updateMultiple();
 }]]></script>
-    <sys_class_name>sys_script_fix</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-04-12 18:44:15</sys_created_on>
-    <sys_id>8e5f374d737033008f12d9be2bf6a70b</sys_id>
-    <sys_mod_count>8</sys_mod_count>
-    <sys_name>Migrate ERP to Fin common - FCA INTG</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_script_fix_8e5f374d737033008f12d9be2bf6a70b</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-08-16 07:53:58</sys_updated_on>
-    <unloadable>false</unloadable>
-  </sys_script_fix>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-12 18:44:15</sys_created_on>
+        <sys_id>8e5f374d737033008f12d9be2bf6a70b</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Migrate ERP to Fin common - FCA INTG</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_script_fix_8e5f374d737033008f12d9be2bf6a70b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-16 07:53:58</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
 </record_update>

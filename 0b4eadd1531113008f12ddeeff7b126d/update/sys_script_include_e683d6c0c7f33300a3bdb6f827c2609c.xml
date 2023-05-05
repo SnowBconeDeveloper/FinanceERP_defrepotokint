@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
-  <sys_script_include action="INSERT_OR_UPDATE">
-    <access>package_private</access>
-    <active>true</active>
-    <api_name>sn_fcms_intg.GLAccountActions</api_name>
-    <caller_access/>
-    <client_callable>false</client_callable>
-    <description/>
-    <name>GLAccountActions</name>
-    <script><![CDATA[var GLAccountActions = Class.create();
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_fcms_intg.GLAccountActions</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GLAccountActions</name>
+        <script><![CDATA[var GLAccountActions = Class.create();
 
 GLAccountActions.doFetch = function(serviceMapGr, glAccountIds) {
     var result = {};
@@ -132,17 +132,17 @@ GLAccountActions.prototype = {
 
     type: 'GLAccountActions'
 };]]></script>
-    <sys_class_name>sys_script_include</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-09-05 11:27:30</sys_created_on>
-    <sys_id>e683d6c0c7f33300a3bdb6f827c2609c</sys_id>
-    <sys_mod_count>19</sys_mod_count>
-    <sys_name>GLAccountActions</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_script_include_e683d6c0c7f33300a3bdb6f827c2609c</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2020-05-12 13:41:15</sys_updated_on>
-  </sys_script_include>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-05 11:27:30</sys_created_on>
+        <sys_id>e683d6c0c7f33300a3bdb6f827c2609c</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>GLAccountActions</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_script_include_e683d6c0c7f33300a3bdb6f827c2609c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-12 13:41:15</sys_updated_on>
+    </sys_script_include>
 </record_update>

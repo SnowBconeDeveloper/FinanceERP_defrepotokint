@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="wf_element_activity">
-  <wf_element_activity action="INSERT_OR_UPDATE">
-    <access>public</access>
-    <attributes/>
-    <base_provider display_value="SOAP Web Service">1043b11237132100aa40cc9fbe41f11a</base_provider>
-    <category/>
-    <checked_out_by/>
-    <default_height/>
-    <default_width/>
-    <description/>
-    <image>images/heisenberg_icons/workflow_ie8/provider_soap.png</image>
-    <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"soap_message","type":"STRING","mandatory":false},{"name":"input_object","type":"STRING","mandatory":false},{"name":"soap_message_function","type":"STRING","mandatory":false}]}</input_meta>
-    <input_process_script><![CDATA[var soapMessageFunction = new SnowSOAPMessageUtil().getSOAPMessageFunction(activityInput.soap_message_function);
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="">1043b11237132100aa40cc9fbe41f11a</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_soap.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"soap_message","type":"STRING","mandatory":false},{"name":"input_object","type":"STRING","mandatory":false},{"name":"soap_message_function","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script><![CDATA[var soapMessageFunction = new SnowSOAPMessageUtil().getSOAPMessageFunction(activityInput.soap_message_function);
 var useMidServer = gs.nil(soapMessageFunction.use_mid_server) ? false : true;
 var serviceEndPoint = soapMessageFunction.soap_endpoint;
 
@@ -34,56 +33,45 @@ gs.info("ERP WS - payload Inside Pre Processing : " + activityInput.input_object
 gs.info("ERP WS - SOAP Function Name : " + soapMessageFunction.function_name);
 gs.info("ERP WS - useMidServer : " + useMidServer);
 gs.info("ERP WS - serviceEndPoint : " + serviceEndPoint);]]></input_process_script>
-    <input_transform>{"web_service_message":"${activityInput.soap_message}","web_service_message_function":"${activityInput.soap_message_function}","web_service_endpoint":"","parameters":"[]","use_mid_server":"false","midCapabilities":"9df941930a00067818fcb3834b216f8f","time_out":"10","auth_type":"use_existing_credentials","credentials":"","protocol_profile":"","username_profile":""}</input_transform>
-    <local_variables/>
-    <name>ERP SOAP Web Service</name>
-    <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"status","type":"INTEGER"},{"name":"response","type":"STRING"},{"name":"error","type":"STRING"}]}</output_meta>
-    <output_process_script/>
-    <output_transform>[{"toLink":"activityOutput.status","description":"Status Code","to":"status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.status_code","from":"${executionResult.status_code}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.response","description":"Response","to":"response","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.body","from":"${executionResult.body}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.error","description":"Error","to":"error","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.error","from":"${executionResult.error}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
-    <processing_script/>
-    <sample_payloads>{}</sample_payloads>
-    <short_description>ERP SOAP Web Service</short_description>
-    <style/>
-    <sys_class_name>wf_element_activity</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2018-06-01 00:17:47</sys_created_on>
-    <sys_id>d355356f535213008f12ddeeff7b1216</sys_id>
-    <sys_mod_count>3</sys_mod_count>
-    <sys_name>ERP SOAP Web Service</sys_name>
-    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>wf_element_activity_d355356f535213008f12ddeeff7b1216</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2018-06-01 00:18:06</sys_updated_on>
-    <version_container_id>f4900232735113008f12d9be2bf6a7b9</version_container_id>
-  </wf_element_activity>
-  <sys_translated_text action="delete_multiple" query="documentkey=d355356f535213008f12ddeeff7b1216"/>
-  <wf_versionable action="INSERT_OR_UPDATE">
-    <checked_out/>
-    <checked_out_by/>
-    <published>true</published>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2018-06-01 00:17:47</sys_created_on>
-    <sys_id>df55356f535213008f12ddeeff7b1216</sys_id>
-    <sys_mod_count>1</sys_mod_count>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2018-06-01 00:18:06</sys_updated_on>
-    <valid_from>2018-06-01 00:18:06</valid_from>
-    <valid_to/>
-    <version>1</version>
-    <version_container_id>f4900232735113008f12d9be2bf6a7b9</version_container_id>
-    <wf_element_definition display_value="ERP SOAP Web Service">d355356f535213008f12ddeeff7b1216</wf_element_definition>
-  </wf_versionable>
-  <wf_versionable action="update_multiple" query="version_container_id=f4900232735113008f12d9be2bf6a7b9^sys_id!=df55356f535213008f12ddeeff7b1216^version&lt;4">
-    <published>false</published>
-  </wf_versionable>
-  <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=f4900232735113008f12d9be2bf6a7b9">
-    <new_activity_definition>d355356f535213008f12ddeeff7b1216</new_activity_definition>
-    <out_of_date>true</out_of_date>
-    <notes>There is a newer version of this activity.
-
-To update the activity, check out the workflow, select the activity, right click
-and select 'Update activity' to use the latest version, then publish the workflow</notes>
-  </wf_activity>
+        <input_transform>{"web_service_message":"${activityInput.soap_message}","web_service_message_function":"${activityInput.soap_message_function}","web_service_endpoint":"","parameters":"[]","use_mid_server":"false","midCapabilities":"9df941930a00067818fcb3834b216f8f","time_out":"10","auth_type":"use_existing_credentials","credentials":"","protocol_profile":"","username_profile":""}</input_transform>
+        <local_variables/>
+        <name>ERP SOAP Web Service</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"status","type":"INTEGER"},{"name":"response","type":"STRING"},{"name":"error","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform>[{"toLink":"activityOutput.status","description":"Status Code","to":"status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.status_code","from":"${executionResult.status_code}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.response","description":"Response","to":"response","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.body","from":"${executionResult.body}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.error","description":"Error","to":"error","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.error","from":"${executionResult.error}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{}</sample_payloads>
+        <short_description>ERP SOAP Web Service</short_description>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-01 00:17:47</sys_created_on>
+        <sys_id>d355356f535213008f12ddeeff7b1216</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ERP SOAP Web Service</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>wf_element_activity_d355356f535213008f12ddeeff7b1216</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-01 00:18:06</sys_updated_on>
+        <version_container_id>f4900232735113008f12d9be2bf6a7b9</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=d355356f535213008f12ddeeff7b1216"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-01 00:17:47</sys_created_on>
+        <sys_id>df55356f535213008f12ddeeff7b1216</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-01 00:18:06</sys_updated_on>
+        <valid_from>2018-06-01 00:18:06</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>f4900232735113008f12d9be2bf6a7b9</version_container_id>
+        <wf_element_definition display_value="ERP SOAP Web Service">d355356f535213008f12ddeeff7b1216</wf_element_definition>
+    </wf_versionable>
 </record_update>

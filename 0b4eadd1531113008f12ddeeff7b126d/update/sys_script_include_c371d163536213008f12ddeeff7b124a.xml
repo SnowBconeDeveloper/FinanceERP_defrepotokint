@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
-  <sys_script_include action="INSERT_OR_UPDATE">
-    <access>public</access>
-    <active>true</active>
-    <api_name>sn_fcms_intg.ErpUserMapper</api_name>
-    <caller_access/>
-    <client_callable>false</client_callable>
-    <description/>
-    <name>ErpUserMapper</name>
-    <script><![CDATA[var ErpUserMapper = Class.create();
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>sn_fcms_intg.ErpUserMapper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ErpUserMapper</name>
+        <script><![CDATA[var ErpUserMapper = Class.create();
 ErpUserMapper.prototype = {
 
     initialize: function(erpSourceConfig) {
@@ -240,17 +240,17 @@ ErpUserMapper.prototype = {
 
     type: 'ErpUserMapper'
 };]]></script>
-    <sys_class_name>sys_script_include</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2018-06-13 07:57:39</sys_created_on>
-    <sys_id>c371d163536213008f12ddeeff7b124a</sys_id>
-    <sys_mod_count>43</sys_mod_count>
-    <sys_name>ErpUserMapper</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_script_include_c371d163536213008f12ddeeff7b124a</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-12-05 14:07:15</sys_updated_on>
-  </sys_script_include>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-13 07:57:39</sys_created_on>
+        <sys_id>c371d163536213008f12ddeeff7b124a</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>ErpUserMapper</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_script_include_c371d163536213008f12ddeeff7b124a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-05 14:07:15</sys_updated_on>
+    </sys_script_include>
 </record_update>

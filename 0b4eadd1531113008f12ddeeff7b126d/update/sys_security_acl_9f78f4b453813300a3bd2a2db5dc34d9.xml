@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
-  <sys_security_acl action="INSERT_OR_UPDATE">
-    <active>true</active>
-    <admin_overrides>false</admin_overrides>
-    <advanced>true</advanced>
-    <condition/>
-    <description>Allow write for roles in sn_fcms_intg_erp_user_map, for users with role sn_fcms_intg.integration_user, and if the ACL script returns true.</description>
-    <name>sn_fcms_intg_erp_user_map.roles</name>
-    <operation display_value="write">write</operation>
-    <script><![CDATA[answer = current.source.erp == 'oracle';]]></script>
-    <sys_class_name>sys_security_acl</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-04-24 02:02:58</sys_created_on>
-    <sys_id>9f78f4b453813300a3bd2a2db5dc34d9</sys_id>
-    <sys_mod_count>4</sys_mod_count>
-    <sys_name>sn_fcms_intg_erp_user_map.roles</sys_name>
-    <sys_package display_value="Financial Close Automation - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Financial Close Automation - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_security_acl_9f78f4b453813300a3bd2a2db5dc34d9</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-04-24 02:13:12</sys_updated_on>
-    <type display_value="record">record</type>
-  </sys_security_acl>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow write for roles in sn_fcms_intg_erp_user_map, for users with role sn_fcms_intg.integration_user, and if the ACL script returns true.</description>
+        <name>sn_fcms_intg_erp_user_map.roles</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[answer = current.source.erp == 'oracle';]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-24 02:02:58</sys_created_on>
+        <sys_id>9f78f4b453813300a3bd2a2db5dc34d9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sn_fcms_intg_erp_user_map.roles</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_security_acl_9f78f4b453813300a3bd2a2db5dc34d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-24 02:13:12</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
 </record_update>

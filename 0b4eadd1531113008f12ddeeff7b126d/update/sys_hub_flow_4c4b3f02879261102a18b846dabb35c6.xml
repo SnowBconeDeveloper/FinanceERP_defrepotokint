@@ -17,7 +17,6 @@
         <name>Return Goods Receipt in ERP</name>
         <natlang/>
         <outputs/>
-        <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -139,7 +138,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -186,7 +184,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -222,7 +219,6 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -269,7 +265,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -305,7 +300,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -352,7 +346,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -454,7 +447,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -501,7 +493,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -600,7 +591,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -647,7 +637,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -760,7 +749,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -807,7 +795,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -894,7 +881,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -941,7 +927,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -952,10 +937,9 @@
         <display_text/>
         <flow display_value="Return Goods Receipt in ERP">4c4b3f02879261102a18b846dabb35c6</flow>
         <inputs/>
-        <inputs/>
         <order>4</order>
         <parent_ui_id>e87ab109-6ce6-46e1-bf00-8905c5afdb0f</parent_ui_id>
-        <subflow display_value="Create Goods Receipt in SAP ECC">3ae6002c87b751102a18b846dabb3539</subflow>
+        <subflow display_value="">3ae6002c87b751102a18b846dabb3539</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -980,7 +964,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-01 14:12:28</sys_updated_on>
         <value>1</value>
-        <variable display_value="IsReturn">fe68f452879661102a18b846dabb35a3</variable>
+        <variable display_value="">fe68f452879661102a18b846dabb35a3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_sub_flow_instance</document>
@@ -996,43 +980,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">a04b7f02879261102a18b846dabb3541</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=e44b7f02879261102a18b846dabb3540"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_alias</field>
-        <id>e44b7f02879261102a18b846dabb3540</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-21 07:52:16</sys_created_on>
-        <sys_id>b44b7f02879261102a18b846dabb354c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 07:52:16</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_3ae6002c87b751102a18b846dabb3539</table>
-        <value>{{9a10b5cf-fc7c-4afd-b926-fdc3d54201a5.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>isreturn</field>
-        <id>e44b7f02879261102a18b846dabb3540</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-05-01 14:12:28</sys_created_on>
-        <sys_id>232270ad87a2a110c04eb259dabb3520</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 14:12:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_3ae6002c87b751102a18b846dabb3539</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_goods_receipt</field>
-        <id>e44b7f02879261102a18b846dabb3540</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-21 07:52:16</sys_created_on>
-        <sys_id>784b7f02879261102a18b846dabb354c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 07:52:16</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_3ae6002c87b751102a18b846dabb3539</table>
-        <value>{{Created or Updated_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_e44b7f02879261102a18b846dabb3540^id=e44b7f02879261102a18b846dabb3540"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=e44b7f02879261102a18b846dabb3540^sys_idNOT INa04b7f02879261102a18b846dabb3541"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1066,7 +1013,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1113,7 +1059,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1226,7 +1171,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1273,7 +1217,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1284,10 +1227,9 @@
         <display_text/>
         <flow display_value="Return Goods Receipt in ERP">4c4b3f02879261102a18b846dabb35c6</flow>
         <inputs/>
-        <inputs/>
         <order>10</order>
         <parent_ui_id>a8be13de-a291-4cbf-ac31-338ff00bd531</parent_ui_id>
-        <subflow display_value="Create Goods Receipt in SAP S4Hana">7cfbaf9387712d50c04eb259dabb351b</subflow>
+        <subflow display_value="">7cfbaf9387712d50c04eb259dabb351b</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -1312,7 +1254,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-05-01 14:12:28</sys_updated_on>
         <value>1</value>
-        <variable display_value="IsReturn">ce5359de87d661102a18b846dabb3503</variable>
+        <variable display_value="">ce5359de87d661102a18b846dabb3503</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_sub_flow_instance</document>
@@ -1328,43 +1270,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">b44b7f02879261102a18b846dabb358e</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=f84b7f02879261102a18b846dabb358d"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_alias</field>
-        <id>f84b7f02879261102a18b846dabb358d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-21 07:52:17</sys_created_on>
-        <sys_id>494b7f02879261102a18b846dabb3599</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 07:52:17</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_7cfbaf9387712d50c04eb259dabb351b</table>
-        <value>{{9a10b5cf-fc7c-4afd-b926-fdc3d54201a5.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>isreturn</field>
-        <id>f84b7f02879261102a18b846dabb358d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-05-01 14:12:28</sys_created_on>
-        <sys_id>ab2270ad87a2a110c04eb259dabb3559</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 14:12:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_7cfbaf9387712d50c04eb259dabb351b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_goods_receipt</field>
-        <id>f84b7f02879261102a18b846dabb358d</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-21 07:52:17</sys_created_on>
-        <sys_id>0d4b7f02879261102a18b846dabb3599</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-21 07:52:17</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_7cfbaf9387712d50c04eb259dabb351b</table>
-        <value>{{Created or Updated_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_f84b7f02879261102a18b846dabb358d^id=f84b7f02879261102a18b846dabb358d"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=f84b7f02879261102a18b846dabb358d^sys_idNOT INb44b7f02879261102a18b846dabb358e"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1398,7 +1303,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1445,7 +1349,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1916,7 +1819,6 @@
         <element>status</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1949,11 +1851,11 @@
         <sys_created_on>2023-04-21 07:52:14</sys_created_on>
         <sys_id>404b3f02879261102a18b846dabb35d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Status</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_hub_flow_variable_404b3f02879261102a18b846dabb35d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-21 07:52:14</sys_updated_on>
         <table_reference>false</table_reference>
@@ -1963,7 +1865,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1999,7 +1900,6 @@
         <element>error_message</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2032,11 +1932,11 @@
         <sys_created_on>2023-04-21 07:52:13</sys_created_on>
         <sys_id>4c4b3f02879261102a18b846dabb35cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Error Message</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_hub_flow_variable_4c4b3f02879261102a18b846dabb35cf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-21 07:52:13</sys_updated_on>
         <table_reference>false</table_reference>
@@ -2046,7 +1946,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2069,7 +1968,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4c4b3f02879261102a18b846dabb35c6_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-21 07:52:14</sys_updated_on>
         <url/>
@@ -2092,7 +1991,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4c4b3f02879261102a18b846dabb35c6_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-21 07:52:14</sys_updated_on>
         <url/>
@@ -2115,7 +2014,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_4c4b3f02879261102a18b846dabb35c6_changed_fields_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2023-04-21 07:52:14</sys_updated_on>
         <url/>

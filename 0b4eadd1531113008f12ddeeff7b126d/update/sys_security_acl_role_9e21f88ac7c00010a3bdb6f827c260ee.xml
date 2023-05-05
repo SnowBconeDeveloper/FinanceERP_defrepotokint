@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
-  <sys_security_acl_role action="INSERT_OR_UPDATE">
-    <sys_class_name>sys_security_acl_role</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-09-23 19:41:13</sys_created_on>
-    <sys_id>9e21f88ac7c00010a3bdb6f827c260ee</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>sn_fcms_intg_gl_balance_stage.sn_fcms_intg.integration_user</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_security_acl display_value="sn_fcms_intg_gl_balance_stage">96113c8ac7c00010a3bdb6f827c2605c</sys_security_acl>
-    <sys_update_name>sys_security_acl_role_9e21f88ac7c00010a3bdb6f827c260ee</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-09-23 19:41:13</sys_updated_on>
-    <sys_user_role display_value="sn_fcms_intg.integration_user" name="sn_fcms_intg.integration_user">55d70219531113008f12ddeeff7b127f</sys_user_role>
-    <transaction_id/>
-  </sys_security_acl_role>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-23 19:41:13</sys_created_on>
+        <sys_id>9e21f88ac7c00010a3bdb6f827c260ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_fcms_intg_gl_balance_stage.sn_fcms_intg.integration_user</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_security_acl display_value="sn_fcms_intg_gl_balance_stage">96113c8ac7c00010a3bdb6f827c2605c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_9e21f88ac7c00010a3bdb6f827c260ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-23 19:41:13</sys_updated_on>
+        <sys_user_role display_value="sn_fcms_intg.integration_user" name="sn_fcms_intg.integration_user">55d70219531113008f12ddeeff7b127f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
 </record_update>

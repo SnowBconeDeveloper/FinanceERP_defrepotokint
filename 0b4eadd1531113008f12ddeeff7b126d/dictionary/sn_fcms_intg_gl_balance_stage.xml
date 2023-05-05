@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<database>
-	<element name="sn_fcms_intg_gl_balance_stage" extends="sys_import_set_row" type="collection" label="GL Balance Stage" >
-		<element name="gl_account" label="GL account" type="string" max_length="40" hint="GL account number" />
-		<element name="legal_entity" type="string" label="Entity" hint="Legal entity ID" max_length="40" />
-        <element name="erp_source" type="string" label="Erp Source" hint="ERP Source ID" max_length="40"/>
-		<element name="end_date" label="End date" type="glide_date" hint="Date from which the accounting period will be derived" />
-		<element name="ledger_code" type="string" label="Ledger code" hint="Ledger code" max_length="40"/>
-
-		<element name="gl_bal_local_curr" label="GL balance (Local curr.)" type="float" hint="GL Balance amount in local currency" />
-		<element name="gl_bal_reporting_curr" label="GL balance (Reporting curr.)" type="float" hint="GL Balance amount in Reporting currency" />
-		<element name="gl_bal_alternative_curr" label="GL balance (Alternative curr.)" type="float" hint="GL Balance amount in alternate currency" />
-		<element name="gl_bal_account_curr" label="GL balance (Account curr.)" type="float" hint="GL Balance amount in account currency" />
-		<element name="sub_ledger_account" label="Sub-ledger account" type="string" max_length="40" display="true" hint="Sub ledger account type" />
-		<element name="current_period_activity" label="Activity in current Period" type="boolean" hint="" />
-	</element>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="GL Balance Stage" max_length="40" name="sn_fcms_intg_gl_balance_stage" type="collection">
+        <element label="Activity in current Period" max_length="40" name="current_period_activity" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Erp Source" max_length="40" name="erp_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="GL account" max_length="40" name="gl_account" type="string"/>
+        <element label="GL balance (Account curr.)" max_length="40" name="gl_bal_account_curr" type="float"/>
+        <element label="GL balance (Alternative curr.)" max_length="40" name="gl_bal_alternative_curr" type="float"/>
+        <element label="GL balance (Local curr.)" max_length="40" name="gl_bal_local_curr" type="float"/>
+        <element label="GL balance (Reporting curr.)" max_length="40" name="gl_bal_reporting_curr" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Ledger code" max_length="40" name="ledger_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Entity" max_length="40" name="legal_entity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Sub-ledger account" max_length="40" name="sub_ledger_account" type="string"/>
+    </element>
 </database>

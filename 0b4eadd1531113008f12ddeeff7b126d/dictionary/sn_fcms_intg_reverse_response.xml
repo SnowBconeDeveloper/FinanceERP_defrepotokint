@@ -1,25 +1,24 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<database>
-    <element name="sn_fcms_intg_reverse_response" extends="sys_import_set_row" type="collection" label="Reverse Response">
-        <element name="journal_number" type="string" label="Journal Number" hint="Journal Number" max_length="40" />
-        <element name="journal_header_id" type="string" label="Journal Header Id" hint="Journal Header SysId" max_length="32" />
-        <element name="fiscal_year" type="string" label="Fiscal Year" hint="Fiscal Year" max_length="40" />
-        <element name="posting_date" type="string" label="Posting Date" hint="Posting Date" max_length="40"/>
-        <element name="year_reversed" type="string" label="Year Reversed" hint="Year Reversed" max_length="40"/>
-        <element name="posting_period" type="string" label="Posting Period" hint="Posting Period" max_length="40"/>
-        <element name="result" type="string" label="Result" hint="Result" max_length="40">
-        	<choice>
-                <element value="success" sequence="0" label="Success"/>
-                <element value="error" sequence="1" label="Error"/>
-			</choice>
-		</element>
-        <element name="message" type="string" label="Message" hint="Message" max_length="1000"/>
-        <element name="entity_code" type="string" label="Entity Code" hint="Entity Code" max_length="40"/>
-        <element name="erp_document_id" type="string" label="Erp Document #" hint="Erp Document #" max_length="200"/>
-        <element name="ic_document_id" type="string" label="IC Document #" hint="IC Document #" max_length="200"/>        
-        <element name="reversal_document_id" type="string" label="Reversal Document #" hint="Reversal Document #" max_length="200"/>        
-        <element name="je_reversal_code" type="string" label="Reversal Code" hint="Reversal Code" max_length="40"/>        
-        <element name="reversal_reason" type="string" label="Reversal Reason" hint="Reversal Reason" max_length="1000"/>        
-    	<element name="reversal_period" label="Reversal period" type="string" hint="Value that determines in which posting period Journal Entry will be reversed in ERP" />
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Reverse Response" max_length="40" name="sn_fcms_intg_reverse_response" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Entity Code" max_length="40" name="entity_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Erp Document #" max_length="200" name="erp_document_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Fiscal Year" max_length="40" name="fiscal_year" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IC Document #" max_length="200" name="ic_document_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reversal Code" max_length="40" name="je_reversal_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Journal Header Id" max_length="32" name="journal_header_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Journal Number" max_length="40" name="journal_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Message" max_length="1000" name="message" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Posting Date" max_length="40" name="posting_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Posting Period" max_length="40" name="posting_period" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Result" max_length="40" name="result" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Success" sequence="0" value="success"/>
+                <element inactive_on_update="false" label="Error" sequence="1" value="error"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Reversal Document #" max_length="200" name="reversal_document_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reversal period" max_length="40" name="reversal_period" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Reversal Reason" max_length="1000" name="reversal_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Year Reversed" max_length="40" name="year_reversed" type="string"/>
     </element>
 </database>

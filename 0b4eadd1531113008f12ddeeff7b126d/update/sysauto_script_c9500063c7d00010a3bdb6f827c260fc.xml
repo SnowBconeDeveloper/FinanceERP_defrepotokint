@@ -1,34 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sysauto_script">
-<sysauto_script action="INSERT_OR_UPDATE">
-<active>false</active>
-<business_calendar display_value=""/>
-<condition/>
-<conditional>false</conditional>
-<entered_time/>
-<name>Pull Ledger Balances- Standard</name>
-<run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
-<run_as_tz/>
-<run_dayofmonth>1</run_dayofmonth>
-<run_dayofweek>1</run_dayofweek>
-<run_period/>
-<run_start>2019-10-10 18:14:20</run_start>
-<run_time>1969-12-31 18:30:00</run_time>
-<run_type>daily</run_type>
-<script><![CDATA[new ERPFetchService().fetchStandardLedgerBalances();]]></script>
-<sys_class_name>sysauto_script</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-10-10 18:15:01</sys_created_on>
-<sys_id>c9500063c7d00010a3bdb6f827c260fc</sys_id>
-<sys_mod_count>9</sys_mod_count>
-<sys_name>Pull Ledger Balances- Standard</sys_name>
-<sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-<sys_policy/>
-<sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-<sys_update_name>sysauto_script_c9500063c7d00010a3bdb6f827c260fc</sys_update_name>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2020-04-24 10:50:06</sys_updated_on>
-<time_zone/>
-<upgrade_safe>false</upgrade_safe>
-</sysauto_script>
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Pull Ledger Balances- Standard</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-10-10 18:14:20</run_start>
+        <run_time>1969-12-31 18:30:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[new ERPFetchService().fetchStandardLedgerBalances();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-10 18:15:01</sys_created_on>
+        <sys_id>c9500063c7d00010a3bdb6f827c260fc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Pull Ledger Balances- Standard</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sysauto_script_c9500063c7d00010a3bdb6f827c260fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:50:06</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
 </record_update>

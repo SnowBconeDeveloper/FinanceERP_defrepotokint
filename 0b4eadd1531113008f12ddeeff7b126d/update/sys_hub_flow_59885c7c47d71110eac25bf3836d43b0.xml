@@ -6,6 +6,7 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
         <copied_from>d7a4a7c4872e19102a18b846dabb3501</copied_from>
         <copied_from_name>Post Purchase Order to ERP</copied_from_name>
         <description/>
@@ -15,7 +16,6 @@
         <name>Create Purchase Order in ERP</name>
         <natlang/>
         <outputs/>
-        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>c509eda587eaa1102a18b846dabb355c</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_59885c7c47d71110eac25bf3836d43b0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:32:33</sys_updated_on>
+        <sys_updated_on>2023-05-05 10:02:16</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59885c7c47d71110eac25bf3836d43b0"/>
@@ -186,7 +186,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -233,7 +232,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -269,7 +267,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -316,7 +313,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -330,6 +326,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>5</order>
@@ -418,6 +415,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment>Update Purchase Order Line Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>25</order>
@@ -506,6 +504,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment>Update Purchase Order Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>2</order>
@@ -594,6 +593,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>3</order>
@@ -656,6 +656,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment>Update Purchase Order Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>22</order>
@@ -744,6 +745,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment>Look for all the Purchase Order Lines that is related to the input Purchase Order</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <order>23</order>
@@ -934,7 +936,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -981,7 +982,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1094,7 +1094,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1141,7 +1140,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1240,7 +1238,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1287,7 +1284,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1311,10 +1307,9 @@
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
-        <inputs/>
         <order>16</order>
         <parent_ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</parent_ui_id>
-        <subflow display_value="Create Purchase Order in SAP S4Hana">057d582887ee59102a18b846dabb35db</subflow>
+        <subflow display_value="">057d582887ee59102a18b846dabb35db</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -1341,31 +1336,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">0398dc7c47d71110eac25bf3836d4382</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=4798dc7c47d71110eac25bf3836d4381"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_credential_alias</field>
-        <id>4798dc7c47d71110eac25bf3836d4381</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-30 16:36:53</sys_created_on>
-        <sys_id>0f50ac9b8775e950c04eb259dabb35e6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:36:53</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_po</field>
-        <id>4798dc7c47d71110eac25bf3836d4381</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-18 15:01:15</sys_created_on>
-        <sys_id>4398dc7c47d71110eac25bf3836d438d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:11:04</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_4798dc7c47d71110eac25bf3836d4381^id=4798dc7c47d71110eac25bf3836d4381"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=4798dc7c47d71110eac25bf3836d4381^sys_idNOT IN0398dc7c47d71110eac25bf3836d4382"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1399,7 +1369,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1446,7 +1415,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1533,7 +1501,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1580,7 +1547,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1679,7 +1645,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1726,7 +1691,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1750,10 +1714,9 @@
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
-        <inputs/>
         <order>10</order>
         <parent_ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</parent_ui_id>
-        <subflow display_value="Create Purchase Order in SAP ECC">34c66f48872e19102a18b846dabb35de</subflow>
+        <subflow display_value="">34c66f48872e19102a18b846dabb35de</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -1780,31 +1743,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">8398dc7c47d71110eac25bf3836d4375</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c798dc7c47d71110eac25bf3836d4374"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_credential_alias</field>
-        <id>c798dc7c47d71110eac25bf3836d4374</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-30 11:02:40</sys_created_on>
-        <sys_id>1d155d6c872791102a18b846dabb353c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-30 11:02:40</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_po</field>
-        <id>c798dc7c47d71110eac25bf3836d4374</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-18 15:01:15</sys_created_on>
-        <sys_id>c398dc7c47d71110eac25bf3836d4380</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:11:04</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c798dc7c47d71110eac25bf3836d4374^id=c798dc7c47d71110eac25bf3836d4374"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c798dc7c47d71110eac25bf3836d4374^sys_idNOT IN8398dc7c47d71110eac25bf3836d4375"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1838,7 +1776,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1885,7 +1822,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2644,7 +2580,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_59885c7c47d71110eac25bf3836d43b0_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-11-18 15:00:53</sys_updated_on>
         <url/>
@@ -2667,7 +2603,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_59885c7c47d71110eac25bf3836d43b0_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-11-18 15:00:53</sys_updated_on>
         <url/>
@@ -2872,7 +2808,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2919,7 +2854,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2955,7 +2889,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3002,7 +2935,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3016,6 +2948,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment>Update Purchase Order Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>2</order>
@@ -3104,6 +3037,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>5</order>
@@ -3192,6 +3126,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment>Update Purchase Order Line Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>25</order>
@@ -3280,6 +3215,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>3</order>
@@ -3342,6 +3278,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment>Update Purchase Order Status to Ordered</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>22</order>
@@ -3430,6 +3367,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment>Look for all the Purchase Order Lines that is related to the input Purchase Order</comment>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <order>23</order>
@@ -3492,10 +3430,9 @@
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
-        <inputs/>
         <order>10</order>
         <parent_ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</parent_ui_id>
-        <subflow display_value="Create Purchase Order in SAP ECC">34c66f48872e19102a18b846dabb35de</subflow>
+        <subflow display_value="">34c66f48872e19102a18b846dabb35de</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -3522,31 +3459,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">d8d1e830479b1110eac25bf3836d43c5</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=10d1e830479b1110eac25bf3836d43c5"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_credential_alias</field>
-        <id>10d1e830479b1110eac25bf3836d43c5</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-12-01 05:49:34</sys_created_on>
-        <sys_id>600751348727d1102a18b846dabb359f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-01 05:49:34</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_po</field>
-        <id>10d1e830479b1110eac25bf3836d43c5</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-18 15:41:29</sys_created_on>
-        <sys_id>d0d1e830479b1110eac25bf3836d43dd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:11:43</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_10d1e830479b1110eac25bf3836d43c5^id=10d1e830479b1110eac25bf3836d43c5"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=10d1e830479b1110eac25bf3836d43c5^sys_idNOT INd8d1e830479b1110eac25bf3836d43c5"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -3580,7 +3492,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3627,7 +3538,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3726,7 +3636,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3773,7 +3682,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3899,7 +3807,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3946,7 +3853,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3957,10 +3863,9 @@
         <display_text/>
         <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
-        <inputs/>
         <order>16</order>
         <parent_ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</parent_ui_id>
-        <subflow display_value="Create Purchase Order in SAP S4Hana">057d582887ee59102a18b846dabb35db</subflow>
+        <subflow display_value="">057d582887ee59102a18b846dabb35db</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -3987,31 +3892,6 @@
         <value>1</value>
         <variable display_value="wait_for_completion">10d1e830479b1110eac25bf3836d43df</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=54d1e830479b1110eac25bf3836d43de"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_credential_alias</field>
-        <id>54d1e830479b1110eac25bf3836d43de</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-30 16:37:00</sys_created_on>
-        <sys_id>206060db8775e950c04eb259dabb3529</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:00</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>psm_po</field>
-        <id>54d1e830479b1110eac25bf3836d43de</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-18 15:41:29</sys_created_on>
-        <sys_id>60d1e830479b1110eac25bf3836d43ea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:11:43</sys_updated_on>
-        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
-        <value>{{Created_1.current}}</value>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_54d1e830479b1110eac25bf3836d43de^id=54d1e830479b1110eac25bf3836d43de"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=54d1e830479b1110eac25bf3836d43de^sys_idNOT IN10d1e830479b1110eac25bf3836d43df"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -4045,7 +3925,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4092,7 +3971,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -4179,7 +4057,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4226,7 +4103,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -4325,7 +4201,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4372,7 +4247,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -4498,7 +4372,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4545,7 +4418,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -5304,7 +5176,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-11-18 15:41:07</sys_updated_on>
         <url/>
@@ -5327,7 +5199,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-11-18 15:41:08</sys_updated_on>
         <url/>
@@ -5336,9 +5208,8 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_cfb1a830479b1110eac25bf3836d432a"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cfb1a830479b1110eac25bf3836d432a"/>
-    <sys_hub_flow action="UPDATE">
+    <sys_hub_flow action="update">
         <sys_id>59885c7c47d71110eac25bf3836d43b0</sys_id>
         <latest_snapshot>cfb1a830479b1110eac25bf3836d432a</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

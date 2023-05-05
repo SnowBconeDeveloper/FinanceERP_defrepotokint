@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ic_document_id" label="IC Document #" language="en" table="sn_fcms_intg_reverse_response">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ic_document_id</element>
+            <help/>
+            <hint/>
+            <label>IC Document #</label>
+            <language>en</language>
+            <name>sn_fcms_intg_reverse_response</name>
+            <plural>IC Document #s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:57</sys_created_on>
+            <sys_id>23bed47ac3e2611012049e0f050131bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IC Document #</sys_name>
+            <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+            <sys_update_name>sys_documentation_sn_fcms_intg_reverse_response_ic_document_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

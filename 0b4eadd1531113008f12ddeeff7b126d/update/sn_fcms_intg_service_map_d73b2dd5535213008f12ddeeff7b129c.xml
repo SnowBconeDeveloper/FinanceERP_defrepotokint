@@ -1,46 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sn_fcms_intg_service_map">
-<sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
-<base_url/>
-<credential_alias/>
-<envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <urn:_-now_-fcmsGetUsersByRole>
-         <!--Optional:-->
-         <ItRole>
-            <!--Zero or more repetitions:-->
-            <item>
-               <AgrName></AgrName>
-            </item>
-         </ItRole>
-      </urn:_-now_-fcmsGetUsersByRole>
-   </soapenv:Body>
-</soapenv:Envelope>]]></envelope>
-<http_method>post</http_method>
-<name>Fetch Users</name>
-<resource_path/>
-<sample_content/>
-<service>fcms_fetch_users</service>
-<soap_action>soap_action</soap_action>
-<soap_endpoint>/endpoint/</soap_endpoint>
-<soap_message display_value=""/>
-<soap_message_function display_value=""/>
-<soap_variable>PAYLOAD</soap_variable>
-<source display_value="SAP Example">b8277d61738213008f12d9be2bf6a784</source>
-<sys_class_name>sn_fcms_intg_service_map</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-05-24 23:47:35</sys_created_on>
-<sys_id>d73b2dd5535213008f12ddeeff7b129c</sys_id>
-<sys_mod_count>18</sys_mod_count>
-<sys_name>Fetch Users</sys_name>
-<sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-<sys_policy/>
-<sys_scope display_value="Financial Close Management System - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-<sys_update_name>sn_fcms_intg_service_map_d73b2dd5535213008f12ddeeff7b129c</sys_update_name>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-02-27 05:46:33</sys_updated_on>
-<type>SOAP</type>
-<use_mid>false</use_mid>
-</sn_fcms_intg_service_map>
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_map">
+    <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
+        <allow_empty>false</allow_empty>
+        <base_url/>
+        <credential_alias/>
+        <envelope>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;urn:_-now_-fcmsGetUsersByRole&gt;
+         &lt;!--Optional:--&gt;
+         &lt;ItRole&gt;
+            &lt;!--Zero or more repetitions:--&gt;
+            &lt;item&gt;
+               &lt;AgrName&gt;&lt;/AgrName&gt;
+            &lt;/item&gt;
+         &lt;/ItRole&gt;
+      &lt;/urn:_-now_-fcmsGetUsersByRole&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</envelope>
+        <http_method>post</http_method>
+        <name>Fetch Users</name>
+        <resource_path/>
+        <sample_content/>
+        <service>fcms_fetch_users</service>
+        <soap_action>soap_action</soap_action>
+        <soap_endpoint>/endpoint/</soap_endpoint>
+        <soap_message/>
+        <soap_message_function/>
+        <soap_variable>PAYLOAD</soap_variable>
+        <source display_value="SAP ECC">b8277d61738213008f12d9be2bf6a784</source>
+        <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-24 23:47:35</sys_created_on>
+        <sys_id>d73b2dd5535213008f12ddeeff7b129c</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Fetch Users</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sn_fcms_intg_service_map_d73b2dd5535213008f12ddeeff7b129c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-27 05:46:33</sys_updated_on>
+        <type>SOAP</type>
+        <use_mid>false</use_mid>
+    </sn_fcms_intg_service_map>
 </record_update>

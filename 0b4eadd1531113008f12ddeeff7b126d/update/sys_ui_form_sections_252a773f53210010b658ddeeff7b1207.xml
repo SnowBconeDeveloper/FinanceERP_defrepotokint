@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_ui_form_sections form_id="252a773f53210010b658ddeeff7b1207" sys_domain="global" table="sn_fcms_intg_netsuite_credentials" version="3">
-    <sys_ui_form_section action="INSERT_OR_UPDATE">
-      <position>0</position>
-      <sys_created_by>admin</sys_created_by>
-      <sys_created_on>2019-12-13 10:22:46</sys_created_on>
-      <sys_domain>global</sys_domain>
-      <sys_domain_path>/</sys_domain_path>
-      <sys_id>2d2a773f53210010b658ddeeff7b1209</sys_id>
-      <sys_mod_count>0</sys_mod_count>
-      <sys_overrides/>
-      <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
-      <sys_ui_section caption="NULL" display_value="" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">68e8f7fb53210010b658ddeeff7b1255</sys_ui_section>
-      <sys_updated_by>admin</sys_updated_by>
-      <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
-    </sys_ui_form_section>
-    <sys_ui_form_section action="INSERT_OR_UPDATE">
-      <position>1</position>
-      <sys_created_by>admin</sys_created_by>
-      <sys_created_on>2019-12-13 10:22:46</sys_created_on>
-      <sys_domain>global</sys_domain>
-      <sys_domain_path>/</sys_domain_path>
-      <sys_id>e52a773f53210010b658ddeeff7b120a</sys_id>
-      <sys_mod_count>0</sys_mod_count>
-      <sys_overrides/>
-      <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
-      <sys_ui_section caption="Authorization" display_value="Authorization" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">e92a773f53210010b658ddeeff7b1205</sys_ui_section>
-      <sys_updated_by>admin</sys_updated_by>
-      <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
-    </sys_ui_form_section>
-    <sys_ui_form_section action="INSERT_OR_UPDATE">
-      <position>2</position>
-      <sys_created_by>admin</sys_created_by>
-      <sys_created_on>2019-12-13 10:22:46</sys_created_on>
-      <sys_domain>global</sys_domain>
-      <sys_domain_path>/</sys_domain_path>
-      <sys_id>a92a773f53210010b658ddeeff7b120d</sys_id>
-      <sys_mod_count>0</sys_mod_count>
-      <sys_overrides/>
-      <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
-      <sys_ui_section caption="Query Parameters" display_value="Query Parameters" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1206</sys_ui_section>
-      <sys_updated_by>admin</sys_updated_by>
-      <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
-    </sys_ui_form_section>
-    <sys_ui_form action="INSERT_OR_UPDATE">
-      <name>sn_fcms_intg_netsuite_credentials</name>
-      <roles/>
-      <sys_class_name>sys_ui_form</sys_class_name>
-      <sys_created_by>admin</sys_created_by>
-      <sys_created_on>2019-12-13 10:22:46</sys_created_on>
-      <sys_domain>global</sys_domain>
-      <sys_domain_path>/</sys_domain_path>
-      <sys_id>252a773f53210010b658ddeeff7b1207</sys_id>
-      <sys_mod_count>0</sys_mod_count>
-      <sys_name>sn_fcms_intg_netsuite_credentials</sys_name>
-      <sys_overrides/>
-      <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-      <sys_policy/>
-      <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-      <sys_update_name>sys_ui_form_sections_252a773f53210010b658ddeeff7b1207</sys_update_name>
-      <sys_updated_by>admin</sys_updated_by>
-      <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
-      <sys_user/>
-      <view display_value="Default view" name="NULL">Default view</view>
-      <view_name/>
-    </sys_ui_form>
-  </sys_ui_form_sections>
+    <sys_ui_form_sections form_id="252a773f53210010b658ddeeff7b1207" sys_domain="global" table="sn_fcms_intg_netsuite_credentials" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d2a773f53210010b658ddeeff7b1209</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">68e8f7fb53210010b658ddeeff7b1255</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e52a773f53210010b658ddeeff7b120a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
+            <sys_ui_section caption="Authorization" display_value="Authorization" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">e92a773f53210010b658ddeeff7b1205</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a92a773f53210010b658ddeeff7b120d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_fcms_intg_netsuite_credentials" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1207</sys_ui_form>
+            <sys_ui_section caption="Query Parameters" display_value="Query Parameters" name="sn_fcms_intg_netsuite_credentials" sys_domain="global" view="Default view">252a773f53210010b658ddeeff7b1206</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_fcms_intg_netsuite_credentials</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-12-13 10:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>252a773f53210010b658ddeeff7b1207</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_fcms_intg_netsuite_credentials</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_252a773f53210010b658ddeeff7b1207</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-12-13 10:22:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
 </record_update>

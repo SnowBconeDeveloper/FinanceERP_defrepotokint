@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_map">
-  <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
-    <base_url>/base_url/</base_url>
-    <credential_alias/>
-    <envelope/>
-    <http_method>post</http_method>
-    <name>Reverse Documents</name>
-    <resource_path>/resource_path/</resource_path>
-    <sample_content/>
-    <service>fcms_document_reverse</service>
-    <soap_action/>
-    <soap_endpoint/>
-    <soap_message/>
-    <soap_message_function/>
-    <soap_variable/>
-    <source display_value="NetSuite">9d5bf6450b233300aa712f4193673a3f</source>
-    <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-10-25 13:23:18</sys_created_on>
-    <sys_id>c05dc8d85330001041aaddeeff7b1217</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>Reverse Documents</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sn_fcms_intg_service_map_c05dc8d85330001041aaddeeff7b1217</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-10-25 13:23:18</sys_updated_on>
-    <type>REST</type>
-    <use_mid>false</use_mid>
-  </sn_fcms_intg_service_map>
+    <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
+        <allow_empty>false</allow_empty>
+        <base_url>/base_url/</base_url>
+        <credential_alias/>
+        <envelope/>
+        <http_method>post</http_method>
+        <name>Reverse Documents</name>
+        <resource_path>/resource_path/</resource_path>
+        <sample_content/>
+        <service>fcms_document_reverse</service>
+        <soap_action/>
+        <soap_endpoint/>
+        <soap_message/>
+        <soap_message_function/>
+        <soap_variable/>
+        <source display_value="NetSuite">9d5bf6450b233300aa712f4193673a3f</source>
+        <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-25 13:23:18</sys_created_on>
+        <sys_id>c05dc8d85330001041aaddeeff7b1217</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reverse Documents</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sn_fcms_intg_service_map_c05dc8d85330001041aaddeeff7b1217</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-25 13:23:18</sys_updated_on>
+        <type>REST</type>
+        <use_mid>false</use_mid>
+    </sn_fcms_intg_service_map>
 </record_update>

@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_map">
-  <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
-    <allow_empty>true</allow_empty>
-    <base_url/>
-    <credential_alias/>
-    <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
-   <soapenv:Header/>
-   <soapenv:Body>
-      <urn:_-now_-finGetGlMaster>
-         <ChartOfAccounts></ChartOfAccounts>
-         <GlAccountType>
-            <item>
-               <Ktoks></Ktoks>
-            </item>
-			 <item>
-               <Ktoks></Ktoks>
-            </item>
-         </GlAccountType>
-         <GlAccounts>
-            <item>
-               <Companycode></Companycode>
-               <Glaccount></Glaccount>
-            </item>
-         </GlAccounts>
-         <Source></Source>
-      </urn:_-now_-finGetGlMaster>
-   </soapenv:Body>
-</soapenv:Envelope>]]></envelope>
-    <http_method>post</http_method>
-    <name>Fetch GL Accounts</name>
-    <resource_path/>
-    <sample_content/>
-    <service>fin_fetch_gl_accounts</service>
-    <soap_action>soap_action</soap_action>
-    <soap_endpoint>/endpoint/</soap_endpoint>
-    <soap_message/>
-    <soap_message_function/>
-    <soap_variable/>
-    <source display_value="SAP ECC">b8277d61738213008f12d9be2bf6a784</source>
-    <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-08-27 20:17:25</sys_created_on>
-    <sys_id>37d57d19c7633300a3bdb6f827c2604c</sys_id>
-    <sys_mod_count>4</sys_mod_count>
-    <sys_name>Fetch GL Accounts</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sn_fcms_intg_service_map_37d57d19c7633300a3bdb6f827c2604c</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-08-30 02:07:56</sys_updated_on>
-    <type>SOAP</type>
-    <use_mid>false</use_mid>
-  </sn_fcms_intg_service_map>
+    <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
+        <allow_empty>true</allow_empty>
+        <base_url/>
+        <credential_alias/>
+        <envelope>&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;urn:_-now_-finGetGlMaster&gt;
+         &lt;ChartOfAccounts&gt;&lt;/ChartOfAccounts&gt;
+         &lt;GlAccountType&gt;
+            &lt;item&gt;
+               &lt;Ktoks&gt;&lt;/Ktoks&gt;
+            &lt;/item&gt;
+			 &lt;item&gt;
+               &lt;Ktoks&gt;&lt;/Ktoks&gt;
+            &lt;/item&gt;
+         &lt;/GlAccountType&gt;
+         &lt;GlAccounts&gt;
+            &lt;item&gt;
+               &lt;Companycode&gt;&lt;/Companycode&gt;
+               &lt;Glaccount&gt;&lt;/Glaccount&gt;
+            &lt;/item&gt;
+         &lt;/GlAccounts&gt;
+         &lt;Source&gt;&lt;/Source&gt;
+      &lt;/urn:_-now_-finGetGlMaster&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</envelope>
+        <http_method>post</http_method>
+        <name>Fetch GL Accounts</name>
+        <resource_path/>
+        <sample_content/>
+        <service>fin_fetch_gl_accounts</service>
+        <soap_action>soap_action</soap_action>
+        <soap_endpoint>/endpoint/</soap_endpoint>
+        <soap_message/>
+        <soap_message_function/>
+        <soap_variable/>
+        <source display_value="SAP ECC">b8277d61738213008f12d9be2bf6a784</source>
+        <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-27 20:17:25</sys_created_on>
+        <sys_id>37d57d19c7633300a3bdb6f827c2604c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Fetch GL Accounts</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sn_fcms_intg_service_map_37d57d19c7633300a3bdb6f827c2604c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-30 02:07:56</sys_updated_on>
+        <type>SOAP</type>
+        <use_mid>false</use_mid>
+    </sn_fcms_intg_service_map>
 </record_update>

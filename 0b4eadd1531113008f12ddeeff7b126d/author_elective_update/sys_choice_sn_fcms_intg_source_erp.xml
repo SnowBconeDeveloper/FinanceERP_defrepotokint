@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="erp" table="sn_fcms_intg_source" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>erp</element>
+            <name>sn_fcms_intg_source</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:55</sys_created_on>
+            <sys_id>cbbed47ac3e2611012049e0f05013154</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>erp</sys_name>
+            <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+            <sys_update_name>sys_choice_sn_fcms_intg_source_erp</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:55</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>erp</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SAP</label>
+            <language>en</language>
+            <name>sn_fcms_intg_source</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47bed47ac3e2611012049e0f05013154</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:55</sys_updated_on>
+            <value>sap</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>erp</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oracle</label>
+            <language>en</language>
+            <name>sn_fcms_intg_source</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87bed47ac3e2611012049e0f05013154</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:55</sys_updated_on>
+            <value>oracle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>erp</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NetSuite</label>
+            <language>en</language>
+            <name>sn_fcms_intg_source</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c7bed47ac3e2611012049e0f05013154</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:55</sys_updated_on>
+            <value>netsuite</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<database>
-    <element name="sn_fcms_intg_fx_rate_stage" extends="sys_import_set_row" type="collection" label="FX Rate Stage">
-    		<element name="from_currency" type="string" label="From currency" max_length="40" hint="" />
-        <element name="to_currency" type="string" label="To currency" max_length="40" hint="" />
-        <element name="conversion_date" label="Conversion date" type="string" max_length="40" hint="" />   
-        <element name="exchange_rate" label="Exchange rate" type="float" hint="" />   
-        <element name="span_start" label="Span start" type="string" max_length="40" hint="" />  
-        <element name="span_end" label="Span end" type="string" max_length="40" hint="" /> 
-        <element name="erp_source" label="ERP Source" type="string" max_length="40" hint="ERP Source ID" />
-        <element name="rate_type" label="Rate type" type="string" max_length="40" hint="" />
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="FX Rate Stage" max_length="40" name="sn_fcms_intg_fx_rate_stage" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Conversion date" max_length="40" name="conversion_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ERP Source" max_length="40" name="erp_source" type="string"/>
+        <element label="Exchange rate" max_length="40" name="exchange_rate" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="From currency" max_length="40" name="from_currency" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Rate type" max_length="40" name="rate_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Span end" max_length="40" name="span_end" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Span start" max_length="40" name="span_start" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="To currency" max_length="40" name="to_currency" type="string"/>
     </element>
 </database>

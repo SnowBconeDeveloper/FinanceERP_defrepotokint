@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
-  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
-    <advance>false</advance>
-    <condition/>
-    <element>XXSNOW_ROLE_REC</element>
-    <foreign_key>sys_created_on</foreign_key>
-    <is_related>false</is_related>
-    <maintain_order>false</maintain_order>
-    <order>120</order>
-    <order_by>sys_created_on</order_by>
-    <order_type>ascending</order_type>
-    <parent display_value="P_ROLE">fbea8d5d0b13230046bc0e7363673a25</parent>
-    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+    <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+        <advance>false</advance>
+        <condition/>
+        <element>XXSNOW_ROLE_REC</element>
+        <foreign_key>sys_created_on</foreign_key>
+        <is_related>false</is_related>
+        <maintain_order>false</maintain_order>
+        <order>120</order>
+        <order_by>sys_created_on</order_by>
+        <order_type>ascending</order_type>
+        <parent display_value="P_ROLE">fbea8d5d0b13230046bc0e7363673a25</parent>
+        <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
   	// Add your code here
   	return ""; 
  })(current,erpIntgCtxString);]]></script>
-    <service_map display_value="Fetch Users">e819815d0b13230046bc0e7363673ab1</service_map>
-    <source_field>sys_created_on</source_field>
-    <source_table>sn_fcms_intg_erp_role_map</source_table>
-    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-02-11 14:35:51</sys_created_on>
-    <sys_id>40170e710b63230046bc0e7363673acb</sys_id>
-    <sys_mod_count>3</sys_mod_count>
-    <sys_name>XXSNOW_ROLE_REC</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sn_fcms_intg_service_element_map_40170e710b63230046bc0e7363673acb</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-02-11 15:01:21</sys_updated_on>
-    <type>container-array</type>
-  </sn_fcms_intg_service_element_map>
+        <service_map display_value="Fetch Users">e819815d0b13230046bc0e7363673ab1</service_map>
+        <source_field>sys_created_on</source_field>
+        <source_table>sn_fcms_intg_erp_role_map</source_table>
+        <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-11 14:35:51</sys_created_on>
+        <sys_id>40170e710b63230046bc0e7363673acb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>XXSNOW_ROLE_REC</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sn_fcms_intg_service_element_map_40170e710b63230046bc0e7363673acb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 15:01:21</sys_updated_on>
+        <type>container-array</type>
+    </sn_fcms_intg_service_element_map>
 </record_update>

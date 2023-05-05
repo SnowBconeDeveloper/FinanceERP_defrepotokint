@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="order_type" table="sn_fcms_intg_service_element_map" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>order_type</element>
+            <name>sn_fcms_intg_service_element_map</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:56</sys_created_on>
+            <sys_id>e7bed47ac3e2611012049e0f05013186</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>order_type</sys_name>
+            <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+            <sys_update_name>sys_choice_sn_fcms_intg_service_element_map_order_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:56</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>order_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ascending</label>
+            <language>en</language>
+            <name>sn_fcms_intg_service_element_map</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3bed47ac3e2611012049e0f05013186</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:56</sys_updated_on>
+            <value>ascending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>order_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Descending</label>
+            <language>en</language>
+            <name>sn_fcms_intg_service_element_map</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-05 09:59:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3bed47ac3e2611012049e0f05013186</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-05 09:59:56</sys_updated_on>
+            <value>descending</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

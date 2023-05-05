@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
-  <sys_transform_script action="INSERT_OR_UPDATE">
-    <active>true</active>
-    <map display_value="Load Sub Ledger Balance">438326cec7040010a3bdb6f827c26085</map>
-    <order>100</order>
-    <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Load Sub Ledger Balance">438326cec7040010a3bdb6f827c26085</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
 
 	if(gs.nil(source.getValue('sub_ledger_account'))) {
 		ignore = true;
@@ -27,18 +27,18 @@
 	}
 
 })(source, map, log, target);]]></script>
-    <sys_class_name>sys_transform_script</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-09-26 12:00:43</sys_created_on>
-    <sys_id>10646a3ac7400010a3bdb6f827c26060</sys_id>
-    <sys_mod_count>2</sys_mod_count>
-    <sys_name>onBefore</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_transform_script_10646a3ac7400010a3bdb6f827c26060</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-10-10 18:10:46</sys_updated_on>
-    <when>onBefore</when>
-  </sys_transform_script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-26 12:00:43</sys_created_on>
+        <sys_id>10646a3ac7400010a3bdb6f827c26060</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_transform_script_10646a3ac7400010a3bdb6f827c26060</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-10 18:10:46</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
 </record_update>

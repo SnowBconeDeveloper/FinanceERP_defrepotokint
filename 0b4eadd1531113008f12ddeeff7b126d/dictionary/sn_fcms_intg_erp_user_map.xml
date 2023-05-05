@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="ERP User Mapping" max_length="40" name="sn_fcms_intg_erp_user_map" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="ERP user ID" max_length="200" name="erp_user_id" type="string"/>
+        <element label="Inactive" max_length="40" name="inactive" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Roles" max_length="1024" name="roles" reference="sys_user_role" reference_qual="javascript:new ErpRoleMapper().getRoleReferenceQualifier();" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Source" max_length="32" name="source" reference="sn_fcms_intg_source" type="reference"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="source"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
-  <sys_script_include action="INSERT_OR_UPDATE">
-    <access>package_private</access>
-    <active>true</active>
-    <api_name>sn_fcms_intg.AuthorizationBuilder</api_name>
-    <caller_access/>
-    <client_callable>false</client_callable>
-    <description/>
-    <name>AuthorizationBuilder</name>
-    <script><![CDATA[var AuthorizationBuilder = Class.create();
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_fcms_intg.AuthorizationBuilder</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AuthorizationBuilder</name>
+        <script><![CDATA[var AuthorizationBuilder = Class.create();
 AuthorizationBuilder.prototype = {
     initialize: function() {
     },
@@ -18,17 +18,17 @@ AuthorizationBuilder.prototype = {
 
     type: 'AuthorizationBuilder'
 };]]></script>
-    <sys_class_name>sys_script_include</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-08-27 10:33:17</sys_created_on>
-    <sys_id>a2bee3490b633300aa712f4193673adb</sys_id>
-    <sys_mod_count>2</sys_mod_count>
-    <sys_name>AuthorizationBuilder</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_script_include_a2bee3490b633300aa712f4193673adb</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-08-28 07:44:39</sys_updated_on>
-  </sys_script_include>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-27 10:33:17</sys_created_on>
+        <sys_id>a2bee3490b633300aa712f4193673adb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AuthorizationBuilder</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_script_include_a2bee3490b633300aa712f4193673adb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-28 07:44:39</sys_updated_on>
+    </sys_script_include>
 </record_update>

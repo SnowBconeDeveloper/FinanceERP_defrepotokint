@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
-  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
-    <advance>false</advance>
-    <condition/>
-    <element>urn:_-now_-reconBalances</element>
-    <foreign_key/>
-    <is_related>false</is_related>
-    <maintain_order>false</maintain_order>
-    <order>60</order>
-    <order_by/>
-    <order_type>ascending</order_type>
-    <parent display_value="soapenv:Body">560085e8c7c00010a3bdb6f827c26010</parent>
-    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {  	// Add your code here  	return "";  })(current,erpIntgCtxString);]]></script>
-    <service_map display_value="Fetch GL Balance">8d1fbca8c7c00010a3bdb6f827c2605a</service_map>
-    <source_field/>
-    <source_table/>
-    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-09-19 04:55:12</sys_created_on>
-    <sys_id>960085e8c7c00010a3bdb6f827c26010</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>urn:_-now_-reconBalances</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sn_fcms_intg_service_element_map_960085e8c7c00010a3bdb6f827c26010</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-09-19 04:55:12</sys_updated_on>
-    <type>container</type>
-  </sn_fcms_intg_service_element_map>
+    <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+        <advance>false</advance>
+        <condition/>
+        <element>urn:_-now_-reconBalances</element>
+        <foreign_key/>
+        <is_related>false</is_related>
+        <maintain_order>false</maintain_order>
+        <order>60</order>
+        <order_by/>
+        <order_type>ascending</order_type>
+        <parent display_value="soapenv:Body">560085e8c7c00010a3bdb6f827c26010</parent>
+        <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {  	// Add your code here  	return "";  })(current,erpIntgCtxString);]]></script>
+        <service_map display_value="Fetch GL Balance">8d1fbca8c7c00010a3bdb6f827c2605a</service_map>
+        <source_field/>
+        <source_table/>
+        <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-19 04:55:12</sys_created_on>
+        <sys_id>960085e8c7c00010a3bdb6f827c26010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>urn:_-now_-reconBalances</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sn_fcms_intg_service_element_map_960085e8c7c00010a3bdb6f827c26010</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-19 04:55:12</sys_updated_on>
+        <type>container</type>
+    </sn_fcms_intg_service_element_map>
 </record_update>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
-  <sys_script_include action="INSERT_OR_UPDATE">
-    <access>package_private</access>
-    <active>true</active>
-    <api_name>sn_fcms_intg.FxRateActions</api_name>
-    <caller_access/>
-    <client_callable>false</client_callable>
-    <description/>
-    <name>FxRateActions</name>
-    <script><![CDATA[var FxRateActions = Class.create();
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_fcms_intg.FxRateActions</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>FxRateActions</name>
+        <script><![CDATA[var FxRateActions = Class.create();
 
 // conversionDate in yyyy-MM-dd format 
 FxRateActions.doFetch = function(serviceMapGr, conversionDate) {
@@ -33,17 +33,17 @@ FxRateActions.prototype = {
 
     type: 'FxRateActions'
 };]]></script>
-    <sys_class_name>sys_script_include</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2019-11-01 02:56:32</sys_created_on>
-    <sys_id>2fdcb912c7b00010a3bdb6f827c26084</sys_id>
-    <sys_mod_count>4</sys_mod_count>
-    <sys_name>FxRateActions</sys_name>
-    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-    <sys_update_name>sys_script_include_2fdcb912c7b00010a3bdb6f827c26084</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2019-11-01 03:49:34</sys_updated_on>
-  </sys_script_include>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-11-01 02:56:32</sys_created_on>
+        <sys_id>2fdcb912c7b00010a3bdb6f827c26084</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>FxRateActions</sys_name>
+        <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+        <sys_update_name>sys_script_include_2fdcb912c7b00010a3bdb6f827c26084</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-11-01 03:49:34</sys_updated_on>
+    </sys_script_include>
 </record_update>

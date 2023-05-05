@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<database>
-    <element name="sn_fcms_intg_service_queue" type="collection" label="Service Queue">
-        <element name="source" type="reference" reference="sn_fcms_intg_source" label="Source" hint="ERP Source" />
-        <element name="service" type="reference" label="Service" hint="ERP Service" reference="sn_fcms_intg_service_map"/>
-        <element name="context" type="json" label="Context" hint="Context" max_length="5000"/>       
-        <element name="input" type="json" label="Input" hint="Input" max_length="5000"/>       
-        <element name="response" type="json" label="Response" hint="Response" max_length="5000"/> 
-        <element name="service_name" label="Service" type="string" choice="1" 
-        	choice_field="service" choice_table="sn_fcms_intg_service_map" hint="" />      
- 	</element>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Service Queue" max_length="40" name="sn_fcms_intg_service_queue" type="collection">
+        <element label="Context" max_length="5000" name="context" type="json"/>
+        <element label="Input" max_length="5000" name="input" type="json"/>
+        <element label="Response" max_length="5000" name="response" type="json"/>
+        <element attributes="encode_utf8=false" label="Service" max_length="32" name="service" reference="sn_fcms_intg_service_map" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="service" choice_table="sn_fcms_intg_service_map" label="Service" max_length="40" name="service_name" type="string">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Source" max_length="32" name="source" reference="sn_fcms_intg_source" type="reference"/>
+        <index name="index">
+            <element name="service"/>
+        </index>
+        <index name="index2">
+            <element name="source"/>
+        </index>
+    </element>
 </database>

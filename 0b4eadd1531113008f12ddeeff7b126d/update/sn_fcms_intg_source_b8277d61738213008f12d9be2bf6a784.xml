@@ -2,7 +2,7 @@
     <sn_fcms_intg_source action="INSERT_OR_UPDATE">
         <connection/>
         <erp>sap</erp>
-        <fin_erp display_value="SAP ECC">e51eb054c3e66910f827dff905013125</fin_erp>
+        <fin_erp display_value="">e51eb054c3e66910f827dff905013125</fin_erp>
         <inactive>false</inactive>
         <name>SAP ECC</name>
         <sys_class_name>sn_fcms_intg_source</sys_class_name>
