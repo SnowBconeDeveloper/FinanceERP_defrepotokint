@@ -8,15 +8,15 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;&lt;span dir="ltr"&gt;Creates a service goods receipt in target ERP.&lt;/span&gt;&lt;/p&gt;</description>
         <internal_name>create_service_goods_receipt_in_erp</internal_name>
-        <label_cache>[{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias.sys_scope","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sys_alias","column_name":"sys_scope"},{"name":"5933cd9e-2533-40b1-bdf5-8a2ae2757da2.context","label":"14 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"93719e98-949d-4c55-8996-feeefbf919f1.context","label":"12 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2803d6a2-352d-4d48-b7cc-cd50f3f01020"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4825cd54-7958-4853-83f7-082247699e40"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4e95fe8e-78e7-4dd0-9f65-9bc294b7d13c"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9e06b60-df3a-4844-b205-3d205dd5d407"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50079e9e-489d-401d-ba6b-a9062d57882d.context","label":"8 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"bffdb332-a61d-4e76-961d-6392d39f76ab.context","label":"6 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message","label":"4 - Create service goods receipt in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"329b0158-a9bd-4634-aa74-31e8c3f7ac33"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status","label":"4 - Create service goods receipt in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"54acff4a-910d-4b44-b783-2a644f1173c6"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.context","label":"4 - Create service goods receipt in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.table_name","label":"4 - Update Record➛Receipt Table","reference":"sn_shop_receipt","reference_display":"Receipt","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.record","label":"4 - Update Record➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.erp_source","label":"Trigger - Record Created or Updated➛Receipt Record➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"erp_source"},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d680fcaa-ecd3-4a11-9a0e-986c27b42b71"}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"affb0c39-8e15-4a2f-a933-710ea17b99ae"}},{"name":"d34ea28a-c87b-4202-bbac-6ad6effb384d.context","label":"12 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"07dd8a9f-9da1-4549-9cd1-c66e4c8f27a6.context","label":"14 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias.sys_scope","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sys_alias","column_name":"sys_scope"},{"name":"5933cd9e-2533-40b1-bdf5-8a2ae2757da2.context","label":"14 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"93719e98-949d-4c55-8996-feeefbf919f1.context","label":"12 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2803d6a2-352d-4d48-b7cc-cd50f3f01020"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4825cd54-7958-4853-83f7-082247699e40"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.context","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4e95fe8e-78e7-4dd0-9f65-9bc294b7d13c"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9e06b60-df3a-4844-b205-3d205dd5d407"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50079e9e-489d-401d-ba6b-a9062d57882d.context","label":"8 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"bffdb332-a61d-4e76-961d-6392d39f76ab.context","label":"6 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message","label":"4 - Create Service Goods Receipt in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"329b0158-a9bd-4634-aa74-31e8c3f7ac33"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status","label":"4 - Create Service Goods Receipt in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"54acff4a-910d-4b44-b783-2a644f1173c6"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.context","label":"4 - Create Service Goods Receipt in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.table_name","label":"4 - Update Record➛Receipt Table","reference":"sn_shop_receipt","reference_display":"Receipt","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.record","label":"4 - Update Record➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.erp_source","label":"Trigger - Record Created or Updated➛Receipt Record➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"erp_source"},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d680fcaa-ecd3-4a11-9a0e-986c27b42b71"}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"affb0c39-8e15-4a2f-a933-710ea17b99ae"}},{"name":"d34ea28a-c87b-4202-bbac-6ad6effb384d.context","label":"12 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"07dd8a9f-9da1-4549-9cd1-c66e4c8f27a6.context","label":"14 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master_snapshot>cb130eb7878d21102a18b846dabb35ee</master_snapshot>
         <name>Create service goods receipt in ERP</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>dbe661928721a910c04eb259dabb3514</remote_trigger_id>
+        <remote_trigger_id>433dbd0647626510c26f8945d36d437e</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -24,7 +24,7 @@
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 04:13:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
@@ -37,14 +37,17 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_ec966db3870d21102a18b846dabb35b2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:28:32</sys_updated_on>
+        <sys_updated_on>2023-05-08 13:35:44</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ec966db3870d21102a18b846dabb35b2"/>
     <sys_variable_value action="delete_multiple" query="document_key=ec966db3870d21102a18b846dabb35b2"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="sn_shop_receipt">type=services_receipt^erp_gr_numberISEMPTY^status=pending_submission</condition>
+        <condition table="sn_shop_receipt">type=services_receipt^erp_gr_numberISEMPTY^status=pending_submission<item display_value="Services Receipt" endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="services_receipt"/>
+            <item endquery="false" field="erp_gr_number" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item display_value="Pending Submission" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="pending_submission"/>
+        </condition>
         <name/>
         <on_delete>false</on_delete>
         <on_insert>true</on_insert>
@@ -55,43 +58,32 @@
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-03-15 08:55:34</sys_created_on>
+        <sys_created_by>Varun</sys_created_by>
+        <sys_created_on>2023-05-03 08:57:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>dbe661928721a910c04eb259dabb3514</sys_id>
+        <sys_id>433dbd0647626510c26f8945d36d437e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-15 08:55:34</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-03 08:57:21</sys_updated_on>
         <table>sn_shop_receipt</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"43884859879221502a18b846dabb359d","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>ec966db3870d21102a18b846dabb35b2</identifier>
         <runner>FDTriggerRunner</runner>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-18 06:16:24</sys_created_on>
-        <sys_id>43884859879221502a18b846dabb359d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
-        <trigger display_value="">dbe661928721a910c04eb259dabb3514</trigger>
+        <sys_created_by>Varun</sys_created_by>
+        <sys_created_on>2023-05-08 13:15:01</sys_created_on>
+        <sys_id>1228ec3b4762a510c26f8945d36d436e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:01</sys_updated_on>
+        <trigger display_value="">433dbd0647626510c26f8945d36d437e</trigger>
     </sys_trigger_runner_mapping>
-    <sys_json_chunk action="INSERT_OR_UPDATE">
-        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>43884859879221502a18b846dabb359d</document_id>
-        <field>trigger_runner</field>
-        <length>144</length>
-        <position>0</position>
-        <source_table>sys_trigger_runner_mapping</source_table>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-18 06:16:24</sys_created_on>
-        <sys_id>8f884859879221502a18b846dabb359e</sys_id>
-    </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ec966db3870d21102a18b846dabb35b2^sys_idNOT IN43884859879221502a18b846dabb359d"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ec966db3870d21102a18b846dabb35b2^sys_idNOT IN1228ec3b4762a510c26f8945d36d436e"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=ec966db3870d21102a18b846dabb35b2^sys_idNOT INb1847577874d21102a18b846dabb352a"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -99,13 +91,13 @@
         <flow display_value="Create service goods receipt in ERP">ec966db3870d21102a18b846dabb35b2</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>b1847577874d21102a18b846dabb352a</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -117,11 +109,11 @@
         <document_key>b1847577874d21102a18b846dabb352a</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>35847577874d21102a18b846dabb352c</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-03-13 11:22:43</sys_updated_on>
         <value>type=services_receipt^erp_gr_numberISEMPTY^status=pending_submission</value>
         <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
@@ -131,11 +123,11 @@
         <document_key>b1847577874d21102a18b846dabb352a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>f5847577874d21102a18b846dabb352c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:30</sys_updated_on>
         <value>sn_shop_receipt</value>
         <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
@@ -146,12 +138,12 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>ec966db3870d21102a18b846dabb35b2</id>
         <name>Create service goods receipt in ERP</name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 04:13:31</sys_created_on>
         <sys_id>68966db3870d21102a18b846dabb35b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 04:13:31</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=68966db3870d21102a18b846dabb35b5"/>
@@ -216,17 +208,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:29</sys_created_on>
         <sys_id>2d847577874d21102a18b846dabb351e</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -234,7 +226,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -299,7 +291,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>b1847577874d21102a18b846dabb3522</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -308,7 +300,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -317,7 +309,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -382,17 +374,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>f5847577874d21102a18b846dabb3525</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -400,7 +392,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -420,13 +412,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>5384b577874d21102a18b846dabb3537</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>bffdb332-a61d-4e76-961d-6392d39f76ab</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5384b577874d21102a18b846dabb3537"/>
@@ -435,11 +427,11 @@
         <document_key>5384b577874d21102a18b846dabb3537</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>6384b577874d21102a18b846dabb3545</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <value>Success</value>
         <variable display_value="Status">c3f3736887016510c04eb259dabb35cb</variable>
@@ -449,24 +441,24 @@
         <document_key>5384b577874d21102a18b846dabb3537</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>ef84b577874d21102a18b846dabb3545</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">2f84b577874d21102a18b846dabb3537</variable>
+        <variable display_value="wait_for_completion">2f84b577874d21102a18b846dabb3537</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=5384b577874d21102a18b846dabb3537"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>5384b577874d21102a18b846dabb3537</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>2f84b577874d21102a18b846dabb3544</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -474,11 +466,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>5384b577874d21102a18b846dabb3537</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>ef84b577874d21102a18b846dabb3544</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value/>
@@ -522,7 +514,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">5384b577874d21102a18b846dabb3537</model>
@@ -545,17 +537,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>2f84b577874d21102a18b846dabb3537</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -563,7 +555,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -580,13 +572,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>767c2f4787b1e950c04eb259dabb3557</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>93719e98-949d-4c55-8996-feeefbf919f1</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=767c2f4787b1e950c04eb259dabb3557"/>
@@ -595,11 +587,11 @@
         <document_key>767c2f4787b1e950c04eb259dabb3557</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>367c2f4787b1e950c04eb259dabb3565</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <value>Success</value>
         <variable display_value="Status">c3f3736887016510c04eb259dabb35cb</variable>
@@ -609,24 +601,24 @@
         <document_key>767c2f4787b1e950c04eb259dabb3557</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>b27c2f4787b1e950c04eb259dabb3566</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">327c2f4787b1e950c04eb259dabb3558</variable>
+        <variable display_value="wait_for_completion">327c2f4787b1e950c04eb259dabb3558</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=767c2f4787b1e950c04eb259dabb3557"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>767c2f4787b1e950c04eb259dabb3557</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>fe7c2f4787b1e950c04eb259dabb3564</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -634,11 +626,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>767c2f4787b1e950c04eb259dabb3557</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>b27c2f4787b1e950c04eb259dabb3565</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value/>
@@ -682,7 +674,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">767c2f4787b1e950c04eb259dabb3557</model>
@@ -705,17 +697,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>327c2f4787b1e950c04eb259dabb3558</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -723,7 +715,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -737,16 +729,16 @@
         <inputs/>
         <order>10</order>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
-        <subflow display_value="Create service goods receipt in SAP S4HANA">9f56ef5a87352950c04eb259dabb3531</subflow>
+        <subflow display_value="Create Service Goods Receipt in SAP S4Hana">9f56ef5a87352950c04eb259dabb3531</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:13</sys_created_on>
         <sys_id>7a7c2f4787b1e950c04eb259dabb3542</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>1a638384-a6ad-4a0b-81cb-7e0ca9db616f</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7a7c2f4787b1e950c04eb259dabb3542"/>
@@ -755,11 +747,11 @@
         <document_key>7a7c2f4787b1e950c04eb259dabb3542</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>3a7c2f4787b1e950c04eb259dabb3551</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-06 06:23:22</sys_updated_on>
         <value/>
         <variable display_value="Connection Alias">e356ef5a87352950c04eb259dabb357a</variable>
@@ -769,24 +761,24 @@
         <document_key>7a7c2f4787b1e950c04eb259dabb3542</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>fa7c2f4787b1e950c04eb259dabb3552</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">3a7c2f4787b1e950c04eb259dabb3543</variable>
+        <variable display_value="wait_for_completion">3a7c2f4787b1e950c04eb259dabb3543</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=7a7c2f4787b1e950c04eb259dabb3542"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_alias</field>
         <id>7a7c2f4787b1e950c04eb259dabb3542</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>f27c2f4787b1e950c04eb259dabb3551</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-06 06:23:22</sys_updated_on>
         <table>var__m_sys_hub_flow_input_9f56ef5a87352950c04eb259dabb3531</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias}}</value>
@@ -794,11 +786,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_goods_receipt</field>
         <id>7a7c2f4787b1e950c04eb259dabb3542</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>b67c2f4787b1e950c04eb259dabb3551</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_input_9f56ef5a87352950c04eb259dabb3531</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -842,7 +834,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">7a7c2f4787b1e950c04eb259dabb3542</model>
@@ -865,17 +857,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:13</sys_created_on>
         <sys_id>3a7c2f4787b1e950c04eb259dabb3543</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:50:13</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -883,7 +875,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -897,16 +889,16 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="Identify target ERP">ed57103c47d71110eac25bf3836d4308</subflow>
+        <subflow display_value="Identify Target ERP">ed57103c47d71110eac25bf3836d4308</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>b9847577874d21102a18b846dabb352d</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>f7c7dee8-fb36-4653-9da8-a250c2d173ae</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b9847577874d21102a18b846dabb352d"/>
@@ -915,24 +907,24 @@
         <document_key>b9847577874d21102a18b846dabb352d</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:31</sys_created_on>
         <sys_id>42847577874d21102a18b846dabb3587</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:31</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">f1847577874d21102a18b846dabb352f</variable>
+        <variable display_value="wait_for_completion">f1847577874d21102a18b846dabb352f</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=b9847577874d21102a18b846dabb352d"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>erp_source</field>
         <id>b9847577874d21102a18b846dabb352d</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:31</sys_created_on>
         <sys_id>06847577874d21102a18b846dabb3586</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:31</sys_updated_on>
         <table>var__m_sys_hub_flow_input_ed57103c47d71110eac25bf3836d4308</table>
         <value>{{Created or Updated_1.current.erp_source}}</value>
@@ -976,7 +968,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">b9847577874d21102a18b846dabb352d</model>
@@ -999,17 +991,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>f1847577874d21102a18b846dabb352f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 05:14:30</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1017,7 +1009,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1034,13 +1026,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>ba7c2f4787b1e950c04eb259dabb3569</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>5933cd9e-2533-40b1-bdf5-8a2ae2757da2</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ba7c2f4787b1e950c04eb259dabb3569"/>
@@ -1049,24 +1041,24 @@
         <document_key>ba7c2f4787b1e950c04eb259dabb3569</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>437c2f4787b1e950c04eb259dabb359d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">767c2f4787b1e950c04eb259dabb356a</variable>
+        <variable display_value="wait_for_completion">767c2f4787b1e950c04eb259dabb356a</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ba7c2f4787b1e950c04eb259dabb3569"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>ba7c2f4787b1e950c04eb259dabb3569</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>c37c2f4787b1e950c04eb259dabb359c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message}}</value>
@@ -1074,11 +1066,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>ba7c2f4787b1e950c04eb259dabb3569</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>877c2f4787b1e950c04eb259dabb359c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -1122,7 +1114,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">ba7c2f4787b1e950c04eb259dabb3569</model>
@@ -1145,17 +1137,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>767c2f4787b1e950c04eb259dabb356a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1163,7 +1155,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1177,16 +1169,16 @@
         <inputs/>
         <order>4</order>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
-        <subflow display_value="Create service goods receipt in SAP ECC">7b01339187386910c04eb259dabb350c</subflow>
+        <subflow display_value="Create Service Goods Receipt in SAP ECC">7b01339187386910c04eb259dabb350c</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>db847577874d21102a18b846dabb3598</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>33d7a782-515b-409d-96ac-7e4ff6b0bf3a</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=db847577874d21102a18b846dabb3598"/>
@@ -1195,11 +1187,11 @@
         <document_key>db847577874d21102a18b846dabb3598</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>9f84b577874d21102a18b846dabb3531</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-06 06:23:21</sys_updated_on>
         <value/>
         <variable display_value="Connection Alias">5c11339187386910c04eb259dabb3574</variable>
@@ -1209,24 +1201,24 @@
         <document_key>db847577874d21102a18b846dabb3598</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>df84b577874d21102a18b846dabb3532</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">97847577874d21102a18b846dabb3599</variable>
+        <variable display_value="wait_for_completion">97847577874d21102a18b846dabb3599</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=db847577874d21102a18b846dabb3598"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_alias</field>
         <id>db847577874d21102a18b846dabb3598</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>5b84b577874d21102a18b846dabb3531</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-06 06:23:21</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias}}</value>
@@ -1234,11 +1226,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_goods_receipt</field>
         <id>db847577874d21102a18b846dabb3598</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>9784b577874d21102a18b846dabb3531</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -1246,11 +1238,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>short_text</field>
         <id>db847577874d21102a18b846dabb3598</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>1f84b577874d21102a18b846dabb3531</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value/>
@@ -1294,7 +1286,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">db847577874d21102a18b846dabb3598</model>
@@ -1317,17 +1309,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>97847577874d21102a18b846dabb3599</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1335,7 +1327,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1352,13 +1344,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>e784b577874d21102a18b846dabb3549</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>50079e9e-489d-401d-ba6b-a9062d57882d</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e784b577874d21102a18b846dabb3549"/>
@@ -1367,24 +1359,24 @@
         <document_key>e784b577874d21102a18b846dabb3549</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>e784b577874d21102a18b846dabb3570</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">2384b577874d21102a18b846dabb3563</variable>
+        <variable display_value="wait_for_completion">2384b577874d21102a18b846dabb3563</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=e784b577874d21102a18b846dabb3549"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>e784b577874d21102a18b846dabb3549</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>6b84b577874d21102a18b846dabb356f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message}}</value>
@@ -1392,11 +1384,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>e784b577874d21102a18b846dabb3549</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>2f84b577874d21102a18b846dabb356f</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-03-23 08:37:09</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -1440,7 +1432,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">e784b577874d21102a18b846dabb3549</model>
@@ -1463,17 +1455,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>2384b577874d21102a18b846dabb3563</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 05:14:37</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1481,7 +1473,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1489,7 +1481,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=e784b577874d21102a18b846dabb3549"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=ec966db3870d21102a18b846dabb35b2^sys_idNOT IN13847577874d21102a18b846dabb3596,1b84b577874d21102a18b846dabb3533,2b84b577874d21102a18b846dabb3546,367c2f4787b1e950c04eb259dabb3553,627c2f4787b1e950c04eb259dabb353e,8a3e10b487292510c04eb259dabb35c5,8e847577874d21102a18b846dabb3587,dd9e7173878d21102a18b846dabb3506,fa7c2f4787b1e950c04eb259dabb3566"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">5f847577874d21102a18b846dabb3595</block>
+        <block display_value="">0b18e83b4762a510c26f8945d36d432c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1507,13 +1499,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>13847577874d21102a18b846dabb3596</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1523,11 +1515,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>13847577874d21102a18b846dabb3596</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>5b847577874d21102a18b846dabb3598</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:10</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp}}=sn_sap_ecc_rfc_spo</value>
@@ -1535,7 +1527,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=13847577874d21102a18b846dabb3596"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=13847577874d21102a18b846dabb3596"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">5784b577874d21102a18b846dabb3533</block>
+        <block display_value="">8f18e83b4762a510c26f8945d36d433d</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1553,13 +1545,13 @@
         <outputs_to_assign/>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>1b84b577874d21102a18b846dabb3533</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>067fb39f-f81a-47cd-9eff-f8d2ac93a852</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1569,11 +1561,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>1b84b577874d21102a18b846dabb3533</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:36</sys_created_on>
         <sys_id>df84b577874d21102a18b846dabb3536</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:36</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status}}=Success</value>
@@ -1581,7 +1573,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1b84b577874d21102a18b846dabb3533"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=1b84b577874d21102a18b846dabb3533"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">6784b577874d21102a18b846dabb3546</block>
+        <block display_value="">8718e83b4762a510c26f8945d36d434e</block>
         <comment/>
         <connected_to>067fb39f-f81a-47cd-9eff-f8d2ac93a852</connected_to>
         <decision_table/>
@@ -1598,13 +1590,13 @@
         <outputs_to_assign/>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:37</sys_created_on>
         <sys_id>2b84b577874d21102a18b846dabb3546</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>0bf41265-22ce-4fa4-a62b-8fbdb1218605</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1613,7 +1605,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2b84b577874d21102a18b846dabb3546"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2b84b577874d21102a18b846dabb3546"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">727c2f4787b1e950c04eb259dabb3553</block>
+        <block display_value="">1f18e83b4762a510c26f8945d36d437d</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1631,13 +1623,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>367c2f4787b1e950c04eb259dabb3553</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>12726ec8-9bd7-4375-b1b3-aadb9eddd6cc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1647,11 +1639,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>367c2f4787b1e950c04eb259dabb3553</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>727c2f4787b1e950c04eb259dabb3557</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:50:14</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status}}=Success</value>
@@ -1659,7 +1651,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=367c2f4787b1e950c04eb259dabb3553"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=367c2f4787b1e950c04eb259dabb3553"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aa7c2f4787b1e950c04eb259dabb353d</block>
+        <block display_value="">cb18e83b4762a510c26f8945d36d435f</block>
         <comment/>
         <connected_to>93a27e7c-7d0c-447f-81b9-b0b55d101216</connected_to>
         <decision_table/>
@@ -1677,13 +1669,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:13</sys_created_on>
         <sys_id>627c2f4787b1e950c04eb259dabb353e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1694,11 +1686,11 @@
         <document_key>627c2f4787b1e950c04eb259dabb353e</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:11</sys_created_on>
         <sys_id>f3784459879221502a18b846dabb35e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:11</sys_updated_on>
         <value>Target ERP is SAP S4 Hana</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
@@ -1707,11 +1699,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>627c2f4787b1e950c04eb259dabb353e</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:13</sys_created_on>
         <sys_id>ee7c2f4787b1e950c04eb259dabb3541</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:11</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp}}=sn_sap_s4_hana_rfc</value>
@@ -1719,11 +1711,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
         <id>627c2f4787b1e950c04eb259dabb353e</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:11</sys_created_on>
         <sys_id>bf784459879221502a18b846dabb35e1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:11</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
         <value/>
@@ -1731,7 +1723,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=627c2f4787b1e950c04eb259dabb353e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=627c2f4787b1e950c04eb259dabb353e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">c23e10b487292510c04eb259dabb35c5</block>
+        <block display_value="">5318e83b4762a510c26f8945d36d43a3</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1748,13 +1740,13 @@
         <outputs_to_assign/>
         <parent_ui_id>f46abf8a-4dd9-4e2d-b4e6-8624d95963bc</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-03-10 11:47:02</sys_created_on>
         <sys_id>8a3e10b487292510c04eb259dabb35c5</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>df741c51-8943-458f-a410-ad298ef35c51</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1763,7 +1755,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8a3e10b487292510c04eb259dabb35c5"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8a3e10b487292510c04eb259dabb35c5"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">c6847577874d21102a18b846dabb3587</block>
+        <block display_value="">0f18e83b4762a510c26f8945d36d4325</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1781,13 +1773,13 @@
         <outputs_to_assign/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:31</sys_created_on>
         <sys_id>8e847577874d21102a18b846dabb3587</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:02</sys_updated_on>
         <ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1798,11 +1790,11 @@
         <document_key>8e847577874d21102a18b846dabb3587</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:10</sys_created_on>
         <sys_id>6f784459879221502a18b846dabb3597</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:10</sys_updated_on>
         <value>Target ERP is SAP ECC</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
@@ -1811,11 +1803,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>8e847577874d21102a18b846dabb3587</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:31</sys_created_on>
         <sys_id>c6847577874d21102a18b846dabb358b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:31</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.status}}=Success</value>
@@ -1823,11 +1815,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
         <id>8e847577874d21102a18b846dabb3587</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:10</sys_created_on>
         <sys_id>67784459879221502a18b846dabb3597</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:10</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
@@ -1835,7 +1827,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8e847577874d21102a18b846dabb3587"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=8e847577874d21102a18b846dabb3587"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">1d9e7173878d21102a18b846dabb3506</block>
+        <block display_value="">9718e83b4762a510c26f8945d36d439e</block>
         <comment/>
         <connected_to>aae65d53-cb7b-4e65-bd25-64ff926b94cd</connected_to>
         <decision_table/>
@@ -1852,13 +1844,13 @@
         <outputs_to_assign/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:58:26</sys_created_on>
         <sys_id>dd9e7173878d21102a18b846dabb3506</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>f46abf8a-4dd9-4e2d-b4e6-8624d95963bc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1867,7 +1859,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=dd9e7173878d21102a18b846dabb3506"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=dd9e7173878d21102a18b846dabb3506"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">3a7c2f4787b1e950c04eb259dabb3566</block>
+        <block display_value="">1718e83b4762a510c26f8945d36d438e</block>
         <comment/>
         <connected_to>12726ec8-9bd7-4375-b1b3-aadb9eddd6cc</connected_to>
         <decision_table/>
@@ -1884,13 +1876,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:50:14</sys_created_on>
         <sys_id>fa7c2f4787b1e950c04eb259dabb3566</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:26</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:03</sys_updated_on>
         <ui_id>d5b63a3d-5b42-44ae-ba97-c8ca5bde0b56</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1910,7 +1902,7 @@
         <name>var__m_sys_hub_flow_input_ec966db3870d21102a18b846dabb35b2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>3d847577874d21102a18b846dabb3524</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1919,7 +1911,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:30</sys_updated_on>
         <url/>
         <url_target/>
@@ -1933,7 +1925,7 @@
         <name>var__m_sys_hub_flow_input_ec966db3870d21102a18b846dabb35b2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:30</sys_created_on>
         <sys_id>3d847577874d21102a18b846dabb3527</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1942,7 +1934,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:30</sys_updated_on>
         <url/>
         <url_target/>
@@ -1956,7 +1948,7 @@
         <name>var__m_sys_hub_flow_input_ec966db3870d21102a18b846dabb35b2</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 05:14:29</sys_created_on>
         <sys_id>f5847577874d21102a18b846dabb3521</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -1965,7 +1957,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 05:14:29</sys_updated_on>
         <url/>
         <url_target/>
@@ -1979,17 +1971,17 @@
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"71238eb7878d21102a18b846dabb3569","name":"plan","plan_signature":null}}</plan>
         <plan_id>ec966db3870d21102a18b846dabb35b2</plan_id>
         <snapshot>cb130eb7878d21102a18b846dabb35ee</snapshot>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>71238eb7878d21102a18b846dabb3569</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-15 08:55:34</sys_updated_on>
-        <trigger display_value="">dbe661928721a910c04eb259dabb3514</trigger>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:01</sys_updated_on>
+        <trigger display_value="">433dbd0647626510c26f8945d36d437e</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ec966db3870d21102a18b846dabb35b2"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -2001,9 +1993,9 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>&lt;p&gt;&lt;span dir="ltr"&gt;Creates a service goods receipt in target ERP.&lt;/span&gt;&lt;/p&gt;</description>
         <internal_name>create_service_goods_receipt_in_erp</internal_name>
-        <label_cache>[{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias.sys_scope","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sys_alias","column_name":"sys_scope"},{"name":"5933cd9e-2533-40b1-bdf5-8a2ae2757da2.context","label":"14 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"93719e98-949d-4c55-8996-feeefbf919f1.context","label":"12 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2803d6a2-352d-4d48-b7cc-cd50f3f01020"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4825cd54-7958-4853-83f7-082247699e40"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4e95fe8e-78e7-4dd0-9f65-9bc294b7d13c"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9e06b60-df3a-4844-b205-3d205dd5d407"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50079e9e-489d-401d-ba6b-a9062d57882d.context","label":"8 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"bffdb332-a61d-4e76-961d-6392d39f76ab.context","label":"6 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message","label":"4 - Create service goods receipt in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"329b0158-a9bd-4634-aa74-31e8c3f7ac33"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status","label":"4 - Create service goods receipt in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"54acff4a-910d-4b44-b783-2a644f1173c6"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.context","label":"4 - Create service goods receipt in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.table_name","label":"4 - Update Record➛Receipt Table","reference":"sn_shop_receipt","reference_display":"Receipt","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.record","label":"4 - Update Record➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.erp_source","label":"Trigger - Record Created or Updated➛Receipt Record➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"erp_source"},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d680fcaa-ecd3-4a11-9a0e-986c27b42b71"}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"affb0c39-8e15-4a2f-a933-710ea17b99ae"}},{"name":"d34ea28a-c87b-4202-bbac-6ad6effb384d.context","label":"12 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"07dd8a9f-9da1-4549-9cd1-c66e4c8f27a6.context","label":"14 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias.sys_scope","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias➛Application","reference":"sys_scope","reference_display":"Application","type":"reference","base_type":"reference","parent_table_name":"sys_alias","column_name":"sys_scope"},{"name":"5933cd9e-2533-40b1-bdf5-8a2ae2757da2.context","label":"14 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"93719e98-949d-4c55-8996-feeefbf919f1.context","label":"12 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2803d6a2-352d-4d48-b7cc-cd50f3f01020"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4825cd54-7958-4853-83f7-082247699e40"}},{"name":"1a638384-a6ad-4a0b-81cb-7e0ca9db616f.context","label":"10 - Create Service Goods Receipt in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4e95fe8e-78e7-4dd0-9f65-9bc294b7d13c"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9e06b60-df3a-4844-b205-3d205dd5d407"}},{"name":"912dac30-e8e3-42fb-ae24-0d1f9728eed3.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50079e9e-489d-401d-ba6b-a9062d57882d.context","label":"8 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"bffdb332-a61d-4e76-961d-6392d39f76ab.context","label":"6 - Goods Receipt Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message","label":"4 - Create Service Goods Receipt in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"329b0158-a9bd-4634-aa74-31e8c3f7ac33"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status","label":"4 - Create Service Goods Receipt in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"54acff4a-910d-4b44-b783-2a644f1173c6"}},{"name":"33d7a782-515b-409d-96ac-7e4ff6b0bf3a.context","label":"4 - Create Service Goods Receipt in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.table_name","label":"4 - Update Record➛Receipt Table","reference":"sn_shop_receipt","reference_display":"Receipt","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"30dd7b23-9f40-422d-8d16-0213697ea272.record","label":"4 - Update Record➛Receipt Record","reference":"sn_shop_receipt","reference_display":"Receipt","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.erp_source","label":"Trigger - Record Created or Updated➛Receipt Record➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"erp_source"},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"f7c7dee8-fb36-4653-9da8-a250c2d173ae.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.context","label":"10 - Create service goods receipt in SAP S4HANA➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.status","label":"10 - Create service goods receipt in SAP S4HANA➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d680fcaa-ecd3-4a11-9a0e-986c27b42b71"}},{"name":"43b387c2-f9b2-4a8c-a716-1e3ffe58d90e.error_message","label":"10 - Create service goods receipt in SAP S4HANA➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"affb0c39-8e15-4a2f-a933-710ea17b99ae"}},{"name":"d34ea28a-c87b-4202-bbac-6ad6effb384d.context","label":"12 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"07dd8a9f-9da1-4549-9cd1-c66e4c8f27a6.context","label":"14 - Goods Receipt error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master>true</master>
         <name>Create service goods receipt in ERP</name>
         <natlang/>
@@ -2015,20 +2007,20 @@
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cb130eb7878d21102a18b846dabb35ee</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:22</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=cb130eb7878d21102a18b846dabb35ee"/>
@@ -2040,13 +2032,13 @@
         <flow display_value="Create service goods receipt in ERP">cb130eb7878d21102a18b846dabb35ee</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:19</sys_created_on>
         <sys_id>68234eb7878d21102a18b846dabb3557</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:25</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:15:01</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -2058,11 +2050,11 @@
         <document_key>68234eb7878d21102a18b846dabb3557</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:19</sys_created_on>
         <sys_id>64234eb7878d21102a18b846dabb3559</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:19</sys_updated_on>
         <value>sn_shop_receipt</value>
         <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
@@ -2072,11 +2064,11 @@
         <document_key>68234eb7878d21102a18b846dabb3557</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:19</sys_created_on>
         <sys_id>a0234eb7878d21102a18b846dabb3559</sys_id>
         <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-03-13 11:24:34</sys_updated_on>
         <value>type=services_receipt^erp_gr_numberISEMPTY^status=pending_submission</value>
         <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
@@ -2087,12 +2079,12 @@
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>cb130eb7878d21102a18b846dabb35ee</id>
         <name>Create service goods receipt in ERP</name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:13</sys_created_on>
         <sys_id>cb130eb7878d21102a18b846dabb35ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:13</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cb130eb7878d21102a18b846dabb35ef"/>
@@ -2157,7 +2149,7 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>17134eb7878d21102a18b846dabb3511</sys_id>
         <sys_mod_count>1</sys_mod_count>
@@ -2166,7 +2158,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-03-13 08:23:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
@@ -2175,7 +2167,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2240,17 +2232,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:13</sys_created_on>
         <sys_id>4b130eb7878d21102a18b846dabb35f1</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2258,7 +2250,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2323,17 +2315,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>9b134eb7878d21102a18b846dabb3519</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2341,7 +2333,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2361,13 +2353,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>01234eb7878d21102a18b846dabb35d3</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>50079e9e-489d-401d-ba6b-a9062d57882d</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=01234eb7878d21102a18b846dabb35d3"/>
@@ -2376,24 +2368,24 @@
         <document_key>01234eb7878d21102a18b846dabb35d3</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>0d234eb7878d21102a18b846dabb35df</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">c9234eb7878d21102a18b846dabb35d3</variable>
+        <variable display_value="wait_for_completion">c9234eb7878d21102a18b846dabb35d3</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=01234eb7878d21102a18b846dabb35d3"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>01234eb7878d21102a18b846dabb35d3</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>8d234eb7878d21102a18b846dabb35de</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{33d7a782-515b-409d-96ac-7e4ff6b0bf3a.error_message}}</value>
@@ -2401,11 +2393,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>01234eb7878d21102a18b846dabb35d3</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>41234eb7878d21102a18b846dabb35df</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-03-23 08:38:27</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -2449,7 +2441,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">01234eb7878d21102a18b846dabb35d3</model>
@@ -2472,17 +2464,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>c9234eb7878d21102a18b846dabb35d3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2490,7 +2482,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2507,13 +2499,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>5fae6b0b87b1e950c04eb259dabb356c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>5933cd9e-2533-40b1-bdf5-8a2ae2757da2</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5fae6b0b87b1e950c04eb259dabb356c"/>
@@ -2522,24 +2514,24 @@
         <document_key>5fae6b0b87b1e950c04eb259dabb356c</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>1bae6b0b87b1e950c04eb259dabb3585</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">1bae6b0b87b1e950c04eb259dabb356d</variable>
+        <variable display_value="wait_for_completion">1bae6b0b87b1e950c04eb259dabb356d</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=5fae6b0b87b1e950c04eb259dabb356c"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>error_message</field>
         <id>5fae6b0b87b1e950c04eb259dabb356c</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>9bae6b0b87b1e950c04eb259dabb3584</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{1a638384-a6ad-4a0b-81cb-7e0ca9db616f.error_message}}</value>
@@ -2547,11 +2539,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>5fae6b0b87b1e950c04eb259dabb356c</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>5fae6b0b87b1e950c04eb259dabb3584</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -2595,7 +2587,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">5fae6b0b87b1e950c04eb259dabb356c</model>
@@ -2618,17 +2610,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>1bae6b0b87b1e950c04eb259dabb356d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2636,7 +2628,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2653,13 +2645,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>85234eb7878d21102a18b846dabb35c5</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>bffdb332-a61d-4e76-961d-6392d39f76ab</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=85234eb7878d21102a18b846dabb35c5"/>
@@ -2668,11 +2660,11 @@
         <document_key>85234eb7878d21102a18b846dabb35c5</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>4d234eb7878d21102a18b846dabb35d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <value>Success</value>
         <variable display_value="Status">c3f3736887016510c04eb259dabb35cb</variable>
@@ -2682,24 +2674,24 @@
         <document_key>85234eb7878d21102a18b846dabb35c5</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>c9234eb7878d21102a18b846dabb35d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">41234eb7878d21102a18b846dabb35c6</variable>
+        <variable display_value="wait_for_completion">41234eb7878d21102a18b846dabb35c6</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=85234eb7878d21102a18b846dabb35c5"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>85234eb7878d21102a18b846dabb35c5</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>09234eb7878d21102a18b846dabb35d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -2707,11 +2699,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>85234eb7878d21102a18b846dabb35c5</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:21</sys_created_on>
         <sys_id>c9234eb7878d21102a18b846dabb35d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:21</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value/>
@@ -2755,7 +2747,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">85234eb7878d21102a18b846dabb35c5</model>
@@ -2778,17 +2770,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>41234eb7878d21102a18b846dabb35c6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2796,7 +2788,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2810,16 +2802,16 @@
         <inputs/>
         <order>10</order>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
-        <subflow display_value="Create service goods receipt in SAP S4HANA">9f56ef5a87352950c04eb259dabb3531</subflow>
+        <subflow display_value="Create Service Goods Receipt in SAP S4Hana">9f56ef5a87352950c04eb259dabb3531</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>87ae6b0b87b1e950c04eb259dabb3545</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>1a638384-a6ad-4a0b-81cb-7e0ca9db616f</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=87ae6b0b87b1e950c04eb259dabb3545"/>
@@ -2828,11 +2820,11 @@
         <document_key>87ae6b0b87b1e950c04eb259dabb3545</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>93ae6b0b87b1e950c04eb259dabb355e</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
         <value/>
         <variable display_value="Connection Alias">e356ef5a87352950c04eb259dabb357a</variable>
@@ -2842,24 +2834,24 @@
         <document_key>87ae6b0b87b1e950c04eb259dabb3545</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>97ae6b0b87b1e950c04eb259dabb355f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">47ae6b0b87b1e950c04eb259dabb3546</variable>
+        <variable display_value="wait_for_completion">47ae6b0b87b1e950c04eb259dabb3546</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=87ae6b0b87b1e950c04eb259dabb3545"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_alias</field>
         <id>87ae6b0b87b1e950c04eb259dabb3545</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>5fae6b0b87b1e950c04eb259dabb355d</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
         <table>var__m_sys_hub_flow_input_9f56ef5a87352950c04eb259dabb3531</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias}}</value>
@@ -2867,11 +2859,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_goods_receipt</field>
         <id>87ae6b0b87b1e950c04eb259dabb3545</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>13ae6b0b87b1e950c04eb259dabb355e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <table>var__m_sys_hub_flow_input_9f56ef5a87352950c04eb259dabb3531</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -2915,7 +2907,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">87ae6b0b87b1e950c04eb259dabb3545</model>
@@ -2938,17 +2930,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>47ae6b0b87b1e950c04eb259dabb3546</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2956,7 +2948,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2970,16 +2962,16 @@
         <inputs/>
         <order>1</order>
         <parent_ui_id/>
-        <subflow display_value="Identify target ERP">ed57103c47d71110eac25bf3836d4308</subflow>
+        <subflow display_value="Identify Target ERP">ed57103c47d71110eac25bf3836d4308</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:19</sys_created_on>
         <sys_id>a8234eb7878d21102a18b846dabb3559</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>f7c7dee8-fb36-4653-9da8-a250c2d173ae</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a8234eb7878d21102a18b846dabb3559"/>
@@ -2988,24 +2980,24 @@
         <document_key>a8234eb7878d21102a18b846dabb3559</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>bc234eb7878d21102a18b846dabb3591</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">68234eb7878d21102a18b846dabb355a</variable>
+        <variable display_value="wait_for_completion">68234eb7878d21102a18b846dabb355a</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a8234eb7878d21102a18b846dabb3559"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>erp_source</field>
         <id>a8234eb7878d21102a18b846dabb3559</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>30234eb7878d21102a18b846dabb3591</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
         <table>var__m_sys_hub_flow_input_ed57103c47d71110eac25bf3836d4308</table>
         <value>{{Created or Updated_1.current.erp_source}}</value>
@@ -3049,7 +3041,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">a8234eb7878d21102a18b846dabb3559</model>
@@ -3072,17 +3064,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:19</sys_created_on>
         <sys_id>68234eb7878d21102a18b846dabb355a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 06:18:19</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3090,7 +3082,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3107,13 +3099,13 @@
         <subflow display_value="Goods Receipt Error Handling">36f3736887016510c04eb259dabb3570</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>dbae6b0b87b1e950c04eb259dabb355f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>93719e98-949d-4c55-8996-feeefbf919f1</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dbae6b0b87b1e950c04eb259dabb355f"/>
@@ -3122,25 +3114,25 @@
         <document_key>dbae6b0b87b1e950c04eb259dabb355f</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>1bae6b0b87b1e950c04eb259dabb356c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">97ae6b0b87b1e950c04eb259dabb3560</variable>
+        <variable display_value="wait_for_completion">97ae6b0b87b1e950c04eb259dabb3560</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_sub_flow_instance</document>
         <document_key>dbae6b0b87b1e950c04eb259dabb355f</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>9bae6b0b87b1e950c04eb259dabb356b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <value>Success</value>
         <variable display_value="Status">c3f3736887016510c04eb259dabb35cb</variable>
@@ -3149,11 +3141,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_gr</field>
         <id>dbae6b0b87b1e950c04eb259dabb355f</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>57ae6b0b87b1e950c04eb259dabb356b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -3161,11 +3153,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
         <id>dbae6b0b87b1e950c04eb259dabb355f</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>1bae6b0b87b1e950c04eb259dabb356b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
         <table>var__m_sys_hub_flow_input_36f3736887016510c04eb259dabb3570</table>
         <value/>
@@ -3209,7 +3201,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">dbae6b0b87b1e950c04eb259dabb355f</model>
@@ -3232,17 +3224,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:49</sys_created_on>
         <sys_id>97ae6b0b87b1e950c04eb259dabb3560</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-30 12:59:49</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3250,7 +3242,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3264,16 +3256,16 @@
         <inputs/>
         <order>4</order>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
-        <subflow display_value="Create service goods receipt in SAP ECC">7b01339187386910c04eb259dabb350c</subflow>
+        <subflow display_value="Create Service Goods Receipt in SAP ECC">7b01339187386910c04eb259dabb350c</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>f0234eb7878d21102a18b846dabb3592</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>33d7a782-515b-409d-96ac-7e4ff6b0bf3a</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f0234eb7878d21102a18b846dabb3592"/>
@@ -3282,11 +3274,11 @@
         <document_key>f0234eb7878d21102a18b846dabb3592</document_key>
         <order>2</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>01234eb7878d21102a18b846dabb35c4</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:19</sys_updated_on>
         <value/>
         <variable display_value="Connection Alias">5c11339187386910c04eb259dabb3574</variable>
@@ -3296,24 +3288,24 @@
         <document_key>f0234eb7878d21102a18b846dabb3592</document_key>
         <order>0</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>41234eb7878d21102a18b846dabb35c5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
         <value>1</value>
-        <variable display_value="Wait For Completion">bc234eb7878d21102a18b846dabb3592</variable>
+        <variable display_value="wait_for_completion">bc234eb7878d21102a18b846dabb3592</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=f0234eb7878d21102a18b846dabb3592"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_alias</field>
         <id>f0234eb7878d21102a18b846dabb3592</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>c9234eb7878d21102a18b846dabb35c3</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:19</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.conn_alias}}</value>
@@ -3321,11 +3313,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>psm_goods_receipt</field>
         <id>f0234eb7878d21102a18b846dabb3592</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>09234eb7878d21102a18b846dabb35c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value>{{Created or Updated_1.current}}</value>
@@ -3333,11 +3325,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>short_text</field>
         <id>f0234eb7878d21102a18b846dabb3592</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>8d234eb7878d21102a18b846dabb35c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
         <table>var__m_sys_hub_flow_input_7b01339187386910c04eb259dabb350c</table>
         <value/>
@@ -3381,7 +3373,7 @@
         <help/>
         <hint/>
         <internal_type display_value="">boolean</internal_type>
-        <label>Wait For Completion</label>
+        <label>wait_for_completion</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <model display_value="">f0234eb7878d21102a18b846dabb3592</model>
@@ -3404,17 +3396,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:20</sys_created_on>
         <sys_id>bc234eb7878d21102a18b846dabb3592</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-02-23 06:18:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3422,7 +3414,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3430,7 +3422,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=f0234eb7878d21102a18b846dabb3592"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cb130eb7878d21102a18b846dabb35ee^sys_idNOT IN0bae6b0b87b1e950c04eb259dabb3517,23134eb7878d21102a18b846dabb3540,2b134eb7878d21102a18b846dabb3539,2f134eb7878d21102a18b846dabb353c,2f134eb7878d21102a18b846dabb354c,4fae6b0b87b1e950c04eb259dabb351e,6f134eb7878d21102a18b846dabb3531,724c0fa587e9e510c04eb259dabb354c,c7ae6b0b87b1e950c04eb259dabb351b"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">aa7c2f4787b1e950c04eb259dabb353d</block>
+        <block display_value="">cb18e83b4762a510c26f8945d36d435f</block>
         <comment/>
         <connected_to>93a27e7c-7d0c-447f-81b9-b0b55d101216</connected_to>
         <decision_table/>
@@ -3448,13 +3440,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:48</sys_created_on>
         <sys_id>0bae6b0b87b1e950c04eb259dabb3517</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3465,11 +3457,11 @@
         <document_key>0bae6b0b87b1e950c04eb259dabb3517</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:19</sys_created_on>
         <sys_id>f588c459879221502a18b846dabb35f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:19</sys_updated_on>
         <value>Target ERP is SAP S4 Hana</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
@@ -3478,11 +3470,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>0bae6b0b87b1e950c04eb259dabb3517</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:48</sys_created_on>
         <sys_id>8bae6b0b87b1e950c04eb259dabb351a</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:19</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp}}=sn_sap_s4_hana_rfc</value>
@@ -3490,11 +3482,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
         <id>0bae6b0b87b1e950c04eb259dabb3517</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:19</sys_created_on>
         <sys_id>b188c459879221502a18b846dabb35f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:19</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
         <value/>
@@ -3502,7 +3494,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0bae6b0b87b1e950c04eb259dabb3517"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=0bae6b0b87b1e950c04eb259dabb3517"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">6784b577874d21102a18b846dabb3546</block>
+        <block display_value="">8718e83b4762a510c26f8945d36d434e</block>
         <comment/>
         <connected_to>067fb39f-f81a-47cd-9eff-f8d2ac93a852</connected_to>
         <decision_table/>
@@ -3519,13 +3511,13 @@
         <outputs_to_assign/>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>23134eb7878d21102a18b846dabb3540</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>0bf41265-22ce-4fa4-a62b-8fbdb1218605</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3534,7 +3526,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=23134eb7878d21102a18b846dabb3540"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=23134eb7878d21102a18b846dabb3540"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">5f847577874d21102a18b846dabb3595</block>
+        <block display_value="">0b18e83b4762a510c26f8945d36d432c</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3552,13 +3544,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>2b134eb7878d21102a18b846dabb3539</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3568,11 +3560,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>2b134eb7878d21102a18b846dabb3539</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>63134eb7878d21102a18b846dabb353c</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:18</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.terget_erp}}=sn_sap_ecc_rfc_spo</value>
@@ -3580,7 +3572,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2b134eb7878d21102a18b846dabb3539"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2b134eb7878d21102a18b846dabb3539"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">5784b577874d21102a18b846dabb3533</block>
+        <block display_value="">8f18e83b4762a510c26f8945d36d433d</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3598,13 +3590,13 @@
         <outputs_to_assign/>
         <parent_ui_id>93a27e7c-7d0c-447f-81b9-b0b55d101216</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>2f134eb7878d21102a18b846dabb353c</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>067fb39f-f81a-47cd-9eff-f8d2ac93a852</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3614,11 +3606,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>2f134eb7878d21102a18b846dabb353c</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>67134eb7878d21102a18b846dabb353f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:14</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{33d7a782-515b-409d-96ac-7e4ff6b0bf3a.status}}=Success</value>
@@ -3626,7 +3618,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f134eb7878d21102a18b846dabb353c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2f134eb7878d21102a18b846dabb353c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">1d9e7173878d21102a18b846dabb3506</block>
+        <block display_value="">9718e83b4762a510c26f8945d36d439e</block>
         <comment/>
         <connected_to>aae65d53-cb7b-4e65-bd25-64ff926b94cd</connected_to>
         <decision_table/>
@@ -3643,13 +3635,13 @@
         <outputs_to_assign/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:15</sys_created_on>
         <sys_id>2f134eb7878d21102a18b846dabb354c</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:22</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>f46abf8a-4dd9-4e2d-b4e6-8624d95963bc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3658,7 +3650,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2f134eb7878d21102a18b846dabb354c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=2f134eb7878d21102a18b846dabb354c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">3a7c2f4787b1e950c04eb259dabb3566</block>
+        <block display_value="">1718e83b4762a510c26f8945d36d438e</block>
         <comment/>
         <connected_to>12726ec8-9bd7-4375-b1b3-aadb9eddd6cc</connected_to>
         <decision_table/>
@@ -3675,13 +3667,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:48</sys_created_on>
         <sys_id>4fae6b0b87b1e950c04eb259dabb351e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>d5b63a3d-5b42-44ae-ba97-c8ca5bde0b56</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3690,7 +3682,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4fae6b0b87b1e950c04eb259dabb351e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=4fae6b0b87b1e950c04eb259dabb351e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">c6847577874d21102a18b846dabb3587</block>
+        <block display_value="">0f18e83b4762a510c26f8945d36d4325</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3708,13 +3700,13 @@
         <outputs_to_assign/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>6f134eb7878d21102a18b846dabb3531</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:20</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:57</sys_updated_on>
         <ui_id>aae65d53-cb7b-4e65-bd25-64ff926b94cd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3725,11 +3717,11 @@
         <document_key>6f134eb7878d21102a18b846dabb3531</document_key>
         <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:18</sys_created_on>
         <sys_id>a588c459879221502a18b846dabb35da</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:18</sys_updated_on>
         <value>Target ERP is SAP ECC</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
@@ -3738,11 +3730,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>6f134eb7878d21102a18b846dabb3531</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>e3134eb7878d21102a18b846dabb3535</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:14</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{f7c7dee8-fb36-4653-9da8-a250c2d173ae.status}}=Success</value>
@@ -3750,11 +3742,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
         <id>6f134eb7878d21102a18b846dabb3531</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-04-18 06:16:18</sys_created_on>
         <sys_id>2588c459879221502a18b846dabb35da</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-04-18 06:16:18</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
@@ -3762,7 +3754,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6f134eb7878d21102a18b846dabb3531"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6f134eb7878d21102a18b846dabb3531"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">c23e10b487292510c04eb259dabb35c5</block>
+        <block display_value="">5318e83b4762a510c26f8945d36d43a3</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3779,13 +3771,13 @@
         <outputs_to_assign/>
         <parent_ui_id>f46abf8a-4dd9-4e2d-b4e6-8624d95963bc</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-03-13 08:23:01</sys_created_on>
         <sys_id>724c0fa587e9e510c04eb259dabb354c</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:22</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>df741c51-8943-458f-a410-ad298ef35c51</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3794,7 +3786,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=724c0fa587e9e510c04eb259dabb354c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=724c0fa587e9e510c04eb259dabb354c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">727c2f4787b1e950c04eb259dabb3553</block>
+        <block display_value="">1f18e83b4762a510c26f8945d36d437d</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3812,13 +3804,13 @@
         <outputs_to_assign/>
         <parent_ui_id>aa2a838f-64cb-496d-afa7-801711a847f2</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:48</sys_created_on>
         <sys_id>c7ae6b0b87b1e950c04eb259dabb351b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:16:21</sys_updated_on>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-05-08 13:14:58</sys_updated_on>
         <ui_id>12726ec8-9bd7-4375-b1b3-aadb9eddd6cc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3828,11 +3820,11 @@
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition</field>
         <id>c7ae6b0b87b1e950c04eb259dabb351b</id>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Krishna</sys_created_by>
         <sys_created_on>2023-03-30 12:59:48</sys_created_on>
         <sys_id>07ae6b0b87b1e950c04eb259dabb351e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Krishna</sys_updated_by>
         <sys_updated_on>2023-03-30 12:59:48</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{1a638384-a6ad-4a0b-81cb-7e0ca9db616f.status}}=Success</value>
@@ -3851,7 +3843,7 @@
         <name>var__m_sys_hub_flow_input_cb130eb7878d21102a18b846dabb35ee</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>17134eb7878d21102a18b846dabb3501</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -3860,7 +3852,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -3874,7 +3866,7 @@
         <name>var__m_sys_hub_flow_input_cb130eb7878d21102a18b846dabb35ee</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>53134eb7878d21102a18b846dabb3516</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -3883,7 +3875,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -3897,7 +3889,7 @@
         <name>var__m_sys_hub_flow_input_cb130eb7878d21102a18b846dabb35ee</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-23 06:18:14</sys_created_on>
         <sys_id>db134eb7878d21102a18b846dabb352a</sys_id>
         <sys_mod_count>0</sys_mod_count>
@@ -3906,7 +3898,7 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>varun</sys_updated_by>
         <sys_updated_on>2023-02-23 06:18:14</sys_updated_on>
         <url/>
         <url_target/>
@@ -3917,6 +3909,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>ec966db3870d21102a18b846dabb35b2</sys_id>
         <latest_snapshot>cb130eb7878d21102a18b846dabb35ee</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
+        <compiler_build>glide-utah-12-21-2022__patch1-03-01-2023_03-13-2023_1716.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

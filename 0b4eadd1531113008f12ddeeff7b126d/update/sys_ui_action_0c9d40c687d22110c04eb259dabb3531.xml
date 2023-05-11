@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>new sn_fcms_intg.FinErpUtils().CheckResubmitCondition(current, 'PO')</condition>
+        <condition>new sn_fcms_intg.FinErpUtils().checkIfPluginDependeciesInstalled(['sn_psm_sap_int'])</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -28,7 +28,7 @@
         <list_style/>
         <messages/>
         <name>Submit POs</name>
-        <onclick/>
+        <onclick>submitPO()</onclick>
         <order>100</order>
         <script><![CDATA[function submitPO() {
     var entries = g_list.getChecked();
@@ -41,8 +41,6 @@
         ga.getXML(callback);
 
         function callback(response) {
-            var answer = response.responseXML.documentElement.getAttribute("answer");
-            alert(answer);
             location.reload();
         }
     }
@@ -52,20 +50,20 @@
         <show_query>false</show_query>
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-20 14:34:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0c9d40c687d22110c04eb259dabb3531</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Submit POs</sys_name>
         <sys_overrides/>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_ui_action_0c9d40c687d22110c04eb259dabb3531</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:24:45</sys_updated_on>
+        <sys_updated_by>shreenag.araga</sys_updated_by>
+        <sys_updated_on>2023-05-03 14:50:52</sys_updated_on>
         <table>sn_shop_purchase_order</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
