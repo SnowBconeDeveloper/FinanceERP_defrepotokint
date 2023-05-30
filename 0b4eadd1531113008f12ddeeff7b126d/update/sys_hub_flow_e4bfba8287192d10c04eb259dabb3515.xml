@@ -10,13 +10,13 @@
         <copied_from_name>Create purchase order in ERP</copied_from_name>
         <description/>
         <internal_name>update_purchase_order_in_erp</internal_name>
-        <label_cache>[{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.error_message","label":"16 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.status","label":"16 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.context","label":"16 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.error_message","label":"5 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.status","label":"5 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.context","label":"5 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"20 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"18 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"9➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"11 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"5 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"5 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"16 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"16 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"16 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"16 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.status","label":"Flow Variables➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"849298ce-f8db-47b8-9002-8b2008af9fdb"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"9➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"9 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"9 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"9 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7b4b7999-7517-4063-a9c3-66bd73c91233"}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"13 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"6 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"6 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"7 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"8 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"8 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.context","label":"8 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.status","label":"8 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.error_message","label":"8 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sn_shop_purchase_order","column_name":"status","choices":[{"label":"Pending Revision","used":false,"image":"","reference":false,"rawLabel":"Pending Revision","selected":false,"missing":false,"value":"pending_revision","parameters":{"name":"sn_shop_order"}},{"label":"Pending Submission","used":false,"image":"","reference":false,"rawLabel":"Pending Submission","selected":false,"missing":false,"value":"pending_submission","parameters":{"name":"sn_shop_order"}},{"label":"Ordered","used":false,"image":"","reference":false,"rawLabel":"Ordered","selected":false,"missing":false,"value":"ordered","parameters":{"name":"sn_shop_order"}},{"label":"Partially Delivered","used":false,"image":"","reference":false,"rawLabel":"Partially Delivered","selected":false,"missing":false,"value":"partially_delivered","parameters":{"name":"sn_shop_order"}},{"label":"Delivered","used":false,"image":"","reference":false,"rawLabel":"Delivered","selected":false,"missing":false,"value":"delivered","parameters":{"name":"sn_shop_order"}},{"label":"Payment Pending","used":false,"image":"","reference":false,"rawLabel":"Payment Pending","selected":false,"missing":false,"value":"payment_pending","parameters":{"name":"sn_shop_order"}},{"label":"Closed Paid","used":false,"image":"","reference":false,"rawLabel":"Closed Paid","selected":false,"missing":false,"value":"closed_paid","parameters":{"name":"sn_shop_order"}},{"label":"Closed Released","used":false,"image":"","reference":false,"rawLabel":"Closed Released","selected":false,"missing":false,"value":"closed_released","parameters":{"name":"sn_shop_order"}},{"label":"Closed Canceled","used":false,"image":"","reference":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"value":"closed_canceled","parameters":{"name":"sn_shop_order"}},{"label":"Pending Return","used":false,"image":"","reference":false,"rawLabel":"Pending Return","selected":false,"missing":false,"value":"pending_return","parameters":{"name":"sn_shop_order"}},{"label":"Pending Cancellation","used":false,"image":"","reference":false,"rawLabel":"Pending Cancellation","selected":false,"missing":false,"value":"pending_cancellation","parameters":{"name":"sn_shop_order"}},{"label":"Closed Returned","used":false,"image":"","reference":false,"rawLabel":"Closed Returned","selected":false,"missing":false,"value":"closed_returned","parameters":{"name":"sn_shop_order"}}]},{"name":"4d47698e-f639-419d-8a70-45402683afa2.context","label":"19 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.status","label":"19 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.error_message","label":"19 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"44755070-cb0b-4d9b-a622-cb8b945b1fb7.context","label":"22 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a593a78d-076a-44b3-9efd-0e01da3e0d8f.context","label":"24 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"a593a78d-076a-44b3-9efd-0e01da3e0d8f.context","label":"24 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"44755070-cb0b-4d9b-a622-cb8b945b1fb7.context","label":"22 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.error_message","label":"19 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.status","label":"19 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.context","label":"19 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sn_shop_purchase_order","column_name":"status","choices":[{"label":"Pending Revision","image":"","used":false,"rawLabel":"Pending Revision","selected":false,"missing":false,"reference":false,"value":"pending_revision","parameters":{"name":"sn_shop_order"}},{"label":"Pending Submission","image":"","used":false,"rawLabel":"Pending Submission","selected":false,"missing":false,"reference":false,"value":"pending_submission","parameters":{"name":"sn_shop_order"}},{"label":"Ordered","image":"","used":false,"rawLabel":"Ordered","selected":false,"missing":false,"reference":false,"value":"ordered","parameters":{"name":"sn_shop_order"}},{"label":"Partially Delivered","image":"","used":false,"rawLabel":"Partially Delivered","selected":false,"missing":false,"reference":false,"value":"partially_delivered","parameters":{"name":"sn_shop_order"}},{"label":"Delivered","image":"","used":false,"rawLabel":"Delivered","selected":false,"missing":false,"reference":false,"value":"delivered","parameters":{"name":"sn_shop_order"}},{"label":"Payment Pending","image":"","used":false,"rawLabel":"Payment Pending","selected":false,"missing":false,"reference":false,"value":"payment_pending","parameters":{"name":"sn_shop_order"}},{"label":"Closed Paid","image":"","used":false,"rawLabel":"Closed Paid","selected":false,"missing":false,"reference":false,"value":"closed_paid","parameters":{"name":"sn_shop_order"}},{"label":"Closed Released","image":"","used":false,"rawLabel":"Closed Released","selected":false,"missing":false,"reference":false,"value":"closed_released","parameters":{"name":"sn_shop_order"}},{"label":"Closed Canceled","image":"","used":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"reference":false,"value":"closed_canceled","parameters":{"name":"sn_shop_order"}},{"label":"Pending Return","image":"","used":false,"rawLabel":"Pending Return","selected":false,"missing":false,"reference":false,"value":"pending_return","parameters":{"name":"sn_shop_order"}},{"label":"Pending Cancellation","image":"","used":false,"rawLabel":"Pending Cancellation","selected":false,"missing":false,"reference":false,"value":"pending_cancellation","parameters":{"name":"sn_shop_order"}},{"label":"Closed Returned","image":"","used":false,"rawLabel":"Closed Returned","selected":false,"missing":false,"reference":false,"value":"closed_returned","parameters":{"name":"sn_shop_order"}}]},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.error_message","label":"8 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.status","label":"8 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.context","label":"8 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"8 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"8 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"7 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"6 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"6 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"13 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7b4b7999-7517-4063-a9c3-66bd73c91233"}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"9 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"9 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"9 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"9➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.status","label":"Flow Variables➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"849298ce-f8db-47b8-9002-8b2008af9fdb"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"16 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"16 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"16 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"16 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"5 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"5 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"11 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"9➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"18 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"20 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.context","label":"5 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.status","label":"5 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.error_message","label":"5 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.context","label":"16 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.status","label":"16 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.error_message","label":"16 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}}]</label_cache>
         <master_snapshot>e6d4c70a87192d10c04eb259dabb35d5</master_snapshot>
         <name>Update Purchase Order in ERP</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>aa204c95871ead10c04eb259dabb3522</remote_trigger_id>
+        <remote_trigger_id>da76f93ec387695012049e0f05013181</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e4bfba8287192d10c04eb259dabb3515</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Update Purchase Order in ERP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_e4bfba8287192d10c04eb259dabb3515</sys_update_name>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:29</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:43</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e4bfba8287192d10c04eb259dabb3515"/>
@@ -61,16 +61,16 @@
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-04-18 05:39:47</sys_created_on>
+        <sys_created_by>shreenag.araga@snc</sys_created_by>
+        <sys_created_on>2023-05-30 12:54:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>aa204c95871ead10c04eb259dabb3522</sys_id>
+        <sys_id>da76f93ec387695012049e0f05013181</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-18 05:39:47</sys_updated_on>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
         <table>sn_shop_purchase_order</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -79,14 +79,14 @@
         <identifier>e4bfba8287192d10c04eb259dabb3515</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>shreenag.araga@snc</sys_created_by>
-        <sys_created_on>2023-05-25 11:07:24</sys_created_on>
-        <sys_id>e6fdeb0dc383e550da89011ad001312b</sys_id>
+        <sys_created_on>2023-05-30 12:54:39</sys_created_on>
+        <sys_id>5676f93ec387695012049e0f05013182</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
-        <trigger display_value="">aa204c95871ead10c04eb259dabb3522</trigger>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
+        <trigger display_value="">da76f93ec387695012049e0f05013181</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e4bfba8287192d10c04eb259dabb3515^sys_idNOT INe6fdeb0dc383e550da89011ad001312b"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e4bfba8287192d10c04eb259dabb3515^sys_idNOT IN5676f93ec387695012049e0f05013182"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=e4bfba8287192d10c04eb259dabb3515^sys_idNOT IN68cfba8287192d10c04eb259dabb35ed"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -97,10 +97,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:31</sys_created_on>
         <sys_id>68cfba8287192d10c04eb259dabb35ed</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -311,14 +311,14 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:14</sys_created_on>
         <sys_id>e0bfba8287192d10c04eb259dabb352e</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -394,14 +394,14 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:14</sys_created_on>
         <sys_id>ecbfba8287192d10c04eb259dabb3529</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -432,10 +432,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:32</sys_created_on>
         <sys_id>09cffa8287192d10c04eb259dabb35d3</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>53d97cb5-d3e0-4c58-861f-d4306be3ee48</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=09cffa8287192d10c04eb259dabb35d3"/>
@@ -591,10 +591,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:31</sys_created_on>
         <sys_id>24cfba8287192d10c04eb259dabb35ef</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:25</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:40</sys_updated_on>
         <ui_id>054f93ce-fb40-4b9e-98db-db1ee4e301a9</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=24cfba8287192d10c04eb259dabb35ef"/>
@@ -725,10 +725,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:48:03</sys_created_on>
         <sys_id>540447c687192d10c04eb259dabb3562</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:26</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>f448284b-68de-4bd3-b622-b58eed488dfa</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=540447c687192d10c04eb259dabb3562"/>
@@ -871,10 +871,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:57</sys_created_on>
         <sys_id>5772778a87126110c04eb259dabb35db</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:26</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:40</sys_updated_on>
         <ui_id>ed74a391-3d1e-4693-88fe-b334d6c3688d</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5772778a87126110c04eb259dabb35db"/>
@@ -1029,10 +1029,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:27</sys_created_on>
         <sys_id>8cb5a3288786ad502a18b846dabb35ed</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>44755070-cb0b-4d9b-a622-cb8b945b1fb7</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8cb5a3288786ad502a18b846dabb35ed"/>
@@ -1189,10 +1189,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:27</sys_created_on>
         <sys_id>98b5e3288786ad502a18b846dabb3502</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:29</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:43</sys_updated_on>
         <ui_id>a593a78d-076a-44b3-9efd-0e01da3e0d8f</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=98b5e3288786ad502a18b846dabb3502"/>
@@ -1335,10 +1335,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:58</sys_created_on>
         <sys_id>a772b78a87126110c04eb259dabb3536</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>948876e5-3f8c-4941-ae47-3a58c3e4dd06</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a772b78a87126110c04eb259dabb3536"/>
@@ -1493,10 +1493,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:32</sys_created_on>
         <sys_id>bccffa8287192d10c04eb259dabb35c5</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>1ed91590-70af-430e-b5ca-4fefa70e04a5</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bccffa8287192d10c04eb259dabb35c5"/>
@@ -1653,10 +1653,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:26</sys_created_on>
         <sys_id>c0b5a3288786ad502a18b846dabb35d9</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>4d47698e-f639-419d-8a70-45402683afa2</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c0b5a3288786ad502a18b846dabb35d9"/>
@@ -1808,10 +1808,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:27</sys_created_on>
         <sys_id>10b5a3288786ad502a18b846dabb35fe</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:29</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:43</sys_updated_on>
         <ui_id>25e6da38-ea9b-4073-8710-860374a3fadd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1881,10 +1881,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:57</sys_created_on>
         <sys_id>1772778a87126110c04eb259dabb35d8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:25</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:40</sys_updated_on>
         <ui_id>79073b71-9f9f-485f-bfeb-7a9f477ede9d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1954,10 +1954,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:57</sys_created_on>
         <sys_id>2372778a87126110c04eb259dabb35ed</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:26</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>f374096c-7b5f-4642-97e9-5338ea774560</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2011,10 +2011,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:57</sys_created_on>
         <sys_id>2f72778a87126110c04eb259dabb35f1</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:26</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>27069ec4-c901-4d26-9389-63854d078396</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2044,10 +2044,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:58</sys_created_on>
         <sys_id>3372b78a87126110c04eb259dabb3564</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>cafff22c-324a-42ed-9c1b-347003f9ff16</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2078,10 +2078,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:58</sys_created_on>
         <sys_id>3f72b78a87126110c04eb259dabb355f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>08820b65-eada-46bb-8651-533c3c24ae80</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2136,10 +2136,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:27</sys_created_on>
         <sys_id>4cb5a3288786ad502a18b846dabb35e9</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>0cae9020-34e7-483f-9a99-9856717baa7a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2209,10 +2209,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:57</sys_created_on>
         <sys_id>6772b78a87126110c04eb259dabb3509</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:26</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>b1c832b6-0a98-4447-a564-86b4a15ac4e6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2267,10 +2267,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:58</sys_created_on>
         <sys_id>6b72b78a87126110c04eb259dabb3533</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>40a44b84-dfa5-4af2-8c19-8570d9657781</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2340,10 +2340,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:15</sys_created_on>
         <sys_id>78bfba8287192d10c04eb259dabb3547</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2413,10 +2413,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:26</sys_created_on>
         <sys_id>c0b5a3288786ad502a18b846dabb35d4</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>b76fa6d3-57d8-4203-98dd-093baa96a3f6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2486,10 +2486,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:15</sys_created_on>
         <sys_id>f0bfba8287192d10c04eb259dabb354b</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:27</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:41</sys_updated_on>
         <ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2559,10 +2559,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:59</sys_created_on>
         <sys_id>f372b78a87126110c04eb259dabb356f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:28</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:42</sys_updated_on>
         <ui_id>eeace992-b62b-4b5e-be3e-729bc15b8932</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2575,11 +2575,11 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:13:59</sys_created_on>
         <sys_id>bb72b78a87126110c04eb259dabb3572</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>shreenag.araga</sys_updated_by>
-        <sys_updated_on>2023-05-11 14:00:54</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+        <sys_updated_on>2023-05-30 12:54:17</sys_updated_on>
         <table>var__m_sys_hub_flow_variable_e4bfba8287192d10c04eb259dabb3515</table>
-        <value>{{4d47698e-f639-419d-8a70-45402683afa2.error_message}} </value>
+        <value>{{4d47698e-f639-419d-8a70-45402683afa2.error_message}}  </value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
@@ -2617,10 +2617,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:15</sys_created_on>
         <sys_id>fcbfba8287192d10c04eb259dabb3537</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:25</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:40</sys_updated_on>
         <ui_id>572b2353-3669-4bd5-b645-af7c9dd1c3e0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2690,10 +2690,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:29:15</sys_created_on>
         <sys_id>fcbfba8287192d10c04eb259dabb3543</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:25</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:40</sys_updated_on>
         <ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2993,12 +2993,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d0f48b0a87192d10c04eb259dabb354e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
-        <trigger display_value="">aa204c95871ead10c04eb259dabb3522</trigger>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
+        <trigger display_value="">da76f93ec387695012049e0f05013181</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e4bfba8287192d10c04eb259dabb3515"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -3012,7 +3012,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>update_purchase_order_in_erp</internal_name>
-        <label_cache>[{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.error_message","label":"16 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.status","label":"16 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.context","label":"16 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.error_message","label":"5 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.status","label":"5 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.context","label":"5 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"20 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"18 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"9➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"11 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"5 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"5 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"16 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"16 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"16 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"16 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.status","label":"Flow Variables➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"849298ce-f8db-47b8-9002-8b2008af9fdb"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"9➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"9 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"9 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"9 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7b4b7999-7517-4063-a9c3-66bd73c91233"}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"13 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"6 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"6 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"7 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"8 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"8 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.context","label":"8 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.status","label":"8 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.error_message","label":"8 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sn_shop_purchase_order","column_name":"status","choices":[{"label":"Pending Revision","used":false,"image":"","reference":false,"rawLabel":"Pending Revision","selected":false,"missing":false,"value":"pending_revision","parameters":{"name":"sn_shop_order"}},{"label":"Pending Submission","used":false,"image":"","reference":false,"rawLabel":"Pending Submission","selected":false,"missing":false,"value":"pending_submission","parameters":{"name":"sn_shop_order"}},{"label":"Ordered","used":false,"image":"","reference":false,"rawLabel":"Ordered","selected":false,"missing":false,"value":"ordered","parameters":{"name":"sn_shop_order"}},{"label":"Partially Delivered","used":false,"image":"","reference":false,"rawLabel":"Partially Delivered","selected":false,"missing":false,"value":"partially_delivered","parameters":{"name":"sn_shop_order"}},{"label":"Delivered","used":false,"image":"","reference":false,"rawLabel":"Delivered","selected":false,"missing":false,"value":"delivered","parameters":{"name":"sn_shop_order"}},{"label":"Payment Pending","used":false,"image":"","reference":false,"rawLabel":"Payment Pending","selected":false,"missing":false,"value":"payment_pending","parameters":{"name":"sn_shop_order"}},{"label":"Closed Paid","used":false,"image":"","reference":false,"rawLabel":"Closed Paid","selected":false,"missing":false,"value":"closed_paid","parameters":{"name":"sn_shop_order"}},{"label":"Closed Released","used":false,"image":"","reference":false,"rawLabel":"Closed Released","selected":false,"missing":false,"value":"closed_released","parameters":{"name":"sn_shop_order"}},{"label":"Closed Canceled","used":false,"image":"","reference":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"value":"closed_canceled","parameters":{"name":"sn_shop_order"}},{"label":"Pending Return","used":false,"image":"","reference":false,"rawLabel":"Pending Return","selected":false,"missing":false,"value":"pending_return","parameters":{"name":"sn_shop_order"}},{"label":"Pending Cancellation","used":false,"image":"","reference":false,"rawLabel":"Pending Cancellation","selected":false,"missing":false,"value":"pending_cancellation","parameters":{"name":"sn_shop_order"}},{"label":"Closed Returned","used":false,"image":"","reference":false,"rawLabel":"Closed Returned","selected":false,"missing":false,"value":"closed_returned","parameters":{"name":"sn_shop_order"}}]},{"name":"4d47698e-f639-419d-8a70-45402683afa2.context","label":"19 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.status","label":"19 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.error_message","label":"19 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"44755070-cb0b-4d9b-a622-cb8b945b1fb7.context","label":"22 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a593a78d-076a-44b3-9efd-0e01da3e0d8f.context","label":"24 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"a593a78d-076a-44b3-9efd-0e01da3e0d8f.context","label":"24 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"44755070-cb0b-4d9b-a622-cb8b945b1fb7.context","label":"22 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.error_message","label":"19 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.status","label":"19 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"4d47698e-f639-419d-8a70-45402683afa2.context","label":"19 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.status","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sn_shop_purchase_order","column_name":"status","choices":[{"label":"Pending Revision","image":"","used":false,"rawLabel":"Pending Revision","selected":false,"missing":false,"reference":false,"value":"pending_revision","parameters":{"name":"sn_shop_order"}},{"label":"Pending Submission","image":"","used":false,"rawLabel":"Pending Submission","selected":false,"missing":false,"reference":false,"value":"pending_submission","parameters":{"name":"sn_shop_order"}},{"label":"Ordered","image":"","used":false,"rawLabel":"Ordered","selected":false,"missing":false,"reference":false,"value":"ordered","parameters":{"name":"sn_shop_order"}},{"label":"Partially Delivered","image":"","used":false,"rawLabel":"Partially Delivered","selected":false,"missing":false,"reference":false,"value":"partially_delivered","parameters":{"name":"sn_shop_order"}},{"label":"Delivered","image":"","used":false,"rawLabel":"Delivered","selected":false,"missing":false,"reference":false,"value":"delivered","parameters":{"name":"sn_shop_order"}},{"label":"Payment Pending","image":"","used":false,"rawLabel":"Payment Pending","selected":false,"missing":false,"reference":false,"value":"payment_pending","parameters":{"name":"sn_shop_order"}},{"label":"Closed Paid","image":"","used":false,"rawLabel":"Closed Paid","selected":false,"missing":false,"reference":false,"value":"closed_paid","parameters":{"name":"sn_shop_order"}},{"label":"Closed Released","image":"","used":false,"rawLabel":"Closed Released","selected":false,"missing":false,"reference":false,"value":"closed_released","parameters":{"name":"sn_shop_order"}},{"label":"Closed Canceled","image":"","used":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"reference":false,"value":"closed_canceled","parameters":{"name":"sn_shop_order"}},{"label":"Pending Return","image":"","used":false,"rawLabel":"Pending Return","selected":false,"missing":false,"reference":false,"value":"pending_return","parameters":{"name":"sn_shop_order"}},{"label":"Pending Cancellation","image":"","used":false,"rawLabel":"Pending Cancellation","selected":false,"missing":false,"reference":false,"value":"pending_cancellation","parameters":{"name":"sn_shop_order"}},{"label":"Closed Returned","image":"","used":false,"rawLabel":"Closed Returned","selected":false,"missing":false,"reference":false,"value":"closed_returned","parameters":{"name":"sn_shop_order"}}]},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.error_message","label":"8 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.status","label":"8 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"f448284b-68de-4bd3-b622-b58eed488dfa.context","label":"8 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify Target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"8 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"8 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"7 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"6 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"6 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"6 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"6 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"6 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"13 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7b4b7999-7517-4063-a9c3-66bd73c91233"}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"9 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"9 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"9 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"9➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.status","label":"Flow Variables➛Status","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"849298ce-f8db-47b8-9002-8b2008af9fdb"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"16 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"16 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"16 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"16 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"5 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"5 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"11 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify Target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"9➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"18 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"20 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.context","label":"5 - Update Purchase Order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.status","label":"5 - Update Purchase Order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"ed74a391-3d1e-4693-88fe-b334d6c3688d.error_message","label":"5 - Update Purchase Order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.context","label":"16 - Update Purchase Order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.status","label":"16 - Update Purchase Order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"948876e5-3f8c-4941-ae47-3a58c3e4dd06.error_message","label":"16 - Update Purchase Order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}}]</label_cache>
         <master>true</master>
         <name>Update Purchase Order in ERP</name>
         <natlang/>
@@ -3029,7 +3029,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6d4c70a87192d10c04eb259dabb35d5</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3037,7 +3037,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:13</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=e6d4c70a87192d10c04eb259dabb35d5"/>
@@ -3052,10 +3052,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:52:01</sys_created_on>
         <sys_id>d2e44b0a87192d10c04eb259dabb351a</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:24</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:39</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -3183,14 +3183,14 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:46</sys_created_on>
         <sys_id>66d4c70a87192d10c04eb259dabb35d8</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:07</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3266,14 +3266,14 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:47</sys_created_on>
         <sys_id>76d4c70a87192d10c04eb259dabb35f3</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:07</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:32</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3387,10 +3387,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:48</sys_created_on>
         <sys_id>15c5a7288786ad502a18b846dabb3513</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:12</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>4d47698e-f639-419d-8a70-45402683afa2</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=15c5a7288786ad502a18b846dabb3513"/>
@@ -3533,10 +3533,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:52:03</sys_created_on>
         <sys_id>6ee44b0a87192d10c04eb259dabb3549</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:09</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>1ed91590-70af-430e-b5ca-4fefa70e04a5</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6ee44b0a87192d10c04eb259dabb3549"/>
@@ -3693,10 +3693,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:52:03</sys_created_on>
         <sys_id>76e44b0a87192d10c04eb259dabb3570</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:10</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>53d97cb5-d3e0-4c58-861f-d4306be3ee48</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=76e44b0a87192d10c04eb259dabb3570"/>
@@ -3852,10 +3852,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:48</sys_created_on>
         <sys_id>91c5a7288786ad502a18b846dabb3520</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:13</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <ui_id>44755070-cb0b-4d9b-a622-cb8b945b1fb7</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=91c5a7288786ad502a18b846dabb3520"/>
@@ -4012,10 +4012,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:48</sys_created_on>
         <sys_id>95c5a7288786ad502a18b846dabb352d</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:13</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <ui_id>a593a78d-076a-44b3-9efd-0e01da3e0d8f</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=95c5a7288786ad502a18b846dabb352d"/>
@@ -4158,10 +4158,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:52:02</sys_created_on>
         <sys_id>a2e44b0a87192d10c04eb259dabb3530</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:09</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>f448284b-68de-4bd3-b622-b58eed488dfa</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a2e44b0a87192d10c04eb259dabb3530"/>
@@ -4304,10 +4304,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:25</sys_created_on>
         <sys_id>ce92fb8a87126110c04eb259dabb3523</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>ed74a391-3d1e-4693-88fe-b334d6c3688d</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ce92fb8a87126110c04eb259dabb3523"/>
@@ -4462,10 +4462,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:52:01</sys_created_on>
         <sys_id>d6e44b0a87192d10c04eb259dabb351c</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:07</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>054f93ce-fb40-4b9e-98db-db1ee4e301a9</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d6e44b0a87192d10c04eb259dabb351c"/>
@@ -4596,10 +4596,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:25</sys_created_on>
         <sys_id>da92fb8a87126110c04eb259dabb354f</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:11</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>948876e5-3f8c-4941-ae47-3a58c3e4dd06</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=da92fb8a87126110c04eb259dabb354f"/>
@@ -4763,10 +4763,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:47</sys_created_on>
         <sys_id>05c567288786ad502a18b846dabb35e5</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:10</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>b76fa6d3-57d8-4203-98dd-093baa96a3f6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4836,10 +4836,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>0e92bb8a87126110c04eb259dabb35ff</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:10</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>40a44b84-dfa5-4af2-8c19-8570d9657781</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4909,10 +4909,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>3992bb8a87126110c04eb259dabb35e2</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>f374096c-7b5f-4642-97e9-5338ea774560</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -4966,10 +4966,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>4a92fb8a87126110c04eb259dabb3506</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:11</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>cafff22c-324a-42ed-9c1b-347003f9ff16</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5000,10 +5000,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:47</sys_created_on>
         <sys_id>72d4c70a87192d10c04eb259dabb35ff</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>572b2353-3669-4bd5-b645-af7c9dd1c3e0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5073,10 +5073,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:47</sys_created_on>
         <sys_id>7ad40b0a87192d10c04eb259dabb351a</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:09</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5146,10 +5146,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>8292fb8a87126110c04eb259dabb3503</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:11</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>08820b65-eada-46bb-8651-533c3c24ae80</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5204,10 +5204,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>8692fb8a87126110c04eb259dabb3509</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:12</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <ui_id>eeace992-b62b-4b5e-be3e-729bc15b8932</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5220,11 +5220,11 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>ce92fb8a87126110c04eb259dabb350b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>shreenag.araga</sys_updated_by>
-        <sys_updated_on>2023-05-11 14:01:04</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>shreenag.araga@snc</sys_updated_by>
+        <sys_updated_on>2023-05-30 12:54:31</sys_updated_on>
         <table>var__m_sys_hub_flow_variable_e6d4c70a87192d10c04eb259dabb35d5</table>
-        <value>{{4d47698e-f639-419d-8a70-45402683afa2.error_message}} </value>
+        <value>{{4d47698e-f639-419d-8a70-45402683afa2.error_message}}  </value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>status</field>
@@ -5262,10 +5262,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:47</sys_created_on>
         <sys_id>89c567288786ad502a18b846dabb35ec</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:13</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <ui_id>25e6da38-ea9b-4073-8710-860374a3fadd</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5335,10 +5335,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>8a92bb8a87126110c04eb259dabb35e9</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:09</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>b1c832b6-0a98-4447-a564-86b4a15ac4e6</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5393,10 +5393,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>b192bb8a87126110c04eb259dabb35df</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>79073b71-9f9f-485f-bfeb-7a9f477ede9d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5465,10 +5465,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-21 07:14:24</sys_created_on>
         <sys_id>b992bb8a87126110c04eb259dabb35e6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>27069ec4-c901-4d26-9389-63854d078396</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5499,10 +5499,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-04-04 04:11:47</sys_created_on>
         <sys_id>cdc567288786ad502a18b846dabb35e8</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:12</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:35</sys_updated_on>
         <ui_id>0cae9020-34e7-483f-9a99-9856717baa7a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5572,10 +5572,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:47</sys_created_on>
         <sys_id>f2d40b0a87192d10c04eb259dabb351e</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:09</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:34</sys_updated_on>
         <ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -5645,10 +5645,10 @@
         <sys_created_by>shreenag.araga</sys_created_by>
         <sys_created_on>2023-03-02 10:51:47</sys_created_on>
         <sys_id>fed40b0a87192d10c04eb259dabb3516</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>shreenag.araga@snc</sys_updated_by>
-        <sys_updated_on>2023-05-25 11:07:08</sys_updated_on>
+        <sys_updated_on>2023-05-30 12:54:33</sys_updated_on>
         <ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
